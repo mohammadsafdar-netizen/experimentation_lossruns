@@ -94,20 +94,75 @@ Remaining bottleneck is **structural (schema mismatch)** — not OCR.
 
 ## 6. Real baseline (v4, against GT v3)
 
-### Per-doc F1
+### Schema being scored against
 
-| Doc | Pages | Archetype | F1 | Coverage | Notes |
-|---|---|---|---|---|---|
-| ADP/AmTrust | 3 | flat_multipage_zeros | **93.3%** | 100% | Trivial — 0 claims, mostly headers |
-| Arrowhead/Sea West | 12 | per_policy_section | **87.2%** | 93.5% | 4 claims across 12 policies, scanned PDF |
-| **ICW** | **15** | **hybrid_detail** | **83.5%** | 79.9% | 12 claims; needed 16K max_new_tokens |
-| Employers | 1 | per_policy_section | **72.7%** | 80.6% | 5 claims, 4 policies (was 13.6% pre-GT-fix) |
-| Insperity | 2 | flat_table_with_grouping | **66.7%** | 100% | 0 claims, just metadata |
-| TriNet | 2 | flat_table_with_grouping | **64.3%** | 100% | 1 claim |
-| Hartford acct (a) | 1 | summary_pivot | **42.9%** | 81.8% | LOB-by-year pivot, schema mismatch |
-| Strategic Info Hartford | 1 | hybrid_detail | **40.6%** | 92.3% | Combined raw cells, doc fields at 11.5% |
-| Hartford acct (b) | 1 | summary_pivot | **25.0%** | 81.8% | Duplicate of (a) but worse |
-| **OVERALL** | **38** | | **78.9%** (407/587) | **83.8%** (244/291) | |
+**Universal target schema** (defined in `data/loss_runs/schema/loss_run.schema.json`, ~462 paths):
+
+```
+document {
+  report_source_type, report_title, report_run_date, valuation_date,
+  report_period_start, report_period_end, target_policy,
+  carrier { name, legal_entity, license_number },
+  claims_administrator { name, address },
+  broker_or_agency { name, agency_code, producer_name, producer_code, ... },
+  policyholder { name, dba, trade_name, address_line, city, state, postal_code, ... },
+  deductible_treatment, lae_inclusion_in_total,
+  symbol_legend[], disclaimers[], safety_facts_block,
+  account_summary { term_premium, earned_premium, total_paid_losses, ... },
+  section_totals[]                                  // cross-policy totals
+}
+policies[] {
+  policy_number, policy_carrier_name, line_of_business,
+  policy_effective_date, policy_expiration_date, median_days_to_report_claim,
+  premium { term_premium, written_premium, earned_premium },
+  counts { total/open/closed/litigated/indemnity_*/medical_*/total_records_* },
+  financials {
+    paid_losses, paid_loss_adjustment_expenses, outstanding, total_incurred, loss_ratio,
+    by_bucket { medical, indemnity, disability, vr, expense_lae,
+                employer_paid_benefits, rehab, recovery, lost_time, total }
+  },
+  has_no_claims, no_claims_marker_text,
+  subtotals[],                                       // within-policy subtotals
+  location_summaries[]                               // per-location blocks
+}
+claims[] {
+  policy_id (joins to policies[].policy_number|effective_date),
+  identity { claim_number, claimant_name, age, hire_date, occupation, occupation_code, ... },
+  location { location_id, loss_location, jurisdiction_state, raw_combined_cell },
+  dates { date_of_loss, date_reported_to_carrier, date_closed, reporting_lag_days },
+  status { claim_status, claim_type, raw_status, in_litigation, pd_rating, ... },
+  injury { nature_of_injury, body_part, cause_of_injury, loss_description, ... },
+  classification { class_code, class_code_raw },
+  examiner { name, id, phone, email },
+  financials {
+    medical, indemnity, disability, vr, expense_lae,
+    employer_paid_benefits, rehab, lost_time, recovery_subrogation,
+    deductible, internal_handling_expense,
+    totals { total_paid, total_reserve, total_incurred, net_total_* }
+  }
+}
+aggregations { by_part_of_body, by_nature_of_injury, by_cause_of_injury, by_time/day/month_of_injury, by_time_to_report }
+verification.checks[], confidence, signals[], extraction_notes[], source_provenance
+```
+
+**GT v3 (`data/loss_runs/gt/loss_runs_gt_v3_pdftext.json`)** = subset of this universal schema, populated only for fields each carrier actually prints. Each form's GT has different paths populated based on what that carrier publishes.
+
+### Per-doc F1 (with field counts and schema applicability)
+
+| Doc | Pages | Archetype | F1 | Coverage | GT fields | Schema scope |
+|---|---|---|---|---|---|---|
+| ADP/AmTrust | 3 | flat_multipage_zeros | **93.3%** | 100% | **15** (doc=5, pol=2, tots=8) | Empty loss-run report. Carrier logo block, policy header, group_totals/report_totals (all zeros). No claims. |
+| Arrowhead/Sea West | 12 | per_policy_section | **87.2%** | 93.5% | **94** (doc=5, pol=33, claims=56) | 12 separate policy sections (Everest National + Premier), 4 claims with full bucket detail (medical, **disability** (Arrowhead-specific bucket), expense_lae, totals); per-policy litigation indicator and per-policy totals row |
+| **ICW** | **15** | **hybrid_detail** | **83.5%** | 79.9% | **327** (doc=21, pol=6, tots=24, claims=276) | Account summary (term_premium, ratios, claim severity counts), CURRENT_AND_PAST_ACCOUNT_SUMMARY cross-policy table, 12 claims with per-bucket Paid/Reserved/Incurred matrix (medical, indemnity, employer_paid_benefits, rehab, expense_lae, subrogation), location_summaries, examiner contact (name+phone+email) |
+| Employers | 1 | per_policy_section | **72.7%** | 80.6% | **88** (doc=7, pol=16, tots=25, claims=40) | 4 policy sections, 3 claims with separate medical/indemnity buckets + recovery + deductible + **net_expense** (Employers-specific = internal_handling_expense), median_days_to_report_claim per policy, combined_all_periods_totals |
+| Insperity | 2 | flat_table_with_grouping | **66.7%** | 100% | **6** (doc only) | Empty report (0 claims). Insured name, valuation date, report period, run date, filters, grouping. Origami-Risk-style report definition page. |
+| TriNet | 2 | flat_table_with_grouping | **64.3%** | 100% | **14** (doc=2, claims=12) | Single flat table format, 1 incident-only claim with claim_number, claimant_name, dates (loss/reported/closed), status, cause_of_loss, body_part, paid/reserve/incurred. Report filter expression. |
+| Hartford acct (a) | 1 | summary_pivot | **42.9%** | 81.8% | **7** (doc only) | LOB-by-year pivot table — NOT individual claims. account_trade_name, policy_number_current, date_produced, AIF account number, agency code, MSI, account_total. Schema doesn't currently model `policy_year_lob_pivot[]` rows. |
+| Strategic Info Hartford | 1 | hybrid_detail | **40.6%** | 92.3% | **32** (doc=5, pol=15, claims=12) | Cover sheet + 5 policy terms (only 4th has claim activity), 1 claim Y3WC99221 with claim_number, claimant, loss_date, reported_date, closed_date, state, class_code, occupation, cause_of_loss, status, paid_loss/paid_expense/total_incurred. Combined raw_combined_cell with location/cause/occupation. |
+| Hartford acct (b) | 1 | summary_pivot | **25.0%** | 81.8% | **4** (doc only) | Duplicate of (a) — same content, same pivot structure. Schema mismatch is identical. |
+| **OVERALL** | **38** | | **78.9%** (407/587) | **83.8%** (244/291) | **587** | |
+
+**Note on schema scope:** Each carrier prints different fields. Coverage % shows that printed values ARE captured (~80-100% per doc); F1 % shows whether they're put in the right schema location. The gap is structural — Hartford pivots have 82% coverage but only 36% F1 because the model captures the values but the schema doesn't have a `policy_year_lob_pivot[]` field for them to live in.
 
 ### Per-archetype F1
 

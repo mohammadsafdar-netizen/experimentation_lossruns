@@ -1,6 +1,15 @@
-# Loss-Run Ground Truths (current production)
+# Loss-Run Ground Truths + Comparison Docs (current state)
 
-Hand-curated ground-truth annotations for 9 workers'-comp loss-run PDFs across 7 carriers. **Only the most-reliable v6 GT is kept** — older versions (v1–v5) were removed to avoid confusion. v6 is the second-pass-audited target with 20 verified corrections (May 4, 2026).
+Hand-curated ground-truth annotations for 9 workers'-comp loss-run PDFs across 7 carriers, plus the latest comparison and ablation results. **Only the most-reliable v6 GT is kept** — older versions (v1–v5) were removed to avoid confusion. v6 is the second-pass-audited target with 20 verified corrections (May 4, 2026).
+
+## Latest comparison docs (`docs/`)
+
+- **[`docs/INSIGHTS.md`](docs/INSIGHTS.md)** — production state (May 4, 2026): **91.12% winner-only F1 / 88.5% strict** on GT v6, per-archetype breakdown, active bottlenecks, cross-references
+- **[`docs/TABLE_EXTRACTOR_COMPARISON.md`](docs/TABLE_EXTRACTOR_COMPARISON.md)** — head-to-head of docling, pdfplumber, pymupdf, unstructured, and YOLO+docling cascade across all archetypes. **Conclusion:** no single tool wins; per-archetype routing is the production path.
+- **[`docs/ABLATION_MATRIX_2026_05_04.md`](docs/ABLATION_MATRIX_2026_05_04.md)** — VLM × OCR-config matrix. **Key finding:** bbox-coordinates-in-prompt regresses Qwen3-VL by 2.47pp (Landing AI's parse-once trick does NOT transfer to a 3-input setup). Granite/Dolphin swap-in tests blocked on env/prompt format issues.
+- **[`docs/LESSONS.md`](docs/LESSONS.md)** — 11 codified lessons (cache invalidation, A/B discipline, namespace separation, etc.)
+
+> ⚠ Older milestone docs (`90_PERCENT_MILESTONE_2026_05_03.md`, `FINAL_94_7PCT_2026_05_03.md`, etc.) at the repo root are **pre-GT-v6**. Their numbers (90-94.7%) were produced against earlier GT versions that contained typos and duplicate-field counting; the rigorous v6 audit revealed and corrected those. **Trust the May 4 docs in `docs/` over the May 3 milestone docs at root.**
 
 > **PRIVATE REPO ONLY.** Contains real PII (claimant names, claim numbers, employer/broker/carrier names). Do not make public.
 

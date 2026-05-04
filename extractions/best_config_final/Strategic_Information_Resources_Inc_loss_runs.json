@@ -1,0 +1,679 @@
+{
+  "document": {
+    "report_source_type": "direct_carrier",
+    "report_title": "Workers' Compensation Loss Run",
+    "report_id": null,
+    "run_id": null,
+    "generating_user": null,
+    "report_run_date": "08/21/2025",
+    "report_run_time": null,
+    "valuation_date": "08/21/2025",
+    "valuation_time": null,
+    "report_period_start": "08/21/2020",
+    "report_period_end": "08/20/2025",
+    "losses_incurred_since": null,
+    "target_policy": "76WEG AF8JGW",
+    "carrier": {
+      "name": "The Hartford",
+      "legal_entity": null,
+      "license_number": null
+    },
+    "claims_administrator": {
+      "name": "Ap Intego Insurance Group Llc",
+      "address": "Fairport, Ny"
+    },
+    "broker_or_agency": {
+      "name": "Ap Intego Insurance Group Llc",
+      "agency_code": null,
+      "dba": null,
+      "producer_name": null,
+      "producer_code": "250846",
+      "producing_regional": "Commercial Programs Center"
+    },
+    "policyholder": {
+      "name": "Strategic Information Resources Inc",
+      "dba": null,
+      "trade_name": null,
+      "individual_name": null,
+      "address_line": "Canoga Park, Ca",
+      "city": "Canoga Park",
+      "state": "Ca",
+      "postal_code": null,
+      "aif_account_number": null,
+      "msi": null
+    },
+    "deductible_treatment": "net_of_recoveries",
+    "lae_inclusion_in_total": "excluded",
+    "report_definition": null,
+    "symbol_legend": [
+      {
+        "symbol": "*",
+        "meaning": "Recovery Pending"
+      },
+      {
+        "symbol": "#",
+        "meaning": "WC Medical Only"
+      }
+    ],
+    "disclaimers": [
+      "Allocated Expenses for Workers' Comp claims are displayed for informational purposes only and are not included in the Total Incurred amounts.",
+      "Losses are net of deductible recoveries."
+    ],
+    "safety_facts_block": null,
+    "account_summary": {
+      "term_premium": null,
+      "earned_premium": null,
+      "earned_premium_excl_retro_adj": null,
+      "written_premium": null,
+      "total_paid_losses_and_expenses": 1056,
+      "outstanding_losses_and_expenses": 0,
+      "subrogation": null,
+      "total_incurred_losses_and_expenses": 1056,
+      "loss_ratio": null,
+      "experience_modification": null,
+      "total_number_of_claims": 1,
+      "litigation_count": 0,
+      "medical_claims_open": 0,
+      "medical_claims_closed": 1,
+      "indemnity_claims_open": 0,
+      "indemnity_claims_closed": 0,
+      "claim_severity_gt_10m": null,
+      "claim_severity_gt_25m": null,
+      "claim_severity_gt_50m": null,
+      "total_amount_in_millions": null
+    },
+    "policy_year_lob_pivot": [
+      {
+        "line_of_business": "WORKERS COMP",
+        "policy_period_end": "2026-03-07",
+        "policy_period_start": "2025-03-07",
+        "scope": "latest_policy"
+      },
+      {
+        "line_of_business": "WORKERS COMP"
+      },
+      {
+        "scope": "account_total"
+      }
+    ],
+    "section_totals": [
+      {
+        "label": "LATEST POLICY INFORMATION TOTAL",
+        "scope": "latest_policy"
+      }
+    ]
+  },
+  "policies": [
+    {
+      "policy_id": "76WEG AF8JGW|03/07/2023",
+      "policy_number": "76WEG AF8JGW",
+      "policy_carrier_name": "The Hartford",
+      "line_of_business": "WC",
+      "policy_effective_date": "03/07/2023",
+      "policy_expiration_date": "03/07/2024",
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 1,
+        "open_claims": 0,
+        "closed_claims": 1,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 1,
+        "medical_total": 1,
+        "total_records_open": 0,
+        "total_records_closed": 1,
+        "total_records_total": 1
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 1056,
+        "paid_loss_adjustment_expenses": 75,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 1056,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 1056,
+            "reserve": 0,
+            "incurred": 1056,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 1056,
+            "reserve": 0,
+            "incurred": 1056,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": false,
+      "no_claims_marker_text": null,
+      "location_summaries": [
+        {
+          "location_address": "Canoga Park, Ca",
+          "location_name": "Canoga Park"
+        }
+      ]
+    },
+    {
+      "policy_id": "76WEG AF8JGW|03/07/2021",
+      "policy_number": "76WEG AF8JGW",
+      "policy_carrier_name": "The Hartford",
+      "line_of_business": "WC",
+      "policy_effective_date": "03/07/2021",
+      "policy_expiration_date": "03/07/2022",
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 0,
+        "open_claims": 0,
+        "closed_claims": 0,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 0,
+        "total_records_total": 0
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 0,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 0,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": true,
+      "no_claims_marker_text": "No Claims for this policy"
+    },
+    {
+      "policy_id": "76WEG AF8JGW|03/07/2022",
+      "policy_number": "76WEG AF8JGW",
+      "policy_carrier_name": "The Hartford",
+      "line_of_business": "WC",
+      "policy_effective_date": "03/07/2022",
+      "policy_expiration_date": "03/07/2023",
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 0,
+        "open_claims": 0,
+        "closed_claims": 0,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 0,
+        "total_records_total": 0
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 0,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 0,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": true,
+      "no_claims_marker_text": "No Claims for this policy"
+    },
+    {
+      "policy_id": "76WEG AF8JGW|03/07/2024",
+      "policy_number": "76WEG AF8JGW",
+      "policy_carrier_name": "The Hartford",
+      "line_of_business": "WC",
+      "policy_effective_date": "03/07/2024",
+      "policy_expiration_date": "03/07/2025",
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 0,
+        "open_claims": 0,
+        "closed_claims": 0,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 0,
+        "total_records_total": 0
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 0,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 0,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": true,
+      "no_claims_marker_text": "No Claims for this policy"
+    },
+    {
+      "policy_id": "76WEG AF8JGW|03/07/2025",
+      "policy_number": "76WEG AF8JGW",
+      "policy_carrier_name": "The Hartford",
+      "line_of_business": "WC",
+      "policy_effective_date": "03/07/2025",
+      "policy_expiration_date": "03/07/2026",
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 0,
+        "open_claims": 0,
+        "closed_claims": 0,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 0,
+        "total_records_total": 0
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 0,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 0,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": true,
+      "no_claims_marker_text": "No Claims for this policy"
+    }
+  ],
+  "claims": [
+    {
+      "policy_id": "76WEG AF8JGW|03/07/2023",
+      "identity": {
+        "claim_number": "Y3WC 99221",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Balster Justine",
+        "claimant_age": 25,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "Office Manager",
+        "claimant_occupation_code": null,
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": "Canoga Park",
+        "location_address": "Canoga Park, Ca",
+        "loss_location": "Canoga Park Ca",
+        "injury_location_state": "Ca",
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "02/19/2024",
+        "date_of_loss_time": null,
+        "date_reported_to_carrier": "02/20/2024",
+        "date_first_aware": null,
+        "date_closed": "07/16/2024",
+        "employee_lag_days": null,
+        "reporting_lag_days": 1,
+        "_derived_fields": [
+          "reporting_lag_days"
+        ]
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "medical",
+        "raw_status": "closed",
+        "compound_status_split": false,
+        "in_litigation": null,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": true
+      },
+      "injury": {
+        "nature_of_injury": null,
+        "nature_of_injury_prefix": null,
+        "body_part": null,
+        "body_part_prefix": null,
+        "cause_of_injury": "Struck By Flying/falling Object",
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "Not We"
+      },
+      "classification": {
+        "class_code": "065191",
+        "class_code_raw": "065191"
+      },
+      "examiner": {
+        "name": null,
+        "id": null,
+        "phone": null,
+        "email": null,
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 1056,
+          "reserve": 0,
+          "incurred": 1056,
+          "recovery": 0,
+          "raw_value": 1056
+        },
+        "indemnity": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": 75,
+        "totals": {
+          "total_paid": 1056,
+          "total_reserve": 0,
+          "total_incurred": 1056,
+          "net_total_paid": 1056,
+          "net_total_reserve": 0,
+          "net_total_incurred": 1056
+        }
+      },
+      "raw_row": "02/19/2024 02/20/2024 07/16/2024 Y3WC 99221 CA 065191 1,056 75 0 0 1,056 # Balster Justine 25 02Y 03 Canoga Park Ca/Struck By Flying/falling Object - Not We /Office Manager"
+    }
+  ],
+  "aggregations": null,
+  "verification": {
+    "checks": [],
+    "reconciliation_summary": {
+      "checks_passed": 1,
+      "checks_run": 1
+    }
+  },
+  "confidence": {
+    "document_overall": 0.95,
+    "by_field": {},
+    "by_claim": {}
+  },
+  "signals": [],
+  "extraction_notes": [],
+  "source_provenance": {
+    "source_filename": null,
+    "source_hash": null,
+    "page_count": 1,
+    "extracted_at": null,
+    "extractor_version": "1.0.0"
+  },
+  "_derived": {
+    "insured_address_concat": "Canoga Park, Ca, Canoga Park, Ca",
+    "combined_all_periods": {
+      "medical_paid": 1056.0,
+      "medical_reserve": 0.0,
+      "medical_incurred": 1056.0,
+      "indemnity_paid": 0.0,
+      "indemnity_reserve": 0.0,
+      "indemnity_incurred": 0.0,
+      "expense_lae_paid": 0.0,
+      "expense_lae_reserve": 0.0,
+      "expense_lae_incurred": 0.0,
+      "total_incurred": 1056.0,
+      "total_incurred_losses_and_expenses": 1056.0,
+      "paid_losses": 1056.0,
+      "outstanding_losses_and_expenses": 0.0,
+      "total_claims": 1.0,
+      "open_claims": 0.0,
+      "net_expense": 0.0
+    }
+  },
+  "_enriched": {
+    "carrier": {
+      "source_name": "The Hartford",
+      "method": "levenshtein-2-vs-known-carriers",
+      "candidate_pool_size": 20,
+      "top_k_candidates": [
+        {
+          "name": "The Hartford",
+          "distance": 0
+        },
+        {
+          "name": "The Zenich",
+          "distance": 8
+        },
+        {
+          "name": "ICW Group",
+          "distance": 9
+        }
+      ],
+      "match": "The Hartford",
+      "distance": 0,
+      "status": "exact_match"
+    }
+  }
+}

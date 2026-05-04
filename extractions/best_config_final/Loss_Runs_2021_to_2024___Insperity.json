@@ -1,0 +1,122 @@
+{
+  "document": {
+    "report_source_type": "peo",
+    "report_title": "W/C Loss Run Report",
+    "report_id": null,
+    "run_id": null,
+    "generating_user": null,
+    "report_run_date": "01/27/2026",
+    "report_run_time": "12:51:44",
+    "valuation_date": "01/26/2026",
+    "valuation_time": null,
+    "report_period_start": "06/21/2021",
+    "report_period_end": "05/01/2024",
+    "losses_incurred_since": null,
+    "target_policy": null,
+    "carrier": {
+      "name": "INSAPERITY",
+      "legal_entity": "unknown",
+      "license_number": null
+    },
+    "claims_administrator": {
+      "name": "INSAPERITY",
+      "address": null
+    },
+    "broker_or_agency": {
+      "name": "PARTNERS IN LEADERSHIP, LLC",
+      "agency_code": null,
+      "dba": null,
+      "producer_name": null,
+      "producer_code": null,
+      "producing_regional": null
+    },
+    "policyholder": {
+      "name": "PARTNERS IN LEADERSHIP, LLC",
+      "dba": null,
+      "trade_name": null,
+      "individual_name": null,
+      "address_line": null,
+      "city": null,
+      "state": null,
+      "postal_code": null,
+      "aif_account_number": null,
+      "msi": null
+    },
+    "deductible_treatment": "unknown",
+    "lae_inclusion_in_total": "unknown",
+    "report_definition": "W/C Loss Run Report\nFilters: Loss Date is on or after 06/21/2021 and Client is equal to PARTNERS IN LEADERSHIP, LLC\nGroups: Member then Period (Policy Period) then Location then Status\nSorts: No Sorts\nOptions: Valuation Date is 01/26/2026\nRun Date: 01/27/2026",
+    "symbol_legend": [],
+    "disclaimers": [],
+    "safety_facts_block": null,
+    "account_summary": {
+      "term_premium": null,
+      "earned_premium": null,
+      "earned_premium_excl_retro_adj": null,
+      "written_premium": null,
+      "total_paid_losses_and_expenses": null,
+      "outstanding_losses_and_expenses": null,
+      "subrogation": null,
+      "total_incurred_losses_and_expenses": null,
+      "loss_ratio": null,
+      "experience_modification": null,
+      "total_number_of_claims": 0,
+      "litigation_count": null,
+      "medical_claims_open": null,
+      "medical_claims_closed": null,
+      "indemnity_claims_open": null,
+      "indemnity_claims_closed": null,
+      "claim_severity_gt_10m": null,
+      "claim_severity_gt_25m": null,
+      "claim_severity_gt_50m": null,
+      "total_amount_in_millions": null
+    },
+    "report_platform": {
+      "logo_text": "unknown",
+      "name": "unknown"
+    }
+  },
+  "policies": [],
+  "claims": [],
+  "aggregations": null,
+  "verification": {
+    "checks": []
+  },
+  "confidence": {
+    "document_overall": 0.95,
+    "by_field": {},
+    "by_claim": {}
+  },
+  "signals": [],
+  "extraction_notes": [],
+  "source_provenance": {
+    "source_filename": null,
+    "source_hash": null,
+    "page_count": 2,
+    "extracted_at": null,
+    "extractor_version": "1.0.0"
+  },
+  "_enriched": {
+    "carrier": {
+      "source_name": "INSAPERITY",
+      "method": "levenshtein-2-vs-known-carriers",
+      "candidate_pool_size": 20,
+      "top_k_candidates": [
+        {
+          "name": "Insperity",
+          "distance": 1
+        },
+        {
+          "name": "TriNet",
+          "distance": 8
+        },
+        {
+          "name": "ICW Group",
+          "distance": 8
+        }
+      ],
+      "match": "Insperity",
+      "distance": 1,
+      "status": "corrected"
+    }
+  }
+}

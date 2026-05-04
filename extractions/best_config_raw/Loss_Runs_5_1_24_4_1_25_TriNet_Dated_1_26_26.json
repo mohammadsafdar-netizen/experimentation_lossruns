@@ -1,0 +1,281 @@
+{
+  "document": {
+    "report_source_type": "peo",
+    "report_title": "Workers' Compensation Claims Summary",
+    "report_id": null,
+    "run_id": null,
+    "generating_user": null,
+    "report_run_date": "2026-01-28",
+    "report_run_time": "10:45:57",
+    "valuation_date": "2026-01-28",
+    "valuation_time": null,
+    "report_period_start": "2024-05-01",
+    "report_period_end": "2025-04-01",
+    "losses_incurred_since": null,
+    "target_policy": null,
+    "carrier": {
+      "name": "TRINET",
+      "legal_entity": null,
+      "license_number": null
+    },
+    "claims_administrator": {
+      "name": "TRINET",
+      "address": null
+    },
+    "broker_or_agency": {
+      "name": "TRINET",
+      "agency_code": null,
+      "dba": null,
+      "producer_name": null,
+      "producer_code": null,
+      "producing_regional": null
+    },
+    "policyholder": {
+      "name": "Partners In Leadership, LLC",
+      "dba": null,
+      "trade_name": null,
+      "individual_name": null,
+      "address_line": null,
+      "city": null,
+      "state": null,
+      "postal_code": null,
+      "aif_account_number": null,
+      "msi": null
+    },
+    "deductible_treatment": "unknown",
+    "lae_inclusion_in_total": "unknown",
+    "report_definition": "Report Filter: (Voided Claim is false or empty and Coverage is equal to Workers Compensation) and Loss Date is between 05/01/2024 and 04/01/2025 and Location is equal to TIII24M6 - Partners In Leadership, LLC",
+    "symbol_legend": [],
+    "disclaimers": [],
+    "safety_facts_block": null,
+    "account_summary": {
+      "term_premium": null,
+      "earned_premium": null,
+      "earned_premium_excl_retro_adj": null,
+      "written_premium": null,
+      "total_paid_losses_and_expenses": 0.0,
+      "outstanding_losses_and_expenses": 0.0,
+      "subrogation": null,
+      "total_incurred_losses_and_expenses": 0.0,
+      "loss_ratio": null,
+      "experience_modification": null,
+      "total_number_of_claims": 1,
+      "litigation_count": 0,
+      "medical_claims_open": 0,
+      "medical_claims_closed": 0,
+      "indemnity_claims_open": 0,
+      "indemnity_claims_closed": 0,
+      "claim_severity_gt_10m": 0,
+      "claim_severity_gt_25m": 0,
+      "claim_severity_gt_50m": 0,
+      "total_amount_in_millions": 0.0
+    }
+  },
+  "policies": [
+    {
+      "policy_id": "M377969|2024-09-18",
+      "policy_number": "M377969",
+      "policy_carrier_name": "TRINET",
+      "line_of_business": "WC",
+      "policy_effective_date": "2024-09-18",
+      "policy_expiration_date": null,
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 1,
+        "open_claims": 0,
+        "closed_claims": 1,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 1,
+        "total_records_total": 1
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 0.0,
+        "paid_loss_adjustment_expenses": 0.0,
+        "outstanding_losses_and_expenses": 0.0,
+        "total_incurred_losses_and_expenses": 0.0,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": 0.0
+          },
+          "indemnity": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": 0.0
+          },
+          "disability": 0.0,
+          "vr": 0.0,
+          "expense_lae": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": 0.0
+          },
+          "employer_paid_benefits": 0.0,
+          "rehab": 0.0,
+          "recovery": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": 0.0
+          },
+          "lost_time": 0.0,
+          "total": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": 0.0
+          }
+        }
+      },
+      "has_no_claims": false,
+      "no_claims_marker_text": null
+    }
+  ],
+  "claims": [
+    {
+      "policy_id": "M377969|2024-09-18",
+      "identity": {
+        "claim_number": "M377969",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "KRIEGEL, JESSICA",
+        "claimant_age": null,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": null,
+        "claimant_occupation_code": null,
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": null,
+        "loss_location": null,
+        "injury_location_state": "California",
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2024-09-18",
+        "date_of_loss_time": null,
+        "date_reported_to_carrier": "2024-09-19",
+        "date_first_aware": null,
+        "date_closed": "2024-09-27",
+        "employee_lag_days": null,
+        "reporting_lag_days": null
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "incident",
+        "raw_status": "Closed",
+        "compound_status_split": false,
+        "in_litigation": null,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": null,
+        "nature_of_injury_prefix": null,
+        "body_part": null,
+        "body_part_prefix": null,
+        "cause_of_injury": null,
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "SLIP AND FALL, LOWER BACK INJURY"
+      },
+      "classification": {
+        "class_code": null,
+        "class_code_raw": null
+      },
+      "examiner": {
+        "name": null,
+        "id": null,
+        "phone": null,
+        "email": null,
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": 0.0,
+          "raw_value": 0.0
+        },
+        "indemnity": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": 0.0,
+          "raw_value": 0.0
+        },
+        "disability": 0.0,
+        "vr": 0.0,
+        "expense_lae": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": 0.0,
+          "raw_value": 0.0
+        },
+        "employer_paid_benefits": 0.0,
+        "rehab": 0.0,
+        "lost_time": 0.0,
+        "recovery_subrogation": 0.0,
+        "deductible": 0.0,
+        "internal_handling_expense": 0.0,
+        "totals": {
+          "total_paid": 0.0,
+          "total_reserve": 0.0,
+          "total_incurred": 0.0,
+          "net_total_paid": 0.0,
+          "net_total_reserve": 0.0,
+          "net_total_incurred": 0.0
+        }
+      },
+      "raw_row": "M377969\nKRIEGEL, JESSICA\nPartners In Leadership, LLC\n\nIncident\nClosed\nCalifornia\n9/18/2024\n9/19/2024\n9/27/2024\n0.00\n0.00\n0.00"
+    }
+  ],
+  "aggregations": null,
+  "verification": {
+    "checks": []
+  },
+  "confidence": {
+    "document_overall": 0.95,
+    "by_field": {},
+    "by_claim": {}
+  },
+  "signals": [],
+  "extraction_notes": [],
+  "source_provenance": {
+    "source_filename": null,
+    "source_hash": null,
+    "page_count": 2,
+    "extracted_at": null,
+    "extractor_version": "1.0.0"
+  }
+}

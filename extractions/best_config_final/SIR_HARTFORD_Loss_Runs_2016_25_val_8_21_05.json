@@ -1,0 +1,153 @@
+{
+  "document": {
+    "report_source_type": "direct_carrier",
+    "report_title": "Loss Run",
+    "report_run_date": "2025-08-21",
+    "valuation_date": "2025-08-21",
+    "report_period_start": "2025-03-07",
+    "report_period_end": "2026-03-07",
+    "target_policy": "076WEG AF8JGW",
+    "carrier": {
+      "name": "Strategic Information Resources",
+      "legal_entity": "Strategic Information Resources",
+      "license_number": "1045104368"
+    },
+    "claims_administrator": {
+      "name": "Strategic Information Resources",
+      "address": "7050 Independence Ave , Canoga Park , CA 91303-0000"
+    },
+    "broker_or_agency": {
+      "name": "Strategic Information Resources",
+      "agency_code": "250846",
+      "producer_name": "Strategic Information Resources",
+      "producer_code": "830",
+      "producing_regional": "Strategic Information Resources",
+      "license_number": "1045104368",
+      "producer_city": "Canoga Park",
+      "producer_state": "CA",
+      "agency_city": "Canoga Park",
+      "agency_state": "CA"
+    },
+    "policyholder": {
+      "name": "Strategic Information Resources",
+      "trade_name": "Strategic Information Resources",
+      "individual_name": "Strategic Information Resources",
+      "address_line": "7050 Independence Ave , Canoga Park , CA 91303-0000",
+      "city": "Canoga Park",
+      "state": "CA",
+      "postal_code": "91303-0000",
+      "aif_account_number": "1045104368",
+      "msi": "830"
+    },
+    "report_platform": {
+      "name": "Origami Risk",
+      "logo_text": "Origami Risk"
+    },
+    "currency": "USD",
+    "deductible_treatment": "net_of_recoveries",
+    "lae_inclusion_in_total": "included",
+    "symbol_legend": [
+      {
+        "symbol": "*",
+        "meaning": "Recovery Pending"
+      }
+    ],
+    "disclaimers": [
+      "Losses are net of deductible recoveries."
+    ],
+    "account_summary": {
+      "term_premium": null,
+      "earned_premium": 7185,
+      "earned_premium_excl_retro_adj": 7185,
+      "written_premium": 15677,
+      "total_paid_losses_and_expenses": 0,
+      "outstanding_losses_and_expenses": 0,
+      "subrogation": 0,
+      "total_incurred_losses_and_expenses": 0,
+      "loss_ratio": 0.0,
+      "experience_modification": 1.0,
+      "total_number_of_claims": 1,
+      "litigation_count": 0,
+      "medical_claims_open": 0,
+      "medical_claims_closed": 0,
+      "indemnity_claims_open": 0,
+      "indemnity_claims_closed": 0
+    },
+    "section_totals": [
+      {
+        "label": "LATEST POLICY INFORMATION TOTAL",
+        "scope": "latest_policy",
+        "earned_premium": 7185,
+        "loss_ratio": 0.0,
+        "claims_paid_count": 0
+      }
+    ],
+    "policy_year_lob_pivot": [
+      {
+        "line_of_business": "WORKERS COMP",
+        "lob_code": "W",
+        "policy_period_start": "2025-03-07",
+        "policy_period_end": "2026-03-07",
+        "earned_premium": 7185,
+        "loss_ratio": 0.0,
+        "paid_claims": 0,
+        "scope": "latest_policy"
+      },
+      {
+        "line_of_business": "WORKERS COMP",
+        "lob_code": "W",
+        "policy_period_label": "2016-2025",
+        "earned_premium": 104444,
+        "loss_ratio": 0.01,
+        "paid_claims": 1,
+        "scope": "row"
+      },
+      {
+        "is_total_row": true,
+        "scope": "account_total",
+        "earned_premium": 129425,
+        "loss_ratio": 0.008,
+        "paid_claims": 1
+      }
+    ]
+  },
+  "policies": [],
+  "claims": [],
+  "verification": {
+    "checks": [],
+    "reconciliation_summary": {
+      "checks_run": 0,
+      "checks_passed": 0,
+      "checks_failed": 0,
+      "overall_pass": false,
+      "categories_failed": []
+    }
+  },
+  "_derived": {
+    "insured_address_concat": "7050 Independence Ave , Canoga Park , CA 91303-0000, Canoga Park, CA 91303-0000"
+  },
+  "_enriched": {
+    "carrier": {
+      "source_name": "Strategic Information Resources",
+      "method": "levenshtein-2-vs-known-carriers",
+      "candidate_pool_size": 20,
+      "top_k_candidates": [
+        {
+          "name": "AmTrust North America",
+          "distance": 23
+        },
+        {
+          "name": "The Hartford",
+          "distance": 24
+        },
+        {
+          "name": "Travelers",
+          "distance": 24
+        }
+      ],
+      "match": null,
+      "distance": null,
+      "status": "no_clean_match"
+    }
+  }
+}

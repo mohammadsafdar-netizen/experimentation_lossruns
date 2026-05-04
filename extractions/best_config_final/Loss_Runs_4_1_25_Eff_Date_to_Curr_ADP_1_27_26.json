@@ -1,0 +1,221 @@
+{
+  "document": {
+    "report_source_type": "direct_carrier",
+    "report_title": "WC LOSS RUN REPORT",
+    "report_id": 677,
+    "run_id": 14569471,
+    "generating_user": "Ashley.Wilgusadp.com",
+    "report_run_date": "2026-01-27",
+    "report_run_time": "10:31:49",
+    "valuation_date": "2026-01-27",
+    "valuation_time": null,
+    "report_period_start": null,
+    "report_period_end": null,
+    "losses_incurred_since": null,
+    "target_policy": null,
+    "carrier": {
+      "name": "AmTrust North America",
+      "legal_entity": null,
+      "license_number": null
+    },
+    "claims_administrator": {
+      "name": null,
+      "address": null
+    },
+    "broker_or_agency": {
+      "name": "Partners in Leadership, LLC",
+      "agency_code": null,
+      "dba": null,
+      "producer_name": null,
+      "producer_code": null,
+      "producing_regional": null
+    },
+    "policyholder": {
+      "name": "Partners in Leadership, LLC",
+      "dba": null,
+      "trade_name": null,
+      "individual_name": null,
+      "address_line": null,
+      "city": null,
+      "state": null,
+      "postal_code": null,
+      "aif_account_number": null,
+      "msi": null
+    },
+    "deductible_treatment": "gross",
+    "lae_inclusion_in_total": "excluded",
+    "report_definition": null,
+    "symbol_legend": [
+      {
+        "symbol": "*",
+        "meaning": "Recovery Pending"
+      }
+    ],
+    "disclaimers": [],
+    "safety_facts_block": null,
+    "account_summary": {
+      "term_premium": null,
+      "earned_premium": null,
+      "earned_premium_excl_retro_adj": null,
+      "written_premium": null,
+      "total_paid_losses_and_expenses": 0,
+      "outstanding_losses_and_expenses": 0,
+      "subrogation": 0,
+      "total_incurred_losses_and_expenses": 0,
+      "loss_ratio": null,
+      "experience_modification": null,
+      "total_number_of_claims": 0,
+      "litigation_count": 0,
+      "medical_claims_open": 0,
+      "medical_claims_closed": 0,
+      "indemnity_claims_open": 0,
+      "indemnity_claims_closed": 0,
+      "claim_severity_gt_10m": 0,
+      "claim_severity_gt_25m": 0,
+      "claim_severity_gt_50m": 0,
+      "total_amount_in_millions": 0
+    }
+  },
+  "policies": [
+    {
+      "policy_id": "QWC1446510|2025-04-01",
+      "policy_number": "QWC1446510",
+      "policy_carrier_name": "AmTrust North America",
+      "line_of_business": "WC",
+      "policy_effective_date": "2025-04-01",
+      "policy_expiration_date": null,
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 0,
+        "open_claims": 0,
+        "closed_claims": 0,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 0,
+        "total_records_total": 0
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 0,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 0,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": 0,
+          "vr": 0,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": 0,
+          "rehab": 0,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": 0,
+          "total": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": true,
+      "no_claims_marker_text": "NO CLAIMANTS"
+    }
+  ],
+  "claims": [],
+  "aggregations": null,
+  "verification": {
+    "checks": []
+  },
+  "confidence": {
+    "document_overall": 0.99,
+    "by_field": {},
+    "by_claim": {}
+  },
+  "signals": [],
+  "extraction_notes": [],
+  "source_provenance": {
+    "source_filename": null,
+    "source_hash": null,
+    "page_count": 3,
+    "extracted_at": null,
+    "extractor_version": "1.0.0"
+  },
+  "_derived": {
+    "combined_all_periods": {
+      "medical_paid": 0.0,
+      "medical_reserve": 0.0,
+      "medical_incurred": 0.0,
+      "indemnity_paid": 0.0,
+      "indemnity_reserve": 0.0,
+      "indemnity_incurred": 0.0,
+      "expense_lae_paid": 0.0,
+      "expense_lae_reserve": 0.0,
+      "expense_lae_incurred": 0.0,
+      "total_incurred": 0.0,
+      "total_incurred_losses_and_expenses": 0.0,
+      "paid_losses": 0.0,
+      "outstanding_losses_and_expenses": 0.0,
+      "total_claims": 0.0,
+      "open_claims": 0.0,
+      "net_expense": 0.0
+    }
+  },
+  "_enriched": {
+    "carrier": {
+      "source_name": "AmTrust North America",
+      "method": "levenshtein-2-vs-known-carriers",
+      "candidate_pool_size": 20,
+      "top_k_candidates": [
+        {
+          "name": "AmTrust North America",
+          "distance": 0
+        },
+        {
+          "name": "The Hartford",
+          "distance": 16
+        },
+        {
+          "name": "Arrowhead",
+          "distance": 16
+        }
+      ],
+      "match": "AmTrust North America",
+      "distance": 0,
+      "status": "exact_match"
+    }
+  }
+}

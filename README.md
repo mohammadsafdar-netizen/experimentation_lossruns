@@ -14,6 +14,13 @@ Hand-curated ground-truth annotations for 9 workers'-comp loss-run PDFs across 7
 
 - **[`scripts/score_v7_coverage.py`](scripts/score_v7_coverage.py)** — score any production output dir against `gt/loss_runs_gt_v7_extended.json`. Walks GT leaf values, checks substring-presence in the extraction. Used to produce the 86.2% number above.
 
+## Best-config extractions (`extractions/`)
+
+The actual extraction outputs from the production winner config (Qwen3-VL-4B + LightOnOCR + V4 prompt + post-processing pipeline) for all 9 docs.
+
+- **[`extractions/best_config_final/`](extractions/best_config_final/)** — *post-processed* extractions (after flatten → derive → coerce → enrich). This is the output that gets scored at 91.12% v6 F1 / 86.2% v7 coverage. Contains three namespaces per doc: `extraction` (top-level fields), `_derived` (computed aggregations like `combined_all_periods`, `reporting_lag`), `_enriched` (carrier match with status enum + top-k Levenshtein candidates). Audit fields: `_alias_from`, `_flatten_conflicts`.
+- **[`extractions/best_config_raw/`](extractions/best_config_raw/)** — *raw chunked* output straight from Qwen3-VL (before post-processing). Multi-page docs (≥4 pages) are stored as `{"chunked": True, "chunks": [...]}` with one chunk per 3 pages. Single-page docs are flat objects. Use this if you want to see what the VLM actually emitted before deterministic merging.
+
 > ⚠ Older milestone docs (`90_PERCENT_MILESTONE_2026_05_03.md`, `FINAL_94_7PCT_2026_05_03.md`, etc.) at the repo root are **pre-GT-v6**. Their numbers (90-94.7%) were produced against earlier GT versions that contained typos and duplicate-field counting; the rigorous v6 audit revealed and corrected those. **Trust the May 4 docs in `docs/` over the May 3 milestone docs at root.**
 
 > **PRIVATE REPO ONLY.** Contains real PII (claimant names, claim numbers, employer/broker/carrier names). Do not make public.

@@ -1,0 +1,1833 @@
+{
+  "document": {
+    "report_title": "Workers' Compensation Loss Analysis Report.",
+    "run_id": null,
+    "carrier": {
+      "license_number": null,
+      "legal_entity": "Insurance Company of the West",
+      "name": "Insurance Company of the West"
+    },
+    "report_id": null,
+    "generating_user": null,
+    "claims_administrator": {
+      "address": null,
+      "name": "ARROYO INSURANCE SERVICES, INC"
+    },
+    "safety_facts_block": "ICW Group offers you a wide variety of risk management services, including safety resources, tools, educational information, helpful support and Safety OnDemand. For more information, contact your risk management consultant or one of our customer care representatives at 877.289.1644, myResource@icwgroup.com or visit icwgroup.com/safety.",
+    "policyholder": {
+      "postal_code": "92618",
+      "city": "IRVINE",
+      "name": "PSQ PRODUCTIONS LLC",
+      "address_line": "205 TECHNOLOGY DR SUITE 200",
+      "trade_name": null,
+      "state": "CA",
+      "aif_account_number": null,
+      "msi": null,
+      "individual_name": null,
+      "dba": null
+    },
+    "report_source_type": "direct_carrier",
+    "deductible_treatment": "gross",
+    "lae_inclusion_in_total": "included",
+    "target_policy": null,
+    "report_period_end": "2025-01-14",
+    "report_run_time": "01:26:53",
+    "symbol_legend": null,
+    "report_definition": null,
+    "report_platform": {
+      "logo_text": "ICW GROUP Insurance Companies"
+    },
+    "broker_or_agency": {
+      "agency_code": "0004569",
+      "name": "ARROYO INSURANCE SERVICES, INC",
+      "producer_name": null,
+      "producing_regional": null,
+      "producer_code": null,
+      "dba": null
+    },
+    "valuation_date": "2025-11-10",
+    "losses_incurred_since": null,
+    "report_run_date": "2025-11-10",
+    "valuation_time": null,
+    "report_period_start": "2024-01-14",
+    "account_summary": {
+      "total_incurred_losses_and_expenses": 117100.27,
+      "indemnity_claims_closed": 0,
+      "written_premium": 63524.0,
+      "claim_severity_gt_10m": 0,
+      "claim_severity_gt_25m": 0,
+      "claim_severity_gt_50m": 0,
+      "total_amount_in_millions": null,
+      "litigation_count": 1,
+      "earned_premium": 52211.51,
+      "outstanding_losses_and_expenses": 76450.93,
+      "subrogation": 0.0,
+      "total_paid_losses_and_expenses": 40649.34,
+      "total_number_of_claims": 2,
+      "medical_claims_open": 1,
+      "indemnity_claims_open": 1,
+      "medical_claims_closed": 0,
+      "earned_premium_excl_retro_adj": null,
+      "loss_ratio": 224,
+      "experience_modification": 133,
+      "term_premium": 63524.0
+    },
+    "disclaimers": null
+  },
+  "policies": [
+    {
+      "policy_id": "WVE 5075514 01|01/14/2025",
+      "policy_number": "WVE 5075514 01",
+      "policy_carrier_name": "Insurance Company of the West",
+      "line_of_business": "WC",
+      "policy_effective_date": "2025-01-14",
+      "policy_expiration_date": "2026-01-14",
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": 63524.0,
+        "written_premium": 63524.0,
+        "earned_premium": 52211.51,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 2,
+        "open_claims": 2,
+        "closed_claims": 0,
+        "litigated_claims": 1,
+        "indemnity_open": 1,
+        "indemnity_closed": 0,
+        "indemnity_total": 1,
+        "medical_open": 1,
+        "medical_closed": 0,
+        "medical_total": 1,
+        "total_records_open": 2,
+        "total_records_closed": 0,
+        "total_records_total": 2
+      },
+      "policy_litigated_indicator": true,
+      "financials": {
+        "paid_losses": 36253.31,
+        "paid_loss_adjustment_expenses": 4396.03,
+        "outstanding_losses_and_expenses": 76450.93,
+        "total_incurred_losses_and_expenses": 117100.27,
+        "loss_ratio": 224,
+        "by_bucket": {
+          "medical": {
+            "paid": 13512.29,
+            "reserve": 51037.83,
+            "incurred": 64550.12,
+            "recovery": null
+          },
+          "indemnity": {
+            "paid": 22741.02,
+            "reserve": 10359.13,
+            "incurred": 33100.15,
+            "recovery": null
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 4396.03,
+            "reserve": 15053.97,
+            "incurred": 19450.0,
+            "recovery": null
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": 0.0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 40649.34,
+            "reserve": 76450.93,
+            "incurred": 117100.27,
+            "recovery": 0.0
+          }
+        }
+      },
+      "has_no_claims": false,
+      "no_claims_marker_text": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|01/14/2024",
+      "policy_number": "WVE 5075514 00",
+      "policy_carrier_name": "Insurance Company of the West",
+      "line_of_business": "WC",
+      "policy_effective_date": "2024-01-14",
+      "policy_expiration_date": "2025-01-14",
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": 47530.0,
+        "written_premium": 47530.0,
+        "earned_premium": 47530.0,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 10,
+        "open_claims": 1,
+        "closed_claims": 9,
+        "litigated_claims": 1,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 1,
+        "total_records_closed": 9,
+        "total_records_total": 10
+      },
+      "policy_litigated_indicator": true,
+      "financials": {
+        "paid_losses": 30039.33,
+        "paid_loss_adjustment_expenses": 898.8,
+        "outstanding_losses_and_expenses": 48104.36,
+        "total_incurred_losses_and_expenses": 79042.49,
+        "loss_ratio": 166,
+        "by_bucket": {
+          "medical": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": null
+          },
+          "indemnity": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": null
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": null
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": 0.0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 0.0,
+            "reserve": 0.0,
+            "incurred": 0.0,
+            "recovery": 0.0
+          }
+        }
+      },
+      "has_no_claims": false,
+      "no_claims_marker_text": null,
+      "location_summaries": [
+        {
+          "by_bucket": {
+            "medical": {
+              "incurred": 3857.24,
+              "paid": 3857.24
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "policy_id": "WVE 5075514 01|01/14/2025",
+      "identity": {
+        "claim_number": "2025028840",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Rebecca Duchsherer",
+        "claimant_age": 50,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "BARTENDER (322)",
+        "claimant_occupation_code": "909501",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": "001",
+        "location_name": "PSQ PRODUCTIONS LLC",
+        "location_address": "205 TECHNOLOGY DR SUITE 200 IRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": "CA",
+        "injury_location_city": "IRVINE",
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2025-11-01",
+        "date_of_loss_time": "17:30",
+        "date_reported_to_carrier": "2025-11-06",
+        "date_first_aware": null,
+        "date_closed": null,
+        "employee_lag_days": null,
+        "reporting_lag_days": 5
+      },
+      "status": {
+        "claim_status": "open",
+        "claim_type": "medical",
+        "raw_status": "Open/Medical",
+        "compound_status_split": true,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Occ: Mental Stress",
+        "nature_of_injury_prefix": null,
+        "body_part": "Mult: No Physical Injury",
+        "body_part_prefix": null,
+        "cause_of_injury": "Misc: Oth Thn Phys Cause Of Inj",
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "EE REPORTS THAT SHE WAS WORKING AS A BAR CASHIER IN THE MOBILE BAR, THROUGHOUT THE SHIFT SHE WAS BY HERSELF CAUSING HER EXTRA STRESS, SHE WASN'T ABLE TO TAKE HER LUNCH AT THE FIVE HOURS, WHICH MADE HER FEEL SICK AND SHE GOT A MIGRAINE WITH NO RELIEF FROM"
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "DANYA DILBECK",
+        "id": null,
+        "phone": "(858) 350-7298",
+        "email": "ddilbeck@lcwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": null,
+          "raw_value": 0.0
+        },
+        "indemnity": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": null,
+          "raw_value": 0.0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": null,
+          "raw_value": 0.0
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 0.0,
+          "total_reserve": 0.0,
+          "total_incurred": 0.0,
+          "net_total_paid": 0.0,
+          "net_total_reserve": 0.0,
+          "net_total_incurred": 0.0
+        }
+      },
+      "raw_row": "Claim Number: 2025028840\nClaimant Name: Rebecca Duchsherer\nAge: 50\nClaim Status: Open/Medical\nClass Code 909501\nOccupation BARTENDER (322)\nDate of Injury 11/01/2025 05:30 PM\nDate Reported to Carrier 11/06/2025 (5 Days To Report)\nClose Date\nIn Litigation No\nNature of Injury Occ: Mental Stress\nBody Part Mult: No Physical Injury\nCause Misc: Oth Thn Phys Cause Of Inj\nAccident Description EE REPORTS THAT SHE WAS WORKING AS A BAR CASHIER IN THE MOBILE BAR, THROUGHOUT THE SHIFT SHE WAS BY HERSELF CAUSING HER EXTRA STRESS, SHE WASN'T ABLE TO TAKE HER LUNCH AT THE FIVE HOURS, WHICH MADE HER FEEL SICK AND SHE GOT A MIGRAINE WITH NO RELIEF FROM"
+    },
+    {
+      "policy_id": "WVE 5075514 01|01/14/2025",
+      "identity": {
+        "claim_number": "2025001519",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Eduardo Baird Alejandre",
+        "claimant_age": 41,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "CLERK, GENERAL (211)",
+        "claimant_occupation_code": "887101",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": "001",
+        "location_name": "PSQ PRODUCTIONS LLC",
+        "location_address": "205 TECHNOLOGY DR SUITE 200 IRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": "CA",
+        "injury_location_city": "IRVINE",
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2025-01-20",
+        "date_of_loss_time": "09:20",
+        "date_reported_to_carrier": "2025-01-20",
+        "date_first_aware": null,
+        "date_closed": null,
+        "employee_lag_days": null,
+        "reporting_lag_days": 0
+      },
+      "status": {
+        "claim_status": "open",
+        "claim_type": "indemnity",
+        "raw_status": "Open/Indemnity",
+        "compound_status_split": true,
+        "in_litigation": true,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: Strain",
+        "nature_of_injury_prefix": null,
+        "body_part": "Trunk: Low Back (Lmbr/Lmbo-Sac)",
+        "body_part_prefix": null,
+        "cause_of_injury": "Fall/Slip: Fall/Slip/Trip, Noc",
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "EDUARDO WAS WALKING DOWN A FLIGHT OF STAIRS WITH (2) TUBS MEDIUM WEIGHT TUBS. ON THE LAST STEP, HIS FOOT SLIPPED AND HE FELL ON HIS BUTTOCKS AND BACK. HE WALKED OVER TO A BENCH OUTSIDE AND SAT DOWN. HE IMMEDIATELY FELT PAIN DOWN HIS LEG AND BACK. HE WAS UNABLE TO WALK OR MOVE, SO AN AMBULANCE WAS CALLED."
+      },
+      "classification": {
+        "class_code": "887101",
+        "class_code_raw": "887101"
+      },
+      "examiner": {
+        "name": "BREA PFANKUCH",
+        "id": null,
+        "phone": "(858) 350-2665",
+        "email": "bpfankuch@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 13512.29,
+          "reserve": 51037.83,
+          "incurred": 64550.12,
+          "recovery": null,
+          "raw_value": 13512.29
+        },
+        "indemnity": {
+          "paid": 22741.02,
+          "reserve": 10359.13,
+          "incurred": 33100.15,
+          "recovery": null,
+          "raw_value": 22741.02
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 4396.03,
+          "reserve": 15053.97,
+          "incurred": 19450.0,
+          "recovery": null,
+          "raw_value": 4396.03
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 40649.34,
+          "total_reserve": 76450.93,
+          "total_incurred": 117100.27,
+          "net_total_paid": 40649.34,
+          "net_total_reserve": 76450.93,
+          "net_total_incurred": 117100.27
+        }
+      },
+      "raw_row": "Claim Number: 2025001519\nClaimant Name: Eduardo Baird Alejandre\nAge: 41\nClaim Status: Open/Indemnity\nClass Code 887101\nOccupation CLERK, GENERAL (211)\nDate of Injury 01/20/2025 09:20 AM\nDate Reported to Carrier 01/20/2025 (0 Days To Report)\nClose Date\nIn Litigation Yes\nNature of Injury Spc: Strain\nBody Part Trunk: Low Back (Lmbr/Lmbo-Sac)\nCause Fall/Slip: Fall/Slip/Trip, Noc\nAccident Description EDUARDO WAS WALKING DOWN A FLIGHT OF STAIRS WITH (2) TUBS MEDIUM WEIGHT TUBS. ON THE LAST STEP, HIS FOOT SLIPPED AND HE FELL ON HIS BUTTOCKS AND BACK. HE WALKED OVER TO A BENCH OUTSIDE AND SAT DOWN. HE IMMEDIATELY FELT PAIN DOWN HIS LEG AND BACK. HE WAS UNABLE TO WALK OR MOVE, SO AN AMBULANCE WAS CALLED."
+    },
+    {
+      "policy_id": "WVE 5075514 00|01/14/2024",
+      "identity": {
+        "claim_number": "2025000303",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Zenette Brown",
+        "claimant_age": 39,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "DECORATOR, SPECIAL EVENT (38",
+        "claimant_occupation_code": "909501",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": "001 PSQ PRODUCTIONS LLC",
+        "location_address": "205 TECHNOLOGY DR SUITE 200\nIRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2025-01-05",
+        "date_of_loss_time": "18:30",
+        "date_reported_to_carrier": null,
+        "date_first_aware": null,
+        "date_closed": "2025-02-05",
+        "employee_lag_days": null,
+        "reporting_lag_days": null
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "medical",
+        "raw_status": "Closed/Medical",
+        "compound_status_split": true,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: All Other Specific Inj,Noc",
+        "nature_of_injury_prefix": null,
+        "body_part": "Mult: No Physical Injury",
+        "body_part_prefix": null,
+        "cause_of_injury": "Misc: Other/Miscellaneous, Noc",
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "EE WAS WORKING NEAR THE TREAT STAND AND HOT COCOA STAND WHEN SHE STARTED TO FEEL LIGHTHEADED AND DIZZY. THE EMT WAS THEN CALLED AND CHECKED THE EE'S SUGAR LEVEL SINCE THE EE IS DIABETIC."
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "ASHLEY CAUDILL",
+        "id": null,
+        "phone": "(858) 350-2927",
+        "email": "aloftis@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": 0.0,
+          "raw_value": 0.0
+        },
+        "indemnity": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": 0.0,
+          "raw_value": 0.0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": 0.0,
+          "raw_value": 0.0
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 0.0,
+          "total_reserve": 0.0,
+          "total_incurred": 0.0,
+          "net_total_paid": 0.0,
+          "net_total_reserve": 0.0,
+          "net_total_incurred": 0.0
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|01/14/2024",
+      "identity": {
+        "claim_number": "2025000290",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Morgan Crone",
+        "claimant_age": 20,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "AMUSEMENT PARK ATTENDANT (34",
+        "claimant_occupation_code": "909501",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": "001 PSQ PRODUCTIONS LLC",
+        "location_address": "205 TECHNOLOGY DR SUITE 200\nIRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2025-01-04",
+        "date_of_loss_time": null,
+        "date_reported_to_carrier": "2025-01-06",
+        "date_first_aware": null,
+        "date_closed": "2025-01-17",
+        "employee_lag_days": null,
+        "reporting_lag_days": 2,
+        "_derived_fields": [
+          "reporting_lag_days"
+        ]
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "medical",
+        "raw_status": "Closed/Medical",
+        "compound_status_split": true,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: Sprain",
+        "nature_of_injury_prefix": null,
+        "body_part": "Upper Ext: Thumb",
+        "body_part_prefix": null,
+        "cause_of_injury": "Struck By Or Injured By, Noc",
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "THE EE WAS STANDING AT THE SKATE ASSIST WHEN SOMEONE FELL ON THE OTHER SIDE OF THE ASSIST, WHICH PUSHED THE ASSIST INTO THE EE AND JAMMED HER THUMB. THE EE SUSTAINED A SPRAIN TO HER RIGHT THUMB."
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "ASHLEY CAUDILL",
+        "id": null,
+        "phone": "(858) 350-2927",
+        "email": "aloftis@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 95.76,
+          "reserve": 0.0,
+          "incurred": 95.76,
+          "recovery": 0.0,
+          "raw_value": 95.76
+        },
+        "indemnity": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": 0.0,
+          "raw_value": 0.0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 44.45,
+          "reserve": 0.0,
+          "incurred": 44.45,
+          "recovery": 0.0,
+          "raw_value": 44.45
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 140.21,
+          "total_reserve": 0.0,
+          "total_incurred": 140.21,
+          "net_total_paid": 140.21,
+          "net_total_reserve": 0.0,
+          "net_total_incurred": 140.21
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|01/14/2024",
+      "identity": {
+        "claim_number": "2024034298",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Yandel Urbano",
+        "claimant_age": 18,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "SERVICE REPRESENTATIVE (213)",
+        "claimant_occupation_code": "909501",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": "001 PSQ PRODUCTIONS LLC",
+        "location_address": "205 TECHNOLOGY DR SUITE 200\nIRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2024-12-25",
+        "date_of_loss_time": "19:30",
+        "date_reported_to_carrier": "2024-12-27",
+        "date_first_aware": null,
+        "date_closed": "2025-01-30",
+        "employee_lag_days": null,
+        "reporting_lag_days": 2,
+        "_derived_fields": [
+          "reporting_lag_days"
+        ]
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "medical",
+        "raw_status": "Closed/Medical",
+        "compound_status_split": true,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: Strain",
+        "nature_of_injury_prefix": null,
+        "body_part": "Lower Ext: Lower Leg",
+        "body_part_prefix": null,
+        "cause_of_injury": "Misc: Oth Thn Phys Cause Of Inj",
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "EE WAS ASSISTING A GUEST WHEN HE HEARD A POP SOUND IN HIS RIGHT LOWER LEG. EE WAS EXPERIENCING PAIN IN HIS LEG"
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "ASHLEY CAUDILL",
+        "id": null,
+        "phone": "(858) 350-2927",
+        "email": "aloftis@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 644.98,
+          "reserve": 0.0,
+          "incurred": 644.98,
+          "recovery": 0.0,
+          "raw_value": 644.98
+        },
+        "indemnity": {
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0,
+          "recovery": 0.0,
+          "raw_value": 0.0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 15.06,
+          "reserve": 0.0,
+          "incurred": 15.06,
+          "recovery": 0.0,
+          "raw_value": 15.06
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 660.04,
+          "total_reserve": 0.0,
+          "total_incurred": 660.04,
+          "net_total_paid": 660.04,
+          "net_total_reserve": 0.0,
+          "net_total_incurred": 660.04
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|01/14/2024",
+      "identity": {
+        "claim_number": "2024033366",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Ravi Surampudi",
+        "claimant_age": 39,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "SECURITY GUARD, GATE",
+        "claimant_occupation_code": "212",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": "205 TECHNOLOGY DR SUITE 200, IRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2024-12-13",
+        "date_of_loss_time": "18:30",
+        "date_reported_to_carrier": "2024-12-13",
+        "date_first_aware": null,
+        "date_closed": "2025-03-26",
+        "employee_lag_days": null,
+        "reporting_lag_days": 0,
+        "_derived_fields": [
+          "reporting_lag_days"
+        ]
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "medical",
+        "raw_status": "Closed/Medical",
+        "compound_status_split": false,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: All Other Specific Inj,Noc",
+        "nature_of_injury_prefix": null,
+        "body_part": "Mult: Body Systems/Mlt Body Sys",
+        "body_part_prefix": null,
+        "cause_of_injury": "Misc: Other/Miscellaneous, Noc",
+        "cause_prefix": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "EMPLOYEE WAS COMPLETING REGULAR WORK DUTIES AND STARTED TO NOT FEEL WELL, HE HAD ELEVATED GLUCOSE AND BLOOD PRESSURE.",
+        "_alias_from": {
+          "cause_of_injury": "cause"
+        }
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "RENE BARRIENTOS",
+        "id": null,
+        "phone": "(858) 350-2884",
+        "email": "rbarrientos@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 456.47,
+          "reserve": 0,
+          "incurred": 456.47,
+          "recovery": 0,
+          "raw_value": 456.47
+        },
+        "indemnity": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 1.5,
+          "reserve": 0,
+          "incurred": 1.5,
+          "recovery": 0,
+          "raw_value": 1.5
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 457.97,
+          "total_reserve": 0,
+          "total_incurred": 457.97,
+          "net_total_paid": 457.97,
+          "net_total_reserve": 0,
+          "net_total_incurred": 457.97
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|01/14/2024",
+      "identity": {
+        "claim_number": "2024033160",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Jensen Diaz",
+        "claimant_age": 23,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "OPERATING ENGINEER",
+        "claimant_occupation_code": "332",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": "205 TECHNOLOGY DR SUITE 200, IRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2024-12-12",
+        "date_of_loss_time": null,
+        "date_reported_to_carrier": "2024-12-12",
+        "date_first_aware": null,
+        "date_closed": "2025-02-18",
+        "employee_lag_days": null,
+        "reporting_lag_days": 0,
+        "_derived_fields": [
+          "reporting_lag_days"
+        ]
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "medical",
+        "raw_status": "Closed/Medical",
+        "compound_status_split": false,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: Strain",
+        "nature_of_injury_prefix": null,
+        "body_part": "Mult: Multiple Body Parts",
+        "body_part_prefix": null,
+        "cause_of_injury": "Fall/Slip: Slipped, Didn't Fall",
+        "cause_prefix": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "THE EE WAS WORKING THE SNOW PLACE AREA TRYING TO REMOVE THE EXCESS SNOW FROM THE MACHINE. AS HE WAS REMOVING THE EXCESS SNOW, HE SLIPPED AND FELL, CAUSING PAIN IN THE LOWER BACK AND RIGHT HIP AREA.",
+        "_alias_from": {
+          "cause_of_injury": "cause"
+        }
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "ONYEABO ADUBA",
+        "id": null,
+        "phone": "(916) 924-6020",
+        "email": "oaduba@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 837.29,
+          "reserve": 0,
+          "incurred": 837.29,
+          "recovery": 0,
+          "raw_value": 837.29
+        },
+        "indemnity": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 47.95,
+          "reserve": 0,
+          "incurred": 47.95,
+          "recovery": 0,
+          "raw_value": 47.95
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 885.24,
+          "total_reserve": 0,
+          "total_incurred": 885.24,
+          "net_total_paid": 885.24,
+          "net_total_reserve": 0,
+          "net_total_incurred": 885.24
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|01/14/2024",
+      "identity": {
+        "claim_number": "2024032743",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Claudia Mercado",
+        "claimant_age": 50,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "Unknown",
+        "claimant_occupation_code": null,
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": "205 TECHNOLOGY DR SUITE 200, IRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2024-12-07",
+        "date_of_loss_time": "17:43",
+        "date_reported_to_carrier": "2024-12-09",
+        "date_first_aware": null,
+        "date_closed": "2025-04-07",
+        "employee_lag_days": null,
+        "reporting_lag_days": 2,
+        "_derived_fields": [
+          "reporting_lag_days"
+        ]
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "medical",
+        "raw_status": "Closed/Medical",
+        "compound_status_split": false,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: Inflammation",
+        "nature_of_injury_prefix": null,
+        "body_part": "Lower Ext: Ankle",
+        "body_part_prefix": null,
+        "cause_of_injury": "Fall/Slip: Into Openings",
+        "cause_prefix": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "THE CALLER REPORTS THAT THE EE WAS GETTING READY TO SIGN OUT, AND HER FOOT GOT CAUGHT UNDER A SMALL POTHOLE; SHE TRIPPED AND FELL. EE SUSTAINED INFLAMMATION TO THE RIGHT ANKLE",
+        "_alias_from": {
+          "cause_of_injury": "cause"
+        }
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "ASHLEY CAUDILL",
+        "id": null,
+        "phone": "(858) 350-2927",
+        "email": "aloftis@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 3779.57,
+          "reserve": 0,
+          "incurred": 3779.57,
+          "recovery": 0,
+          "raw_value": 3779.57
+        },
+        "indemnity": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 77.67,
+          "reserve": 0,
+          "incurred": 77.67,
+          "recovery": 0,
+          "raw_value": 77.67
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 3857.24,
+          "total_reserve": 0,
+          "total_incurred": 3857.24,
+          "net_total_paid": 3857.24,
+          "net_total_reserve": 0,
+          "net_total_incurred": 3857.24
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|01/14/2024",
+      "identity": {
+        "claim_number": "2024032747",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Maria Lugo",
+        "claimant_age": 34,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "CREW SCHEDULER",
+        "claimant_occupation_code": "111",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": "205 TECHNOLOGY DR SUITE 200, IRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2024-12-07",
+        "date_of_loss_time": "08:00",
+        "date_reported_to_carrier": "2024-12-09",
+        "date_first_aware": null,
+        "date_closed": null,
+        "employee_lag_days": null,
+        "reporting_lag_days": 2,
+        "_derived_fields": [
+          "reporting_lag_days"
+        ]
+      },
+      "status": {
+        "claim_status": "open",
+        "claim_type": "indemnity",
+        "raw_status": "Open/Indemnity",
+        "compound_status_split": false,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: Strain",
+        "nature_of_injury_prefix": null,
+        "body_part": "Trunk: Low Back (Lmbr/Lmbo-Sac)",
+        "body_part_prefix": null,
+        "cause_of_injury": "Strain By Lifting",
+        "cause_prefix": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "EMPLOYEE STATES WHEN SHE WAS LIFTING AN UMBRELLA BASE, SHE FAILED TO LIFT CORRECTLY AND STRAINED HER BACK/WRIST.",
+        "_alias_from": {
+          "cause_of_injury": "cause"
+        }
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "DARREN MCTAGGART",
+        "id": null,
+        "phone": "(858) 350-7226",
+        "email": "dmctaggart@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 9479.38,
+          "reserve": 24820.62,
+          "incurred": 34300,
+          "recovery": 0,
+          "raw_value": 9479.38
+        },
+        "indemnity": {
+          "paid": 12400.44,
+          "reserve": 21927.72,
+          "incurred": 34328.16,
+          "recovery": 0,
+          "raw_value": 12400.44
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 643.98,
+          "reserve": 1356.02,
+          "incurred": 2000,
+          "recovery": 0,
+          "raw_value": 643.98
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 22523.8,
+          "total_reserve": 48104.36,
+          "total_incurred": 70628.16,
+          "net_total_paid": 22523.8,
+          "net_total_reserve": 48104.36,
+          "net_total_incurred": 70628.16
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|01/14/2024",
+      "identity": {
+        "claim_number": "2024031850",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Melvin Carrera",
+        "claimant_age": 18,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "LABORER, YARD",
+        "claimant_occupation_code": "460",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": "205 TECHNOLOGY DR SUITE 200, IRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2024-11-27",
+        "date_of_loss_time": "07:50",
+        "date_reported_to_carrier": "2024-11-27",
+        "date_first_aware": null,
+        "date_closed": "2024-12-31",
+        "employee_lag_days": null,
+        "reporting_lag_days": 0,
+        "_derived_fields": [
+          "reporting_lag_days"
+        ]
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "indemnity",
+        "raw_status": "Closed/Indemnity",
+        "compound_status_split": false,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: Sprain",
+        "nature_of_injury_prefix": null,
+        "body_part": "Trunk: Low Back (Lmbr/Lmbo-Sac)",
+        "body_part_prefix": null,
+        "cause_of_injury": "Strain By Lifting",
+        "cause_prefix": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "EE WORKING AT AN EVENT WITH SNOW. SHOVELING SHOW AND LIFTED A BIKE RACK WHEN HE FELT HIS BACK TIGHTEN UP.",
+        "_alias_from": {
+          "cause_of_injury": "cause"
+        }
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "KEVIN QUACH",
+        "id": null,
+        "phone": "(858) 350-2877",
+        "email": "kquach@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 1688.54,
+          "reserve": 0,
+          "incurred": 1688.54,
+          "recovery": 0,
+          "raw_value": 1688.54
+        },
+        "indemnity": {
+          "paid": 115.81,
+          "reserve": 0,
+          "incurred": 115.81,
+          "recovery": 0,
+          "raw_value": 115.81
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 41.99,
+          "reserve": 0,
+          "incurred": 41.99,
+          "recovery": 0,
+          "raw_value": 41.99
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 1846.34,
+          "total_reserve": 0,
+          "total_incurred": 1846.34,
+          "net_total_paid": 1846.34,
+          "net_total_reserve": 0,
+          "net_total_incurred": 1846.34
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|2024-01-14",
+      "identity": {
+        "claim_number": "2024031866",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Elias Paz",
+        "claimant_age": 33,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "MANAGER, DEPARTMENT",
+        "claimant_occupation_code": "110",
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": "001 PSQ PRODUCTIONS LLC",
+        "location_address": "205 TECHNOLOGY DR SUITE 200 IRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2024-11-27",
+        "date_of_loss_time": "08:16",
+        "date_reported_to_carrier": "2024-11-27",
+        "date_first_aware": null,
+        "date_closed": "2024-12-19",
+        "employee_lag_days": null,
+        "reporting_lag_days": 0
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "indemnity",
+        "raw_status": "Closed/Indemnity",
+        "compound_status_split": true,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Occ: All Other Occ Dis Inj, Noc",
+        "nature_of_injury_prefix": null,
+        "body_part": "Trunk: Multiple Trunk",
+        "body_part_prefix": null,
+        "cause_of_injury": "Fall/Slip: On Ice Or Snow",
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "EMPLOYEE WAS EXITING ICE RINK AT EMPLOYERS EVENT AND HE SLIPPED AND FELL ON THE ICE. NO HEAD INJURY, BUT CLAIMS THE FALL TOOK HIS BREATH AWAY MOMENTARILY."
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "MICHAELA ALGER",
+        "id": null,
+        "phone": "(916) 924-5458",
+        "email": "malger@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 189.55,
+          "reserve": 0,
+          "incurred": 189.55,
+          "recovery": 0,
+          "raw_value": 189.55
+        },
+        "indemnity": {
+          "paid": 96.77,
+          "reserve": 0,
+          "incurred": 96.77,
+          "recovery": 0,
+          "raw_value": 96.77
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 10.48,
+          "reserve": 0,
+          "incurred": 10.48,
+          "recovery": 0,
+          "raw_value": 10.48
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 296.8,
+          "total_reserve": 0,
+          "total_incurred": 296.8,
+          "net_total_paid": 296.8,
+          "net_total_reserve": 0,
+          "net_total_incurred": 296.8
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "WVE 5075514 00|2024-01-14",
+      "identity": {
+        "claim_number": "2024020888",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Maria Lugo",
+        "claimant_age": 34,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": "Unknown",
+        "claimant_occupation_code": null,
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": "001 PSQ PRODUCTIONS LLC",
+        "location_address": "205 TECHNOLOGY DR SUITE 200 IRVINE, CA 92618",
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2024-08-09",
+        "date_of_loss_time": "09:00",
+        "date_reported_to_carrier": "2024-08-13",
+        "date_first_aware": null,
+        "date_closed": "2024-10-04",
+        "employee_lag_days": null,
+        "reporting_lag_days": 4
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "medical",
+        "raw_status": "Closed/Medical",
+        "compound_status_split": true,
+        "in_litigation": false,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "Spc: Strain",
+        "nature_of_injury_prefix": null,
+        "body_part": "Lower Ext: Knee",
+        "body_part_prefix": null,
+        "cause_of_injury": "Strain By, Noc",
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": "EMPLOYEE WAS SETTING UP PICNIC TABLES AT A WORK EVENT, SHE WAS USING HER KNEE AS LEVERAGE AND SHE INJURED HER LEFT KNEE"
+      },
+      "classification": {
+        "class_code": "909501",
+        "class_code_raw": "909501"
+      },
+      "examiner": {
+        "name": "MONTANA POTTS",
+        "id": null,
+        "phone": "(858) 350-2701",
+        "email": "mpotts@icwgroup.com",
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 254.77,
+          "reserve": 0,
+          "incurred": 254.77,
+          "recovery": 0,
+          "raw_value": 254.77
+        },
+        "indemnity": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 15.72,
+          "reserve": 0,
+          "incurred": 15.72,
+          "recovery": 0,
+          "raw_value": 15.72
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": null,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 270.49,
+          "total_reserve": 0,
+          "total_incurred": 270.49,
+          "net_total_paid": 270.49,
+          "net_total_reserve": 0,
+          "net_total_incurred": 270.49
+        }
+      },
+      "raw_row": null
+    }
+  ],
+  "extraction_notes": null,
+  "aggregations": null,
+  "source_provenance": {
+    "source_filename": null,
+    "source_hash": null,
+    "page_count": 15,
+    "extracted_at": null,
+    "extractor_version": "1.0.0"
+  },
+  "verification": {
+    "checks": [
+      "bucket_arithmetic_medical",
+      "bucket_arithmetic_indemnity",
+      "bucket_arithmetic_expense_lae",
+      "policy_total_reconciliation",
+      "claim_count_reconciliation",
+      "policy_band_linkage",
+      "lae_excluded_from_total_per_disclosure"
+    ]
+  },
+  "confidence": {
+    "document_overall": 0.99,
+    "by_field": {},
+    "by_claim": {}
+  },
+  "signals": null,
+  "_flatten_conflicts": [
+    {
+      "key_path": "document.carrier.name",
+      "values": [
+        "Insurance Company of the West",
+        "ICWGROUP Insurance Companies",
+        "ICW GROUP Insurance Companies"
+      ],
+      "n_chunks_disagreeing": 3,
+      "picked_first_seen": "Insurance Company of the West"
+    },
+    {
+      "key_path": "document.deductible_treatment",
+      "values": [
+        "gross",
+        "unknown"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "gross"
+    },
+    {
+      "key_path": "document.report_run_time",
+      "values": [
+        "01:26:53",
+        "01:26"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "01:26:53"
+    },
+    {
+      "key_path": "document.account_summary.total_incurred_losses_and_expenses",
+      "values": [
+        "117100.27",
+        "79042.49",
+        "75285.65"
+      ],
+      "n_chunks_disagreeing": 3,
+      "picked_first_seen": "117100.27"
+    },
+    {
+      "key_path": "document.account_summary.indemnity_claims_closed",
+      "values": [
+        "0",
+        "2"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "0"
+    },
+    {
+      "key_path": "document.account_summary.written_premium",
+      "values": [
+        "63524.0",
+        "47530.0"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "63524.0"
+    },
+    {
+      "key_path": "document.account_summary.litigation_count",
+      "values": [
+        "1",
+        "0"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "1"
+    },
+    {
+      "key_path": "document.account_summary.earned_premium",
+      "values": [
+        "52211.51",
+        "47530.0"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "52211.51"
+    },
+    {
+      "key_path": "document.account_summary.outstanding_losses_and_expenses",
+      "values": [
+        "76450.93",
+        "48104.36"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "76450.93"
+    },
+    {
+      "key_path": "document.account_summary.subrogation",
+      "values": [
+        "0.0",
+        "0"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "0.0"
+    },
+    {
+      "key_path": "document.account_summary.total_paid_losses_and_expenses",
+      "values": [
+        "40649.34",
+        "30938.13",
+        "75285.65"
+      ],
+      "n_chunks_disagreeing": 3,
+      "picked_first_seen": "40649.34"
+    },
+    {
+      "key_path": "document.account_summary.total_number_of_claims",
+      "values": [
+        "2",
+        "10",
+        "15"
+      ],
+      "n_chunks_disagreeing": 3,
+      "picked_first_seen": "2"
+    },
+    {
+      "key_path": "document.account_summary.medical_claims_open",
+      "values": [
+        "1",
+        "0"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "1"
+    },
+    {
+      "key_path": "document.account_summary.indemnity_claims_open",
+      "values": [
+        "1",
+        "0"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "1"
+    },
+    {
+      "key_path": "document.account_summary.medical_claims_closed",
+      "values": [
+        "0",
+        "7"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "0"
+    },
+    {
+      "key_path": "document.account_summary.loss_ratio",
+      "values": [
+        "224",
+        "166"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "224"
+    },
+    {
+      "key_path": "document.account_summary.experience_modification",
+      "values": [
+        "133",
+        "93"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "133"
+    },
+    {
+      "key_path": "document.account_summary.term_premium",
+      "values": [
+        "63524.0",
+        "47530.0"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "63524.0"
+    },
+    {
+      "key_path": "verification",
+      "values": [
+        "{'checks': ['bucket_arithmetic_medical', 'bucket_arithmetic_indemnity', 'bucket_",
+        "{'checks': [], 'reconciliation_summary': {'checks_passed': 3, 'checks_run': 3}}",
+        "{'checks': [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {'name': 'bucket_arithmetic_",
+        "{'checks': []}"
+      ],
+      "n_chunks_disagreeing": 4,
+      "picked_first_seen": "{'checks': ['bucket_arithmetic_medical', 'bucket_arithmetic_indemnity', 'bucket_"
+    },
+    {
+      "key_path": "confidence",
+      "values": [
+        "{'document_overall': 0.99, 'by_field': {}, 'by_claim': {}}",
+        "{'document_overall': 0.95, 'by_field': {}, 'by_claim': {}}"
+      ],
+      "n_chunks_disagreeing": 2,
+      "picked_first_seen": "{'document_overall': 0.99, 'by_field': {}, 'by_claim': {}}"
+    }
+  ],
+  "_derived": {
+    "insured_address_concat": "205 TECHNOLOGY DR SUITE 200, IRVINE, CA 92618",
+    "combined_all_periods": {
+      "medical_paid": 13512.29,
+      "medical_reserve": 51037.83,
+      "medical_incurred": 64550.12,
+      "indemnity_paid": 22741.02,
+      "indemnity_reserve": 10359.13,
+      "indemnity_incurred": 33100.15,
+      "expense_lae_paid": 4396.03,
+      "expense_lae_reserve": 15053.97,
+      "expense_lae_incurred": 19450.0,
+      "total_incurred": 196142.76,
+      "total_incurred_losses_and_expenses": 196142.76,
+      "paid_losses": 66292.64,
+      "outstanding_losses_and_expenses": 124555.29,
+      "total_claims": 12.0,
+      "open_claims": 3.0,
+      "written_premium": 111054.0,
+      "earned_premium": 99741.51000000001,
+      "net_expense": 4396.03
+    }
+  },
+  "_enriched": {
+    "carrier": {
+      "source_name": "Insurance Company of the West",
+      "method": "levenshtein-2-vs-known-carriers",
+      "candidate_pool_size": 20,
+      "top_k_candidates": [
+        {
+          "name": "Insurance Company of the West",
+          "distance": 0
+        },
+        {
+          "name": "Employers",
+          "distance": 23
+        },
+        {
+          "name": "Berkshire Hathaway",
+          "distance": 23
+        }
+      ],
+      "match": "Insurance Company of the West",
+      "distance": 0,
+      "status": "exact_match"
+    }
+  }
+}

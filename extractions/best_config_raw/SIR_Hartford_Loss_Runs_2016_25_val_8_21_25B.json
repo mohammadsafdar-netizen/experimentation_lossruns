@@ -1,0 +1,174 @@
+{
+  "document": {
+    "report_source_type": "state_fund",
+    "report_title": null,
+    "report_id": null,
+    "run_id": null,
+    "generating_user": null,
+    "report_run_date": "2025-08-21",
+    "report_run_time": null,
+    "valuation_date": "2025-08-21",
+    "valuation_time": null,
+    "report_period_start": null,
+    "report_period_end": null,
+    "losses_incurred_since": null,
+    "target_policy": null,
+    "carrier": {
+      "name": "Strategic Information Resources",
+      "legal_entity": null,
+      "license_number": null
+    },
+    "claims_administrator": {
+      "name": null,
+      "address": null
+    },
+    "broker_or_agency": {
+      "name": null,
+      "agency_code": null,
+      "dba": null,
+      "producer_name": null,
+      "producer_code": null,
+      "producing_regional": null
+    },
+    "policyholder": {
+      "name": "Strategic Information Resources",
+      "dba": null,
+      "trade_name": null,
+      "individual_name": null,
+      "address_line": "7050 Independence Ave , Canoga Park , CA 91303-0000",
+      "city": "Canoga Park",
+      "state": "CA",
+      "postal_code": "91303-0000",
+      "aif_account_number": "1045104368",
+      "msi": null
+    },
+    "deductible_treatment": "gross",
+    "lae_inclusion_in_total": "included",
+    "report_definition": null,
+    "symbol_legend": [],
+    "disclaimers": [
+      "Losses are net of deductible recoveries."
+    ],
+    "safety_facts_block": null,
+    "account_summary": {
+      "term_premium": null,
+      "earned_premium": 129425,
+      "earned_premium_excl_retro_adj": null,
+      "written_premium": 0,
+      "total_paid_losses_and_expenses": 0,
+      "outstanding_losses_and_expenses": 0,
+      "subrogation": null,
+      "total_incurred_losses_and_expenses": 0,
+      "loss_ratio": 0.8,
+      "experience_modification": null,
+      "total_number_of_claims": 1,
+      "litigation_count": 0,
+      "medical_claims_open": 0,
+      "medical_claims_closed": 0,
+      "indemnity_claims_open": 0,
+      "indemnity_claims_closed": 0,
+      "claim_severity_gt_10m": 0,
+      "claim_severity_gt_25m": 0,
+      "claim_severity_gt_50m": 0,
+      "total_amount_in_millions": 0
+    }
+  },
+  "policies": [
+    {
+      "policy_id": "076WEG AF8JGW|2025-03-07",
+      "policy_number": "076WEG AF8JGW",
+      "policy_carrier_name": "Strategic Information Resources",
+      "line_of_business": "WC",
+      "policy_effective_date": "2025-03-07",
+      "policy_expiration_date": "2026-03-07",
+      "median_days_to_report_claim": null,
+      "premium": {
+        "term_premium": null,
+        "written_premium": 15677,
+        "earned_premium": 7185,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 1,
+        "open_claims": 0,
+        "closed_claims": 0,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 0,
+        "total_records_total": 0
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 0,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 0,
+        "loss_ratio": 0.0,
+        "by_bucket": {
+          "medical": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": 0,
+          "vr": 0,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": 0,
+          "rehab": 0,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": 0,
+          "total": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": false,
+      "no_claims_marker_text": null
+    }
+  ],
+  "claims": [],
+  "aggregations": null,
+  "verification": {
+    "checks": []
+  },
+  "confidence": {
+    "document_overall": 0.95,
+    "by_field": {},
+    "by_claim": {}
+  },
+  "signals": [],
+  "extraction_notes": [],
+  "source_provenance": {
+    "source_filename": null,
+    "source_hash": null,
+    "page_count": null,
+    "extracted_at": null,
+    "extractor_version": "1.0.0"
+  }
+}

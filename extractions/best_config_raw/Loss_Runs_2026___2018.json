@@ -1,0 +1,1798 @@
+{
+  "chunked": true,
+  "chunks": [
+    {
+      "document": {
+        "report_source_type": "wholesaler",
+        "report_title": "Loss Run For Everest National Insurance Company",
+        "report_id": null,
+        "run_id": null,
+        "generating_user": null,
+        "report_run_date": "2025-12-18",
+        "report_run_time": "07:16",
+        "valuation_date": "2025-12-04",
+        "valuation_time": null,
+        "report_period_start": null,
+        "report_period_end": null,
+        "losses_incurred_since": null,
+        "target_policy": "7600018496251",
+        "carrier": {
+          "name": "Everest National Insurance Company",
+          "legal_entity": null,
+          "license_number": null
+        },
+        "claims_administrator": {
+          "name": "American Claims Management",
+          "address": null
+        },
+        "broker_or_agency": {
+          "name": "Arrowhead General Insurance Agency, Inc.",
+          "agency_code": null,
+          "dba": null,
+          "producer_name": null,
+          "producer_code": null,
+          "producing_regional": null
+        },
+        "policyholder": {
+          "name": "Sea West Enterprises, Inc.",
+          "dba": null,
+          "trade_name": null,
+          "individual_name": null,
+          "address_line": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "aif_account_number": null,
+          "msi": null
+        },
+        "deductible_treatment": "unknown",
+        "lae_inclusion_in_total": "included",
+        "report_definition": null,
+        "symbol_legend": [],
+        "disclaimers": [],
+        "safety_facts_block": null,
+        "account_summary": {
+          "term_premium": null,
+          "earned_premium": null,
+          "earned_premium_excl_retro_adj": null,
+          "written_premium": null,
+          "total_paid_losses_and_expenses": null,
+          "outstanding_losses_and_expenses": null,
+          "subrogation": null,
+          "total_incurred_losses_and_expenses": null,
+          "loss_ratio": null,
+          "experience_modification": null,
+          "total_number_of_claims": null,
+          "litigation_count": null,
+          "medical_claims_open": null,
+          "medical_claims_closed": null,
+          "indemnity_claims_open": null,
+          "indemnity_claims_closed": null,
+          "claim_severity_gt_10m": null,
+          "claim_severity_gt_25m": null,
+          "claim_severity_gt_50m": null,
+          "total_amount_in_millions": null
+        }
+      },
+      "policies": [
+        {
+          "policy_id": "7690000362251|2025-01-01",
+          "policy_number": "7690000362251",
+          "policy_carrier_name": "Everest National Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2025-01-01",
+          "policy_expiration_date": "2026-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 0,
+            "open_claims": 0,
+            "closed_claims": 0,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 0,
+            "medical_total": 0,
+            "total_records_open": 0,
+            "total_records_closed": 0,
+            "total_records_total": 0
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 0,
+            "paid_loss_adjustment_expenses": 0,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 0,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": null,
+              "vr": null,
+              "expense_lae": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "employer_paid_benefits": null,
+              "rehab": null,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": null,
+              "total": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": true,
+          "no_claims_marker_text": "No losses found for policy number 7690000362251 1/1/2025 - 1/1/2026 Sea West Enterprises, Inc."
+        },
+        {
+          "policy_id": "7600018496251|2025-01-01",
+          "policy_number": "7600018496251",
+          "policy_carrier_name": "Everest Premier Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2025-01-01",
+          "policy_expiration_date": "2026-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 1,
+            "open_claims": 0,
+            "closed_claims": 1,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 1,
+            "medical_total": 1,
+            "total_records_open": 0,
+            "total_records_closed": 1,
+            "total_records_total": 1
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 626.86,
+            "paid_loss_adjustment_expenses": 32.14,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 659,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 626.86,
+                "reserve": 0,
+                "incurred": 626.86,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": null,
+              "vr": null,
+              "expense_lae": {
+                "paid": 32.14,
+                "reserve": 0,
+                "incurred": 32.14,
+                "recovery": 0
+              },
+              "employer_paid_benefits": null,
+              "rehab": null,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": null,
+              "total": {
+                "paid": 659,
+                "reserve": 0,
+                "incurred": 659,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": false,
+          "no_claims_marker_text": null
+        },
+        {
+          "policy_id": "7600025142241|2024-01-01",
+          "policy_number": "7600025142241",
+          "policy_carrier_name": "Everest National Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2024-01-01",
+          "policy_expiration_date": "2025-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 0,
+            "open_claims": 0,
+            "closed_claims": 0,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 0,
+            "medical_total": 0,
+            "total_records_open": 0,
+            "total_records_closed": 0,
+            "total_records_total": 0
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 0,
+            "paid_loss_adjustment_expenses": 0,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 0,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": null,
+              "vr": null,
+              "expense_lae": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "employer_paid_benefits": null,
+              "rehab": null,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": null,
+              "total": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": true,
+          "no_claims_marker_text": "No losses found for policy number 7600025142241 1/1/2024 - 1/1/2025 Sea West Enterprises, Inc."
+        }
+      ],
+      "claims": [
+        {
+          "policy_id": "7600018496251|2025-01-01",
+          "identity": {
+            "claim_number": "173008376",
+            "converted_claim_number": null,
+            "related_claim_number": null,
+            "claimant_name": "Albert, Nystrom",
+            "claimant_age": null,
+            "claimant_hire_date": "2023-02-16",
+            "claimant_length_of_employment": null,
+            "claimant_average_weekly_wage": null,
+            "claimant_occupation": null,
+            "claimant_occupation_code": null,
+            "claimant_department": null
+          },
+          "location": {
+            "location_id": null,
+            "location_name": null,
+            "location_address": null,
+            "loss_location": null,
+            "injury_location_state": "CA",
+            "injury_location_city": null,
+            "jurisdiction_state": null
+          },
+          "dates": {
+            "date_of_loss": "2025-09-11",
+            "date_of_loss_time": null,
+            "date_reported_to_carrier": "2025-09-19",
+            "date_first_aware": null,
+            "date_closed": "2025-11-05",
+            "employee_lag_days": null,
+            "reporting_lag_days": 8
+          },
+          "status": {
+            "claim_status": "closed",
+            "claim_type": "medical",
+            "raw_status": "Closed",
+            "compound_status_split": false,
+            "in_litigation": null,
+            "pd_rating": ".00",
+            "fatalities_flag": null,
+            "recovery_pending_indicator": false,
+            "medical_only_indicator": false
+          },
+          "injury": {
+            "nature_of_injury": "Laceration",
+            "nature_of_injury_prefix": null,
+            "body_part": null,
+            "body_part_prefix": null,
+            "cause_of_injury": null,
+            "injury_source": null,
+            "injury_type": null,
+            "accident_code": null,
+            "category": null,
+            "loss_description": "Employee was inspecting a cut piece of metal grate when sustained a cut to left middle finger."
+          },
+          "classification": {
+            "class_code": "5183",
+            "class_code_raw": "5183"
+          },
+          "examiner": {
+            "name": "kgerardo",
+            "id": null,
+            "phone": null,
+            "email": null,
+            "category": null
+          },
+          "financials": {
+            "medical": {
+              "paid": 626.86,
+              "reserve": 0,
+              "incurred": 626.86,
+              "recovery": 0,
+              "raw_value": 626.86
+            },
+            "indemnity": {
+              "paid": 0,
+              "reserve": 0,
+              "incurred": 0,
+              "recovery": 0,
+              "raw_value": 0
+            },
+            "disability": null,
+            "vr": null,
+            "expense_lae": {
+              "paid": 32.14,
+              "reserve": 0,
+              "incurred": 32.14,
+              "recovery": 0,
+              "raw_value": 32.14
+            },
+            "employer_paid_benefits": null,
+            "rehab": null,
+            "lost_time": null,
+            "recovery_subrogation": null,
+            "deductible": null,
+            "internal_handling_expense": null,
+            "totals": {
+              "total_paid": 659,
+              "total_reserve": 0,
+              "total_incurred": 659,
+              "net_total_paid": 659,
+              "net_total_reserve": 0,
+              "net_total_incurred": 659
+            }
+          },
+          "raw_row": null
+        }
+      ],
+      "aggregations": null,
+      "verification": {
+        "checks": []
+      },
+      "confidence": {
+        "document_overall": 0.95,
+        "by_field": {},
+        "by_claim": {}
+      },
+      "signals": [],
+      "extraction_notes": [],
+      "source_provenance": {
+        "source_filename": null,
+        "source_hash": null,
+        "page_count": 12,
+        "extracted_at": null,
+        "extractor_version": "1.0.0"
+      }
+    },
+    {
+      "document": {
+        "report_source_type": "wholesaler",
+        "report_title": "Loss Run For Everest National Insurance Company",
+        "report_id": null,
+        "run_id": null,
+        "generating_user": null,
+        "report_run_date": "2025-12-18",
+        "report_run_time": "07:16:05",
+        "valuation_date": "2025-12-04",
+        "valuation_time": null,
+        "report_period_start": null,
+        "report_period_end": null,
+        "losses_incurred_since": null,
+        "target_policy": "7600018496251",
+        "carrier": {
+          "name": "Everest National Insurance Company",
+          "legal_entity": null,
+          "license_number": null
+        },
+        "claims_administrator": {
+          "name": "American Claims Management",
+          "address": null
+        },
+        "broker_or_agency": {
+          "name": "Arrowhead General Insurance Agency, Inc.",
+          "agency_code": null,
+          "dba": null,
+          "producer_name": null,
+          "producer_code": null,
+          "producing_regional": null
+        },
+        "policyholder": {
+          "name": "Sea West Enterprises, Inc.",
+          "dba": null,
+          "trade_name": null,
+          "individual_name": null,
+          "address_line": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "aif_account_number": null,
+          "msi": null
+        },
+        "deductible_treatment": "unknown",
+        "lae_inclusion_in_total": "included",
+        "report_definition": null,
+        "symbol_legend": [],
+        "disclaimers": [],
+        "safety_facts_block": null,
+        "account_summary": {
+          "term_premium": null,
+          "earned_premium": null,
+          "earned_premium_excl_retro_adj": null,
+          "written_premium": null,
+          "total_paid_losses_and_expenses": null,
+          "outstanding_losses_and_expenses": null,
+          "subrogation": null,
+          "total_incurred_losses_and_expenses": null,
+          "loss_ratio": null,
+          "experience_modification": null,
+          "total_number_of_claims": null,
+          "litigation_count": null,
+          "medical_claims_open": null,
+          "medical_claims_closed": null,
+          "indemnity_claims_open": null,
+          "indemnity_claims_closed": null,
+          "claim_severity_gt_10m": null,
+          "claim_severity_gt_25m": null,
+          "claim_severity_gt_50m": null,
+          "total_amount_in_millions": null
+        }
+      },
+      "policies": [
+        {
+          "policy_id": "7690000362241|2024-01-01",
+          "policy_number": "7690000362241",
+          "policy_carrier_name": "Everest National Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2024-01-01",
+          "policy_expiration_date": "2025-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 0,
+            "open_claims": 0,
+            "closed_claims": 0,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 0,
+            "medical_total": 0,
+            "total_records_open": 0,
+            "total_records_closed": 0,
+            "total_records_total": 0
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 0,
+            "paid_loss_adjustment_expenses": 0,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 0,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": null,
+              "vr": null,
+              "expense_lae": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "employer_paid_benefits": null,
+              "rehab": null,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": null,
+              "total": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": true,
+          "no_claims_marker_text": "No losses found for policy number 7690000362241 1/1/2024 - 1/1/2025 Sea West Enterprises, Inc."
+        },
+        {
+          "policy_id": "7600018496241|2024-01-01",
+          "policy_number": "7600018496241",
+          "policy_carrier_name": "Everest Premier Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2024-01-01",
+          "policy_expiration_date": "2025-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 1,
+            "open_claims": 1,
+            "closed_claims": 0,
+            "litigated_claims": 0,
+            "indemnity_open": 1,
+            "indemnity_closed": 0,
+            "indemnity_total": 1,
+            "medical_open": 0,
+            "medical_closed": 0,
+            "medical_total": 0,
+            "total_records_open": 1,
+            "total_records_closed": 0,
+            "total_records_total": 1
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 21979.01,
+            "paid_loss_adjustment_expenses": 692.07,
+            "outstanding_losses_and_expenses": 49958.92,
+            "total_incurred_losses_and_expenses": 72630,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 21979.01,
+                "reserve": 24520.99,
+                "incurred": 46500,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 21130,
+                "incurred": 21130,
+                "recovery": 0
+              },
+              "disability": null,
+              "vr": null,
+              "expense_lae": {
+                "paid": 692.07,
+                "reserve": 4307.93,
+                "incurred": 5000,
+                "recovery": 0
+              },
+              "employer_paid_benefits": null,
+              "rehab": null,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": null,
+              "total": {
+                "paid": 22671.08,
+                "reserve": 49958.92,
+                "incurred": 72630,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": false,
+          "no_claims_marker_text": null
+        },
+        {
+          "policy_id": "7690000362231|2023-01-01",
+          "policy_number": "7690000362231",
+          "policy_carrier_name": "Everest National Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2023-01-01",
+          "policy_expiration_date": "2024-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 0,
+            "open_claims": 0,
+            "closed_claims": 0,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 0,
+            "medical_total": 0,
+            "total_records_open": 0,
+            "total_records_closed": 0,
+            "total_records_total": 0
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 0,
+            "paid_loss_adjustment_expenses": 0,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 0,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": null,
+              "vr": null,
+              "expense_lae": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "employer_paid_benefits": null,
+              "rehab": null,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": null,
+              "total": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": true,
+          "no_claims_marker_text": "No losses found for policy number 7690000362231 1/9/2023 - 1/1/2024 Sea West Enterprises, Inc."
+        }
+      ],
+      "claims": [
+        {
+          "policy_id": "7600018496241|2024-01-01",
+          "identity": {
+            "claim_number": "173007214",
+            "converted_claim_number": null,
+            "related_claim_number": null,
+            "claimant_name": "Juan, Villanueva",
+            "claimant_age": null,
+            "claimant_hire_date": "1997-07-22",
+            "claimant_length_of_employment": null,
+            "claimant_average_weekly_wage": null,
+            "claimant_occupation": "Crew Leader",
+            "claimant_occupation_code": null,
+            "claimant_department": null
+          },
+          "location": {
+            "location_id": null,
+            "location_name": null,
+            "location_address": null,
+            "loss_location": null,
+            "injury_location_state": "CA",
+            "injury_location_city": null,
+            "jurisdiction_state": null
+          },
+          "dates": {
+            "date_of_loss": "2024-09-18",
+            "date_of_loss_time": null,
+            "date_reported_to_carrier": null,
+            "date_first_aware": null,
+            "date_closed": null,
+            "employee_lag_days": null,
+            "reporting_lag_days": 6
+          },
+          "status": {
+            "claim_status": "Open",
+            "claim_type": "Indemnity",
+            "raw_status": "Open",
+            "compound_status_split": false,
+            "in_litigation": null,
+            "pd_rating": 6.0,
+            "fatalities_flag": null,
+            "recovery_pending_indicator": false,
+            "medical_only_indicator": false
+          },
+          "injury": {
+            "nature_of_injury": "Fracture",
+            "nature_of_injury_prefix": null,
+            "body_part": null,
+            "body_part_prefix": null,
+            "cause_of_injury": null,
+            "injury_source": null,
+            "injury_type": null,
+            "accident_code": null,
+            "category": null,
+            "loss_description": "Employee was taping and clamping metal together, clamp fell off, employee reached to grab it and sustained a left ring finger distal phalanx fracture"
+          },
+          "classification": {
+            "class_code": "5542",
+            "class_code_raw": "5542"
+          },
+          "examiner": {
+            "name": "srivers",
+            "id": null,
+            "phone": null,
+            "email": null,
+            "category": null
+          },
+          "financials": {
+            "medical": {
+              "paid": 21979.01,
+              "reserve": 24520.99,
+              "incurred": 46500,
+              "recovery": 0,
+              "raw_value": 21979.01
+            },
+            "indemnity": {
+              "paid": 0,
+              "reserve": 21130,
+              "incurred": 21130,
+              "recovery": 0,
+              "raw_value": 0
+            },
+            "disability": null,
+            "vr": null,
+            "expense_lae": {
+              "paid": 692.07,
+              "reserve": 4307.93,
+              "incurred": 5000,
+              "recovery": 0,
+              "raw_value": 692.07
+            },
+            "employer_paid_benefits": null,
+            "rehab": null,
+            "lost_time": null,
+            "recovery_subrogation": null,
+            "deductible": null,
+            "internal_handling_expense": null,
+            "totals": {
+              "total_paid": 22671.08,
+              "total_reserve": 49958.92,
+              "total_incurred": 72630,
+              "net_total_paid": 22671.08,
+              "net_total_reserve": 49958.92,
+              "net_total_incurred": 72630
+            }
+          },
+          "raw_row": null
+        }
+      ],
+      "aggregations": null,
+      "verification": {
+        "checks": []
+      },
+      "confidence": {
+        "document_overall": 0.95,
+        "by_field": {},
+        "by_claim": {}
+      },
+      "signals": [],
+      "extraction_notes": [],
+      "source_provenance": {
+        "source_filename": null,
+        "source_hash": null,
+        "page_count": 12,
+        "extracted_at": null,
+        "extractor_version": "1.0.0"
+      }
+    },
+    {
+      "document": {
+        "report_source_type": "wholesaler",
+        "report_title": "Loss Run For Everest Premier Insurance Company",
+        "report_id": null,
+        "run_id": null,
+        "generating_user": null,
+        "report_run_date": "2025-12-18",
+        "report_run_time": "07:16",
+        "valuation_date": "2025-12-04",
+        "valuation_time": null,
+        "report_period_start": null,
+        "report_period_end": null,
+        "losses_incurred_since": null,
+        "target_policy": "7600018496251",
+        "carrier": {
+          "name": "Everest Premier Insurance Company",
+          "legal_entity": null,
+          "license_number": null
+        },
+        "claims_administrator": {
+          "name": "American Claims Management",
+          "address": null
+        },
+        "broker_or_agency": {
+          "name": "Arrowhead General Insurance Agency, Inc.",
+          "agency_code": null,
+          "dba": null,
+          "producer_name": null,
+          "producer_code": null,
+          "producing_regional": null
+        },
+        "policyholder": {
+          "name": "Sea West Enterprises, Inc.",
+          "dba": null,
+          "trade_name": null,
+          "individual_name": null,
+          "address_line": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "aif_account_number": null,
+          "msi": null
+        },
+        "deductible_treatment": "unknown",
+        "lae_inclusion_in_total": "included",
+        "report_definition": null,
+        "symbol_legend": [],
+        "disclaimers": [],
+        "safety_facts_block": null,
+        "account_summary": {
+          "term_premium": null,
+          "earned_premium": null,
+          "earned_premium_excl_retro_adj": null,
+          "written_premium": null,
+          "total_paid_losses_and_expenses": null,
+          "outstanding_losses_and_expenses": null,
+          "subrogation": null,
+          "total_incurred_losses_and_expenses": null,
+          "loss_ratio": null,
+          "experience_modification": null,
+          "total_number_of_claims": null,
+          "litigation_count": null,
+          "medical_claims_open": null,
+          "medical_claims_closed": null,
+          "indemnity_claims_open": null,
+          "indemnity_claims_closed": null,
+          "claim_severity_gt_10m": null,
+          "claim_severity_gt_25m": null,
+          "claim_severity_gt_50m": null,
+          "total_amount_in_millions": null
+        }
+      },
+      "policies": [
+        {
+          "policy_id": "7600018496231|2023-01-01",
+          "policy_number": "7600018496231",
+          "policy_carrier_name": "Everest Premier Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2023-01-01",
+          "policy_expiration_date": "2024-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 2,
+            "open_claims": 0,
+            "closed_claims": 2,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 2,
+            "medical_total": 2,
+            "total_records_open": 0,
+            "total_records_closed": 2,
+            "total_records_total": 2
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 1443.04,
+            "paid_loss_adjustment_expenses": 72.49,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 1515.53,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 1443.04,
+                "reserve": 0,
+                "incurred": 1443.04,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "vr": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "expense_lae": {
+                "paid": 72.49,
+                "reserve": 0,
+                "incurred": 72.49,
+                "recovery": 0
+              },
+              "employer_paid_benefits": null,
+              "rehab": null,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": null,
+              "total": {
+                "paid": 1515.53,
+                "reserve": 0,
+                "incurred": 1515.53,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": false,
+          "no_claims_marker_text": null
+        },
+        {
+          "policy_id": "7600018496231|2023-01-01",
+          "policy_number": "7600018496231",
+          "policy_carrier_name": "Everest Premier Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2023-01-01",
+          "policy_expiration_date": "2024-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 2,
+            "open_claims": 0,
+            "closed_claims": 2,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 2,
+            "medical_total": 2,
+            "total_records_open": 0,
+            "total_records_closed": 2,
+            "total_records_total": 2
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 1443.04,
+            "paid_loss_adjustment_expenses": 72.49,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 1515.53,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 1443.04,
+                "reserve": 0,
+                "incurred": 1443.04,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "vr": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "expense_lae": {
+                "paid": 72.49,
+                "reserve": 0,
+                "incurred": 72.49,
+                "recovery": 0
+              },
+              "employer_paid_benefits": null,
+              "rehab": null,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": null,
+              "total": {
+                "paid": 1515.53,
+                "reserve": 0,
+                "incurred": 1515.53,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": false,
+          "no_claims_marker_text": null
+        },
+        {
+          "policy_id": "7600018496221|2022-01-01",
+          "policy_number": "7600018496221",
+          "policy_carrier_name": "Everest Premier Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2022-01-01",
+          "policy_expiration_date": "2023-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 0,
+            "open_claims": 0,
+            "closed_claims": 0,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 0,
+            "medical_total": 0,
+            "total_records_open": 0,
+            "total_records_closed": 0,
+            "total_records_total": 0
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 0,
+            "paid_loss_adjustment_expenses": 0,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 0,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "vr": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "expense_lae": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "employer_paid_benefits": null,
+              "rehab": null,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": null,
+              "total": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": true,
+          "no_claims_marker_text": "No losses found for policy number 7600018496221 1/1/2022 - 1/1/2023 Sea West Enterprises, Inc."
+        }
+      ],
+      "claims": [
+        {
+          "policy_id": "7600018496231|2023-01-01",
+          "identity": {
+            "claim_number": "173005795",
+            "converted_claim_number": null,
+            "related_claim_number": null,
+            "claimant_name": "Cody, Walker",
+            "claimant_age": null,
+            "claimant_hire_date": "2022-08-01",
+            "claimant_length_of_employment": null,
+            "claimant_average_weekly_wage": null,
+            "claimant_occupation": null,
+            "claimant_occupation_code": null,
+            "claimant_department": null
+          },
+          "location": {
+            "location_id": null,
+            "location_name": null,
+            "location_address": null,
+            "loss_location": null,
+            "injury_location_state": "CA",
+            "injury_location_city": null,
+            "jurisdiction_state": null
+          },
+          "dates": {
+            "date_of_loss": "2023-08-01",
+            "date_of_loss_time": null,
+            "date_reported_to_carrier": null,
+            "date_first_aware": null,
+            "date_closed": "2023-08-28",
+            "employee_lag_days": null,
+            "reporting_lag_days": 1
+          },
+          "status": {
+            "claim_status": "closed",
+            "claim_type": "medical",
+            "raw_status": "Closed",
+            "compound_status_split": false,
+            "in_litigation": null,
+            "pd_rating": 0,
+            "fatalities_flag": null,
+            "recovery_pending_indicator": false,
+            "medical_only_indicator": false
+          },
+          "injury": {
+            "nature_of_injury": "Laceration",
+            "nature_of_injury_prefix": null,
+            "body_part": null,
+            "body_part_prefix": null,
+            "cause_of_injury": null,
+            "injury_source": null,
+            "injury_type": null,
+            "accident_code": null,
+            "category": null,
+            "loss_description": "Left pointer finger knuckle."
+          },
+          "classification": {
+            "class_code": 8742,
+            "class_code_raw": "8742"
+          },
+          "examiner": {
+            "name": "khayes",
+            "id": null,
+            "phone": null,
+            "email": null,
+            "category": null
+          },
+          "financials": {
+            "medical": {
+              "paid": 721.1,
+              "reserve": 0,
+              "incurred": 721.1,
+              "recovery": 0,
+              "raw_value": 721.1
+            },
+            "indemnity": {
+              "paid": 0,
+              "reserve": 0,
+              "incurred": 0,
+              "recovery": 0,
+              "raw_value": 0
+            },
+            "disability": {
+              "paid": 0,
+              "reserve": 0,
+              "incurred": 0,
+              "recovery": 0,
+              "raw_value": 0
+            },
+            "vr": {
+              "paid": 0,
+              "reserve": 0,
+              "incurred": 0,
+              "recovery": 0,
+              "raw_value": 0
+            },
+            "expense_lae": {
+              "paid": 36.25,
+              "reserve": 0,
+              "incurred": 36.25,
+              "recovery": 0,
+              "raw_value": 36.25
+            },
+            "employer_paid_benefits": null,
+            "rehab": null,
+            "lost_time": null,
+            "recovery_subrogation": null,
+            "deductible": null,
+            "internal_handling_expense": null,
+            "totals": {
+              "total_paid": 757.35,
+              "total_reserve": 0,
+              "total_incurred": 757.35,
+              "net_total_paid": 757.35,
+              "net_total_reserve": 0,
+              "net_total_incurred": 757.35
+            }
+          },
+          "raw_row": null
+        },
+        {
+          "policy_id": "7600018496231|2023-01-01",
+          "identity": {
+            "claim_number": "173006141",
+            "converted_claim_number": null,
+            "related_claim_number": null,
+            "claimant_name": "Albert, Nystrom II",
+            "claimant_age": null,
+            "claimant_hire_date": "2023-02-16",
+            "claimant_length_of_employment": null,
+            "claimant_average_weekly_wage": null,
+            "claimant_occupation": "Manager",
+            "claimant_occupation_code": null,
+            "claimant_department": null
+          },
+          "location": {
+            "location_id": null,
+            "location_name": null,
+            "location_address": null,
+            "loss_location": null,
+            "injury_location_state": "CA",
+            "injury_location_city": null,
+            "jurisdiction_state": null
+          },
+          "dates": {
+            "date_of_loss": "2023-10-30",
+            "date_of_loss_time": null,
+            "date_reported_to_carrier": null,
+            "date_first_aware": null,
+            "date_closed": "2023-12-11",
+            "employee_lag_days": null,
+            "reporting_lag_days": 2
+          },
+          "status": {
+            "claim_status": "closed",
+            "claim_type": "medical",
+            "raw_status": "Closed",
+            "compound_status_split": false,
+            "in_litigation": null,
+            "pd_rating": 0,
+            "fatalities_flag": null,
+            "recovery_pending_indicator": false,
+            "medical_only_indicator": false
+          },
+          "injury": {
+            "nature_of_injury": "Laceration",
+            "nature_of_injury_prefix": null,
+            "body_part": null,
+            "body_part_prefix": null,
+            "cause_of_injury": null,
+            "injury_source": null,
+            "injury_type": null,
+            "accident_code": null,
+            "category": null,
+            "loss_description": "EE was opening a wooden crate, which had a small piece of thin metal attached to it, when he accidentally came in contact with it causing a laceration to the index finger on right hand."
+          },
+          "classification": {
+            "class_code": 5432,
+            "class_code_raw": "5432"
+          },
+          "examiner": {
+            "name": "ctainato",
+            "id": null,
+            "phone": null,
+            "email": null,
+            "category": null
+          },
+          "financials": {
+            "medical": {
+              "paid": 721.94,
+              "reserve": 0,
+              "incurred": 721.94,
+              "recovery": 0,
+              "raw_value": 721.94
+            },
+            "indemnity": {
+              "paid": 0,
+              "reserve": 0,
+              "incurred": 0,
+              "recovery": 0,
+              "raw_value": 0
+            },
+            "disability": {
+              "paid": 0,
+              "reserve": 0,
+              "incurred": 0,
+              "recovery": 0,
+              "raw_value": 0
+            },
+            "vr": {
+              "paid": 0,
+              "reserve": 0,
+              "incurred": 0,
+              "recovery": 0,
+              "raw_value": 0
+            },
+            "expense_lae": {
+              "paid": 36.24,
+              "reserve": 0,
+              "incurred": 36.24,
+              "recovery": 0,
+              "raw_value": 36.24
+            },
+            "employer_paid_benefits": null,
+            "rehab": null,
+            "lost_time": null,
+            "recovery_subrogation": null,
+            "deductible": null,
+            "internal_handling_expense": null,
+            "totals": {
+              "total_paid": 758.18,
+              "total_reserve": 0,
+              "total_incurred": 758.18,
+              "net_total_paid": 758.18,
+              "net_total_reserve": 0,
+              "net_total_incurred": 758.18
+            }
+          },
+          "raw_row": null
+        }
+      ],
+      "aggregations": null,
+      "verification": {
+        "checks": []
+      },
+      "confidence": {
+        "document_overall": 0.95,
+        "by_field": {},
+        "by_claim": {}
+      },
+      "signals": [],
+      "extraction_notes": [],
+      "source_provenance": {
+        "source_filename": null,
+        "source_hash": null,
+        "page_count": 12,
+        "extracted_at": null,
+        "extractor_version": "1.0.0"
+      }
+    },
+    {
+      "document": {
+        "report_source_type": "wholesaler",
+        "report_title": "Loss Run For Everest Premier Insurance Company",
+        "report_id": null,
+        "run_id": null,
+        "generating_user": null,
+        "report_run_date": "2025-12-18",
+        "report_run_time": "07:16",
+        "valuation_date": "2025-12-04",
+        "valuation_time": null,
+        "report_period_start": null,
+        "report_period_end": null,
+        "losses_incurred_since": null,
+        "target_policy": "7600018496251",
+        "carrier": {
+          "name": "Everest Premier Insurance Company",
+          "legal_entity": null,
+          "license_number": null
+        },
+        "claims_administrator": {
+          "name": "American Claims Management",
+          "address": null
+        },
+        "broker_or_agency": {
+          "name": "Arrowhead General Insurance Agency, Inc.",
+          "agency_code": null,
+          "dba": null,
+          "producer_name": null,
+          "producer_code": null,
+          "producing_regional": null
+        },
+        "policyholder": {
+          "name": "Sea West Enterprises, Inc.",
+          "dba": null,
+          "trade_name": null,
+          "individual_name": null,
+          "address_line": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "aif_account_number": null,
+          "msi": null
+        },
+        "deductible_treatment": "unknown",
+        "lae_inclusion_in_total": "included",
+        "report_definition": null,
+        "symbol_legend": [],
+        "disclaimers": [],
+        "safety_facts_block": null,
+        "account_summary": {
+          "term_premium": null,
+          "earned_premium": null,
+          "earned_premium_excl_retro_adj": null,
+          "written_premium": null,
+          "total_paid_losses_and_expenses": null,
+          "outstanding_losses_and_expenses": null,
+          "subrogation": null,
+          "total_incurred_losses_and_expenses": null,
+          "loss_ratio": null,
+          "experience_modification": null,
+          "total_number_of_claims": null,
+          "litigation_count": null,
+          "medical_claims_open": null,
+          "medical_claims_closed": null,
+          "indemnity_claims_open": null,
+          "indemnity_claims_closed": null,
+          "claim_severity_gt_10m": null,
+          "claim_severity_gt_25m": null,
+          "claim_severity_gt_50m": null,
+          "total_amount_in_millions": null
+        }
+      },
+      "policies": [
+        {
+          "policy_id": "7600018496211|2021-01-01",
+          "policy_number": "7600018496211",
+          "policy_carrier_name": "Everest Premier Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2021-01-01",
+          "policy_expiration_date": "2022-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 0,
+            "open_claims": 0,
+            "closed_claims": 0,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 0,
+            "medical_total": 0,
+            "total_records_open": 0,
+            "total_records_closed": 0,
+            "total_records_total": 0
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 0,
+            "paid_loss_adjustment_expenses": 0,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 0,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": 0,
+              "vr": 0,
+              "expense_lae": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "employer_paid_benefits": 0,
+              "rehab": 0,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": 0,
+              "total": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": true,
+          "no_claims_marker_text": "No losses found for policy number 7600018496211 1/1/2021 - 1/1/2022 Sea West Enterprises, Inc."
+        },
+        {
+          "policy_id": "7600018496201|2020-01-01",
+          "policy_number": "7600018496201",
+          "policy_carrier_name": "Everest Premier Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2020-01-01",
+          "policy_expiration_date": "2021-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 0,
+            "open_claims": 0,
+            "closed_claims": 0,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 0,
+            "medical_total": 0,
+            "total_records_open": 0,
+            "total_records_closed": 0,
+            "total_records_total": 0
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 0,
+            "paid_loss_adjustment_expenses": 0,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 0,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": 0,
+              "vr": 0,
+              "expense_lae": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "employer_paid_benefits": 0,
+              "rehab": 0,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": 0,
+              "total": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": true,
+          "no_claims_marker_text": "No losses found for policy number 7600018496201 1/1/2020 - 1/1/2021 Sea West Enterprises, Inc."
+        },
+        {
+          "policy_id": "7600018496191|2019-01-01",
+          "policy_number": "7600018496191",
+          "policy_carrier_name": "Everest Premier Insurance Company",
+          "line_of_business": "WC",
+          "policy_effective_date": "2019-01-01",
+          "policy_expiration_date": "2020-01-01",
+          "median_days_to_report_claim": null,
+          "premium": {
+            "term_premium": null,
+            "written_premium": null,
+            "earned_premium": null,
+            "earned_premium_excl_retro_adj": null
+          },
+          "counts": {
+            "total_claims": 0,
+            "open_claims": 0,
+            "closed_claims": 0,
+            "litigated_claims": 0,
+            "indemnity_open": 0,
+            "indemnity_closed": 0,
+            "indemnity_total": 0,
+            "medical_open": 0,
+            "medical_closed": 0,
+            "medical_total": 0,
+            "total_records_open": 0,
+            "total_records_closed": 0,
+            "total_records_total": 0
+          },
+          "policy_litigated_indicator": null,
+          "financials": {
+            "paid_losses": 0,
+            "paid_loss_adjustment_expenses": 0,
+            "outstanding_losses_and_expenses": 0,
+            "total_incurred_losses_and_expenses": 0,
+            "loss_ratio": null,
+            "by_bucket": {
+              "medical": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "indemnity": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "disability": 0,
+              "vr": 0,
+              "expense_lae": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "employer_paid_benefits": 0,
+              "rehab": 0,
+              "recovery": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              },
+              "lost_time": 0,
+              "total": {
+                "paid": 0,
+                "reserve": 0,
+                "incurred": 0,
+                "recovery": 0
+              }
+            }
+          },
+          "has_no_claims": true,
+          "no_claims_marker_text": "No losses found for policy number 7600018496191 1/1/2019 - 1/1/2020 Sea West Enterprises, Inc."
+        }
+      ],
+      "claims": [],
+      "aggregations": null,
+      "verification": {
+        "checks": []
+      },
+      "confidence": {
+        "document_overall": 0.95,
+        "by_field": {},
+        "by_claim": {}
+      },
+      "signals": [],
+      "extraction_notes": [],
+      "source_provenance": {
+        "source_filename": null,
+        "source_hash": null,
+        "page_count": 12,
+        "extracted_at": null,
+        "extractor_version": "1.0.0"
+      }
+    }
+  ]
+}

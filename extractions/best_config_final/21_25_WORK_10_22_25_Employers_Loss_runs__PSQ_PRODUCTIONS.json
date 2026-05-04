@@ -1,0 +1,917 @@
+{
+  "document": {
+    "report_source_type": "direct_carrier",
+    "report_title": "Claims History Report (Loss Run)",
+    "report_id": null,
+    "run_id": null,
+    "generating_user": null,
+    "report_run_date": "2025-10-22",
+    "report_run_time": "15:49:49",
+    "valuation_date": "2025-10-22",
+    "valuation_time": null,
+    "report_period_start": "2018-01-01",
+    "report_period_end": "2025-01-14",
+    "losses_incurred_since": "2018-01-01",
+    "target_policy": "EIG469077603|EIG469077602|EIG469077601|EIG469077600",
+    "carrier": {
+      "name": "Employers Preferred Insurance Company",
+      "legal_entity": "Employers Preferred Insurance Company",
+      "license_number": null
+    },
+    "claims_administrator": {
+      "name": "WORLDWIDE FACILITIES LLC",
+      "address": null
+    },
+    "broker_or_agency": {
+      "name": "WORLDWIDE FACILITIES LLC",
+      "agency_code": null,
+      "dba": null,
+      "producer_name": null,
+      "producer_code": null,
+      "producing_regional": null
+    },
+    "policyholder": {
+      "name": "PSQ PRODUCTIONS LLC",
+      "dba": null,
+      "trade_name": null,
+      "individual_name": null,
+      "address_line": null,
+      "city": null,
+      "state": null,
+      "postal_code": null,
+      "aif_account_number": null,
+      "msi": null
+    },
+    "deductible_treatment": "gross",
+    "lae_inclusion_in_total": "included",
+    "report_definition": null,
+    "symbol_legend": [],
+    "disclaimers": [
+      "Amount does not reflect deductible"
+    ],
+    "safety_facts_block": null,
+    "account_summary": {
+      "term_premium": null,
+      "earned_premium": null,
+      "earned_premium_excl_retro_adj": null,
+      "written_premium": null,
+      "total_paid_losses_and_expenses": null,
+      "outstanding_losses_and_expenses": 0,
+      "subrogation": null,
+      "total_incurred_losses_and_expenses": 23219.64,
+      "loss_ratio": null,
+      "experience_modification": null,
+      "total_number_of_claims": 3,
+      "litigation_count": 0,
+      "medical_claims_open": 0,
+      "medical_claims_closed": 0,
+      "indemnity_claims_open": 0,
+      "indemnity_claims_closed": 0,
+      "claim_severity_gt_10m": null,
+      "claim_severity_gt_25m": null,
+      "claim_severity_gt_50m": null,
+      "total_amount_in_millions": null
+    },
+    "policy_year_lob_pivot": [
+      {
+        "earned_premium": 7185,
+        "policy_period_end": "2026-03-07",
+        "policy_period_start": "2025-03-07",
+        "scope": "latest_policy"
+      },
+      {
+        "earned_premium": 104444,
+        "loss_ratio": 0.01,
+        "paid_claims": 1
+      },
+      {
+        "earned_premium": 129425,
+        "loss_ratio": 0.008,
+        "paid_claims": 1,
+        "scope": "account_total"
+      }
+    ],
+    "report_platform": {
+      "logo_text": "EMPLOYERS\u00ae",
+      "name": "Employers"
+    }
+  },
+  "policies": [
+    {
+      "policy_id": "EIG469077603|2024-01-14",
+      "policy_number": "EIG469077603",
+      "policy_carrier_name": "Employers Preferred Insurance Company",
+      "line_of_business": "WC",
+      "policy_effective_date": "2024-01-14",
+      "policy_expiration_date": "2025-01-14",
+      "median_days_to_report_claim": 2,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 0,
+        "open_claims": 0,
+        "closed_claims": 0,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 0,
+        "total_records_total": 0
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 0,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 0,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": true,
+      "no_claims_marker_text": "Total claims from this policy period: 0"
+    },
+    {
+      "policy_id": "EIG469077602|2023-01-14",
+      "policy_number": "EIG469077602",
+      "policy_carrier_name": "Employers Preferred Insurance Company",
+      "line_of_business": "WC",
+      "policy_effective_date": "2023-01-14",
+      "policy_expiration_date": "2024-01-14",
+      "median_days_to_report_claim": 2,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 1,
+        "open_claims": 0,
+        "closed_claims": 1,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 1,
+        "indemnity_total": 1,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 1,
+        "total_records_total": 1
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 230,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 21300,
+        "total_incurred_losses_and_expenses": 21530,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 230,
+            "reserve": 0,
+            "incurred": 230,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 21300,
+            "reserve": 0,
+            "incurred": 21300,
+            "recovery": 0
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 21530,
+            "reserve": 0,
+            "incurred": 21530,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": false,
+      "no_claims_marker_text": null
+    },
+    {
+      "policy_id": "EIG469077601|2022-01-14",
+      "policy_number": "EIG469077601",
+      "policy_carrier_name": "Employers Preferred Insurance Company",
+      "line_of_business": "WC",
+      "policy_effective_date": "2022-01-14",
+      "policy_expiration_date": "2023-01-14",
+      "median_days_to_report_claim": 2,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 0,
+        "open_claims": 0,
+        "closed_claims": 0,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 0,
+        "indemnity_total": 0,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 0,
+        "total_records_total": 0
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 0,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 0,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": true,
+      "no_claims_marker_text": "Total claims from this policy period: 0"
+    },
+    {
+      "policy_id": "EIG469077600|2021-01-14",
+      "policy_number": "EIG469077600",
+      "policy_carrier_name": "Employers Preferred Insurance Company",
+      "line_of_business": "WC",
+      "policy_effective_date": "2021-01-14",
+      "policy_expiration_date": "2022-01-14",
+      "median_days_to_report_claim": 2,
+      "premium": {
+        "term_premium": null,
+        "written_premium": null,
+        "earned_premium": null,
+        "earned_premium_excl_retro_adj": null
+      },
+      "counts": {
+        "total_claims": 2,
+        "open_claims": 0,
+        "closed_claims": 2,
+        "litigated_claims": 0,
+        "indemnity_open": 0,
+        "indemnity_closed": 2,
+        "indemnity_total": 2,
+        "medical_open": 0,
+        "medical_closed": 0,
+        "medical_total": 0,
+        "total_records_open": 0,
+        "total_records_closed": 2,
+        "total_records_total": 2
+      },
+      "policy_litigated_indicator": null,
+      "financials": {
+        "paid_losses": 1689.64,
+        "paid_loss_adjustment_expenses": 0,
+        "outstanding_losses_and_expenses": 0,
+        "total_incurred_losses_and_expenses": 1689.64,
+        "loss_ratio": null,
+        "by_bucket": {
+          "medical": {
+            "paid": 1689.64,
+            "reserve": 0,
+            "incurred": 1689.64,
+            "recovery": 0
+          },
+          "indemnity": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "disability": null,
+          "vr": null,
+          "expense_lae": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "employer_paid_benefits": null,
+          "rehab": null,
+          "recovery": {
+            "paid": 0,
+            "reserve": 0,
+            "incurred": 0,
+            "recovery": 0
+          },
+          "lost_time": null,
+          "total": {
+            "paid": 1689.64,
+            "reserve": 0,
+            "incurred": 1689.64,
+            "recovery": 0
+          }
+        }
+      },
+      "has_no_claims": false,
+      "no_claims_marker_text": null
+    }
+  ],
+  "claims": [
+    {
+      "policy_id": "EIG469077603|2024-01-14",
+      "identity": {
+        "claim_number": null,
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": null,
+        "claimant_age": null,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": null,
+        "claimant_occupation_code": null,
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": null,
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": null,
+        "date_of_loss_time": null,
+        "date_reported_to_carrier": null,
+        "date_first_aware": null,
+        "date_closed": null,
+        "employee_lag_days": null,
+        "reporting_lag_days": null
+      },
+      "status": {
+        "claim_status": "unknown",
+        "claim_type": "unknown",
+        "raw_status": "unknown",
+        "compound_status_split": false,
+        "in_litigation": null,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": null,
+        "nature_of_injury_prefix": null,
+        "body_part": null,
+        "body_part_prefix": null,
+        "cause_of_injury": "Cumulative, NOC",
+        "injury_source": null,
+        "injury_type": null,
+        "accident_code": null,
+        "category": null,
+        "loss_description": null
+      },
+      "classification": {
+        "class_code": null,
+        "class_code_raw": null
+      },
+      "examiner": {
+        "name": null,
+        "id": null,
+        "phone": null,
+        "email": null,
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "indemnity": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": {
+          "raw_value": 0
+        },
+        "internal_handling_expense": {
+          "raw_value": 0
+        },
+        "totals": {
+          "total_paid": 0,
+          "total_reserve": 0,
+          "total_incurred": 0,
+          "net_total_paid": 0,
+          "net_total_reserve": 0,
+          "net_total_incurred": 0
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "EIG469077602|2023-01-14",
+      "identity": {
+        "claim_number": "2023026815",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Guerra, Seth",
+        "claimant_age": null,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": null,
+        "claimant_occupation_code": null,
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": null,
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2023-12-13",
+        "date_of_loss_time": "12:00",
+        "date_reported_to_carrier": null,
+        "date_first_aware": null,
+        "date_closed": null,
+        "employee_lag_days": null,
+        "reporting_lag_days": null
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "indemnity",
+        "raw_status": "Closed",
+        "compound_status_split": false,
+        "in_litigation": null,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": "All Other Cumulative Injury, NOC",
+        "nature_of_injury_prefix": "All",
+        "body_part": "Lower Back Area",
+        "body_part_prefix": null,
+        "cause_of_injury": "Cumulative, NOC",
+        "injury_source": "Cumulative, NOC",
+        "injury_type": "All Other Cumulative Injury, NOC",
+        "accident_code": null,
+        "category": null,
+        "loss_description": null
+      },
+      "classification": {
+        "class_code": "9095",
+        "class_code_raw": "9095"
+      },
+      "examiner": {
+        "name": null,
+        "id": null,
+        "phone": null,
+        "email": null,
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 230,
+          "reserve": 0,
+          "incurred": 230,
+          "recovery": 0,
+          "raw_value": 230
+        },
+        "indemnity": {
+          "paid": 21300,
+          "reserve": 0,
+          "incurred": 21300,
+          "recovery": 0,
+          "raw_value": 21300
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": {
+          "raw_value": 0
+        },
+        "internal_handling_expense": {
+          "raw_value": 0
+        },
+        "totals": {
+          "total_paid": 21530,
+          "total_reserve": 0,
+          "total_incurred": 21530,
+          "net_total_paid": 21530,
+          "net_total_reserve": 0,
+          "net_total_incurred": 21530
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "EIG469077600|2021-01-14",
+      "identity": {
+        "claim_number": "2021452572",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Alejandre, Lucio",
+        "claimant_age": null,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": null,
+        "claimant_occupation_code": null,
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": null,
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2021-05-29",
+        "date_of_loss_time": "17:00",
+        "date_reported_to_carrier": null,
+        "date_first_aware": null,
+        "date_closed": null,
+        "employee_lag_days": null,
+        "reporting_lag_days": null
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "indemnity",
+        "raw_status": "Closed",
+        "compound_status_split": false,
+        "in_litigation": null,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": null,
+        "nature_of_injury_prefix": null,
+        "body_part": "Ankle",
+        "body_part_prefix": "Lower",
+        "cause_of_injury": "Strain or Injury by, NOC",
+        "injury_source": "Strain or Injury by, NOC",
+        "injury_type": "Strain or Tear",
+        "accident_code": null,
+        "category": null,
+        "loss_description": null
+      },
+      "classification": {
+        "class_code": "9095",
+        "class_code_raw": "9095"
+      },
+      "examiner": {
+        "name": null,
+        "id": null,
+        "phone": null,
+        "email": null,
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 504.92,
+          "reserve": 0,
+          "incurred": 504.92,
+          "recovery": 0,
+          "raw_value": 504.92
+        },
+        "indemnity": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": {
+          "raw_value": 0
+        },
+        "internal_handling_expense": {
+          "raw_value": 0
+        },
+        "totals": {
+          "total_paid": 504.92,
+          "total_reserve": 0,
+          "total_incurred": 504.92,
+          "net_total_paid": 504.92,
+          "net_total_reserve": 0,
+          "net_total_incurred": 504.92
+        }
+      },
+      "raw_row": null
+    },
+    {
+      "policy_id": "EIG469077600|2021-01-14",
+      "identity": {
+        "claim_number": "2021007688",
+        "converted_claim_number": null,
+        "related_claim_number": null,
+        "claimant_name": "Oconnor, Mark",
+        "claimant_age": null,
+        "claimant_hire_date": null,
+        "claimant_length_of_employment": null,
+        "claimant_average_weekly_wage": null,
+        "claimant_occupation": null,
+        "claimant_occupation_code": null,
+        "claimant_department": null
+      },
+      "location": {
+        "location_id": null,
+        "location_name": null,
+        "location_address": null,
+        "loss_location": null,
+        "injury_location_state": null,
+        "injury_location_city": null,
+        "jurisdiction_state": null
+      },
+      "dates": {
+        "date_of_loss": "2021-09-25",
+        "date_of_loss_time": "21:00",
+        "date_reported_to_carrier": null,
+        "date_first_aware": null,
+        "date_closed": null,
+        "employee_lag_days": null,
+        "reporting_lag_days": null
+      },
+      "status": {
+        "claim_status": "closed",
+        "claim_type": "indemnity",
+        "raw_status": "Closed",
+        "compound_status_split": false,
+        "in_litigation": null,
+        "pd_rating": null,
+        "fatalities_flag": null,
+        "recovery_pending_indicator": false,
+        "medical_only_indicator": false
+      },
+      "injury": {
+        "nature_of_injury": null,
+        "nature_of_injury_prefix": null,
+        "body_part": "Shoulder(s)",
+        "body_part_prefix": null,
+        "cause_of_injury": null,
+        "injury_source": "Pushing or Pulling",
+        "injury_type": "Strain or Tear",
+        "accident_code": null,
+        "category": null,
+        "loss_description": null
+      },
+      "classification": {
+        "class_code": "9095",
+        "class_code_raw": "9095"
+      },
+      "examiner": {
+        "name": null,
+        "id": null,
+        "phone": null,
+        "email": null,
+        "category": null
+      },
+      "financials": {
+        "medical": {
+          "paid": 1184.72,
+          "reserve": 0,
+          "incurred": 1184.72,
+          "recovery": 0,
+          "raw_value": 1184.72
+        },
+        "indemnity": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "disability": null,
+        "vr": null,
+        "expense_lae": {
+          "paid": 0,
+          "reserve": 0,
+          "incurred": 0,
+          "recovery": 0,
+          "raw_value": 0
+        },
+        "employer_paid_benefits": null,
+        "rehab": null,
+        "lost_time": null,
+        "recovery_subrogation": null,
+        "deductible": 0,
+        "internal_handling_expense": null,
+        "totals": {
+          "total_paid": 1184.72,
+          "total_reserve": 0,
+          "total_incurred": 1184.72,
+          "net_total_paid": 1184.72,
+          "net_total_reserve": 0,
+          "net_total_incurred": 1184.72
+        }
+      },
+      "raw_row": null
+    }
+  ],
+  "aggregations": null,
+  "verification": {
+    "checks": []
+  },
+  "confidence": {
+    "document_overall": 0.95,
+    "by_field": {},
+    "by_claim": {}
+  },
+  "signals": [],
+  "extraction_notes": [],
+  "source_provenance": {
+    "source_filename": null,
+    "source_hash": null,
+    "page_count": 1,
+    "extracted_at": null,
+    "extractor_version": "1.0.0"
+  },
+  "_derived": {
+    "combined_all_periods": {
+      "medical_paid": 1919.64,
+      "medical_reserve": 0.0,
+      "medical_incurred": 1919.64,
+      "indemnity_paid": 21300.0,
+      "indemnity_reserve": 0.0,
+      "indemnity_incurred": 21300.0,
+      "expense_lae_paid": 0.0,
+      "expense_lae_reserve": 0.0,
+      "expense_lae_incurred": 0.0,
+      "total_incurred": 23219.64,
+      "total_incurred_losses_and_expenses": 23219.64,
+      "paid_losses": 1919.64,
+      "outstanding_losses_and_expenses": 21300.0,
+      "total_claims": 3.0,
+      "open_claims": 0.0,
+      "net_expense": 0.0
+    }
+  },
+  "_enriched": {
+    "carrier": {
+      "source_name": "Employers Preferred Insurance Company",
+      "method": "levenshtein-2-vs-known-carriers",
+      "candidate_pool_size": 20,
+      "top_k_candidates": [
+        {
+          "name": "Employers Preferred Insurance Company",
+          "distance": 0
+        },
+        {
+          "name": "Hartford Fire Insurance Company",
+          "distance": 14
+        },
+        {
+          "name": "Everest National Insurance Company",
+          "distance": 16
+        }
+      ],
+      "match": "Employers Preferred Insurance Company",
+      "distance": 0,
+      "status": "exact_match"
+    }
+  }
+}

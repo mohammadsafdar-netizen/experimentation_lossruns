@@ -1,0 +1,33 @@
+{
+  "file_name": "Loss_Runs_5_1_24-4_1_25_TriNet_Dated_1_26_26.pdf",
+  "carrier": "TriNet (Workers' Compensation Claims Summary)",
+  "carrier_format_archetype": "flat_table_with_grouping",
+  "n_pages": 2,
+  "document_metadata": {
+    "vendor_system_inferred": "internal-or-Origami",
+    "insured_location": "TIII24M6 - Partners In Leadership, LLC",
+    "valued_as_of": "01/28/2026",
+    "filter_voided": false,
+    "filter_coverage": "WC",
+    "filter_loss_date_start": "05/01/2024",
+    "filter_loss_date_end": "04/01/2025"
+  },
+  "policies": [],
+  "claims": [
+    {
+      "claim_number": "M377969",
+      "claimant_name": "KRIEGEL, JESSICA",
+      "location_name": "Partners In Leadership, LLC",
+      "incident_state": "CA",
+      "loss_date": "9/18/2024",
+      "reported_date": "9/19/2024",
+      "closed_date": "9/27/2024",
+      "status": "Incident Closed",
+      "cause_of_loss": "Slip and Fall",
+      "body_part": "Lower Back Injury",
+      "paid": 0.0,
+      "reserve": 0.0,
+      "incurred": 0.0
+    }
+  ]
+}

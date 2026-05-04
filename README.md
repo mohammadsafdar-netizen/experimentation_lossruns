@@ -1,6 +1,6 @@
-# Loss-Run Ground Truths
+# Loss-Run Ground Truths (current production)
 
-Hand-curated ground-truth annotations for 9 workers'-comp loss-run PDFs across 7 carriers (2026-04 / 2026-05).
+Hand-curated ground-truth annotations for 9 workers'-comp loss-run PDFs across 7 carriers. **Only the most-reliable v6 GT is kept** — older versions (v1–v5) were removed to avoid confusion. v6 is the second-pass-audited target with 20 verified corrections (May 4, 2026).
 
 > **PRIVATE REPO ONLY.** Contains real PII (claimant names, claim numbers, employer/broker/carrier names). Do not make public.
 
@@ -8,54 +8,50 @@ Hand-curated ground-truth annotations for 9 workers'-comp loss-run PDFs across 7
 
 ```
 gt/
-├── loss_runs_gt_v1_unaudited.json     # initial annotation pass, no audit
-├── loss_runs_gt_v2_audited.json       # 1st audit pass
-├── loss_runs_gt_v3_pdftext.json       # rebuilt against pdftotext to fix typos
-├── loss_runs_gt_v4_schema_extended.json # schema v5 fields added (75 industry-standard)
-├── loss_runs_gt_v5.json               # consolidated production GT (May 3)
-├── loss_runs_gt_v6.json               # current — second-pass audit (May 4)
+├── loss_runs_gt_v6.json                     # 47K — consolidated v6 (all 9 docs in one file)
 │
-├── per_carrier_field_inventory.json   # which fields each carrier emits
-├── AUDIT_CORRECTIONS.md               # log of every correction applied (v5 → v6)
+├── per_doc/                                 # same v6 data, split per form (1 file per loss run)
+│   ├── 21_25_WORK_10_22_25_Employers_Loss_runs__PSQ_PRODUCTIONS.json
+│   ├── 24_26_RE_WORK_11_10_25_ICW_loss_runs.json
+│   ├── Loss_Runs_2021_to_2024___Insperity.json
+│   ├── Loss_Runs_2026___2018.json
+│   ├── Loss_Runs_4_1_25_Eff_Date_to_Curr_ADP_1_27_26.json
+│   ├── Loss_Runs_5_1_24_4_1_25_TriNet_Dated_1_26_26.json
+│   ├── SIR_HARTFORD_Loss_Runs_2016_25_val_8_21_05.json
+│   ├── SIR_Hartford_Loss_Runs_2016_25_val_8_21_25B.json
+│   └── Strategic_Information_Resources_Inc_loss_runs.json
 │
-├── audit_gt.py                        # runs schema/value sanity checks across GT
-├── build_gt_v3.py / build_gt_v4.py / build_gt_v5.py  # version progression scripts
-│
-└── verifications/                     # per-doc, per-field manual verification audit trail
+├── per_carrier_field_inventory.json         # which fields each carrier emits
+├── AUDIT_CORRECTIONS.md                     # log of every correction in v6
+├── audit_gt.py                              # schema/value sanity checks
+└── verifications/                           # per-doc, per-field manual audit trail
 ```
 
-## Versions
+`loss_runs_gt_v6.json` and `per_doc/*.json` contain the **same data** — pick whichever shape your pipeline prefers (consolidated for cross-doc eval, split for per-doc workflows).
 
-| Version | Date | Notes |
-|---|---|---|
-| v1 | Apr 30 2026 | Unaudited initial annotation |
-| v2 | Apr 30 2026 | First audit pass |
-| v3 | May 1  2026 | Rebuilt from `pdftotext` to fix 19 typo-class corrections |
-| v4 | May 2  2026 | Schema v5 — extended to 75 industry-standard fields |
-| v5 | May 3  2026 | Consolidated production GT |
-| **v6** | **May 4  2026** | **Current — 20 corrections applied via second-pass audit** (see AUDIT_CORRECTIONS.md) |
+## Coverage
 
-The 9 docs covered (across 7 carriers + 1 narrative + 1 PEO summary):
-
-1. `21-25 WORK 10.22.25 Employers Loss runs -PSQ PRODUCTIONS.pdf` — Employers (1pg, row-per-claim)
-2. `24-26 RE WORK 11-10-25 ICW loss runs.pdf` — ICW Group (15pg, form-per-claim)
-3. `Loss Runs 2021 to 2024 - Insperity.pdf` — Insperity PEO (2pg, summary)
-4. `Loss Runs 2026 - 2018.pdf` — Arrowhead/Everest (12pg, multi-section)
-5. `Loss Runs 4.1.25 Eff Date to Curr ADP 1.27.26.pdf` — ADP/AmTrust PEO (3pg)
-6. `Loss Runs 5.1.24-4.1.25-TriNet Dated 1.26.26.pdf` — TriNet PEO (2pg)
-7. `SIR HARTFORD Loss Runs 2016-25 val 8.21.05.pdf` — Hartford pivot (1pg, summary)
-8. `SIR Hartford Loss Runs 2016-25 val 8.21.25B.pdf` — Hartford pivot (1pg, summary, dup)
-9. `Strategic Information Resources Inc loss runs.pdf` — Hartford detailed (1pg)
+| File (doc stem) | Carrier | Layout archetype | Pages | Claims |
+|---|---|---|---|---|
+| `21_25_WORK_10_22_25_Employers_Loss_runs__PSQ_PRODUCTIONS` | Employers Preferred | row-per-claim, digital | 1 | 3 |
+| `24_26_RE_WORK_11_10_25_ICW_loss_runs` | ICW Group | form-per-claim, scanned | 15 | 12 |
+| `Loss_Runs_2021_to_2024___Insperity` | Insperity (PEO) | summary, digital | 2 | 0 |
+| `Loss_Runs_2026___2018` | Arrowhead / Everest | multi-section, scanned | 12 | 4 |
+| `Loss_Runs_4_1_25_Eff_Date_to_Curr_ADP_1_27_26` | ADP / AmTrust (PEO) | summary, digital | 3 | 0 |
+| `Loss_Runs_5_1_24_4_1_25_TriNet_Dated_1_26_26` | TriNet (PEO) | summary, digital | 2 | 1 |
+| `SIR_HARTFORD_Loss_Runs_2016_25_val_8_21_05` | Hartford pivot | summary, digital | 1 | 0 |
+| `SIR_Hartford_Loss_Runs_2016_25_val_8_21_25B` | Hartford pivot (dup) | summary, digital | 1 | 0 |
+| `Strategic_Information_Resources_Inc_loss_runs` | Hartford detailed | row-per-claim, digital | 1 | 1 |
 
 ## Headline numbers (against v6)
 
-- Production winner-only F1: **91.12%** (554/608 fields, commit `242e2d8` of upstream repo)
-- Strict F1: 88.5%
+- Production winner-only F1: **91.12%** (554/608 fields)
+- Strict F1: **88.5%**
 - Per-archetype: ICW 99% / Employers 96% / Arrowhead 97% / Insperity 92% / Hartford pivots 88%
 
 ## Schema
 
-The schema is a 75-field workers'-comp loss-run target covering: document metadata, policy summary, per-claim identity / dates / financials / injury / examiner, and combined-period totals. See any v5+ JSON for the canonical structure.
+75-field workers'-comp loss-run schema covering: document metadata, policy summary, per-claim identity / dates / financials / injury / examiner, and combined-period totals. Each per-doc JSON is a single `document` object; the consolidated v6 has them under a top-level `documents: [...]` list.
 
 ## License
 

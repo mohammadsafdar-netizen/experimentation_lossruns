@@ -1,0 +1,80 @@
+{
+  "file_name": "SIR_Hartford_Loss_Runs_2016_25_val_8_21_25B.pdf",
+  "carrier": "The Hartford",
+  "carrier_format_archetype": "summary_pivot",
+  "n_pages": 1,
+  "duplicate_of": "SIR_HARTFORD_Loss_Runs_2016_25_val_8_21_05.pdf",
+  "document_metadata": {
+    "account_trade_name": "Strategic Information Resources",
+    "policy_number_current": "076WEG AF8JGW",
+    "date_produced": "08/21/2025",
+    "aif_account_number": "1045104368",
+    "policy_year_lob_pivot": [
+      {
+        "line_of_business": "WORKERS COMP",
+        "lob_code": "W",
+        "policy_number": "076WEG AF8JGW",
+        "policy_period_start": "2025-03-07",
+        "policy_period_end": "2026-03-07",
+        "earned_premium": 7185,
+        "loss_ratio": 0.0,
+        "paid_claims": 0,
+        "open_claims": 0,
+        "written_premium": 15677,
+        "agency_code": "250846",
+        "msi": "830",
+        "scope": "latest_policy"
+      },
+      {
+        "is_total_row": true,
+        "scope": "latest_policy",
+        "line_of_business": "WORKERS COMP",
+        "earned_premium": 7185,
+        "loss_ratio": 0.0,
+        "paid_claims": 0,
+        "written_premium": 15677
+      },
+      {
+        "line_of_business": "FIRE & ALLIED",
+        "lob_code": "P",
+        "policy_period_label": "2016-2020",
+        "earned_premium": 4608,
+        "loss_ratio": 0.0,
+        "paid_claims": 0,
+        "scope": "row"
+      },
+      {
+        "line_of_business": "WORKERS COMP",
+        "lob_code": "W",
+        "policy_period_label": "2016-2025",
+        "earned_premium": 104444,
+        "loss_ratio": 0.01,
+        "paid_claims": 1,
+        "scope": "row"
+      },
+      {
+        "line_of_business": "GENERAL LIAB",
+        "lob_code": "L",
+        "policy_period_label": "2016-2020",
+        "earned_premium": 13188,
+        "loss_ratio": 0.0,
+        "paid_claims": 0,
+        "scope": "row"
+      },
+      {
+        "is_total_row": true,
+        "scope": "prior_lob",
+        "earned_premium": 122240,
+        "loss_ratio": 0.009,
+        "paid_claims": 1
+      },
+      {
+        "is_total_row": true,
+        "scope": "account_total",
+        "earned_premium": 129425,
+        "loss_ratio": 0.008,
+        "paid_claims": 1
+      }
+    ]
+  }
+}

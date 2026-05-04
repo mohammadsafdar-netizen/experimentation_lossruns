@@ -1,0 +1,37 @@
+{
+  "file_name": "Loss_Runs_4_1_25_Eff_Date_to_Curr_ADP_1_27_26.pdf",
+  "carrier": "AmTrust North America (via ADP TotalSource)",
+  "carrier_format_archetype": "flat_multipage_zeros",
+  "n_pages": 3,
+  "document_metadata": {
+    "report_title": "WC LOSS RUN REPORT",
+    "carrier": "AmTrust North America",
+    "report_id": "677",
+    "run_id": "14569471",
+    "policy_number": "QWC1446510",
+    "policy_effective": "04/01/2025",
+    "insured_name": "Partners in Leadership, LLC",
+    "loss_status_filter": "All Statuses",
+    "footnote": "Policy Loss Run Selection: Partners in Leadership, LLC; Loss Statuses: All Statuses; Losses = 0, for all loss dates"
+  },
+  "policies": [
+    {
+      "policy_number": "QWC1446510",
+      "policy_period_start": "04/01/2025",
+      "policy_period_end": null,
+      "claims": [],
+      "group_totals": {
+        "open_lost_time": 0,
+        "open_medical_only": 0,
+        "open_total": 0,
+        "closed": 0
+      },
+      "report_totals": {
+        "open_lost_time": 0,
+        "open_medical_only": 0,
+        "open_total": 0,
+        "closed": 0
+      }
+    }
+  ]
+}

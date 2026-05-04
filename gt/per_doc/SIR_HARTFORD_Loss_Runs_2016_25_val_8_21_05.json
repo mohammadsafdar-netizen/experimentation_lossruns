@@ -1,0 +1,120 @@
+{
+  "file_name": "SIR_HARTFORD_Loss_Runs_2016_25_val_8_21_05.pdf",
+  "carrier": "The Hartford",
+  "carrier_format_archetype": "summary_pivot",
+  "n_pages": 1,
+  "duplicates": [
+    "SIR_Hartford_Loss_Runs_2016_25_val_8_21_25B.pdf"
+  ],
+  "document_metadata": {
+    "account_trade_name": "Strategic Information Resources",
+    "policy_number_current": "076WEG AF8JGW",
+    "date_produced": "08/21/2025",
+    "aif_account_number": "1045104368",
+    "agency_code": "250846",
+    "msi": "830",
+    "policy_year_lob_pivot": [
+      {
+        "line_of_business": "WORKERS COMP",
+        "lob_code": "W",
+        "policy_number": "076WEG AF8JGW",
+        "policy_period_start": "2025-03-07",
+        "policy_period_end": "2026-03-07",
+        "earned_premium": 7185,
+        "loss_ratio": 0.0,
+        "paid_claims": 0,
+        "open_claims": 0,
+        "written_premium": 15677,
+        "agency_code": "250846",
+        "msi": "830",
+        "scope": "latest_policy"
+      },
+      {
+        "is_total_row": true,
+        "scope": "latest_policy",
+        "line_of_business": "WORKERS COMP",
+        "earned_premium": 7185,
+        "loss_ratio": 0.0,
+        "paid_claims": 0,
+        "written_premium": 15677
+      },
+      {
+        "line_of_business": "FIRE & ALLIED",
+        "lob_code": "P",
+        "policy_period_label": "2016-2020",
+        "earned_premium": 4608,
+        "loss_ratio": 0.0,
+        "paid_claims": 0,
+        "scope": "row"
+      },
+      {
+        "line_of_business": "WORKERS COMP",
+        "lob_code": "W",
+        "policy_period_label": "2016-2025",
+        "earned_premium": 104444,
+        "loss_ratio": 0.01,
+        "paid_claims": 1,
+        "scope": "row"
+      },
+      {
+        "line_of_business": "GENERAL LIAB",
+        "lob_code": "L",
+        "policy_period_label": "2016-2020",
+        "earned_premium": 13188,
+        "loss_ratio": 0.0,
+        "paid_claims": 0,
+        "scope": "row"
+      },
+      {
+        "is_total_row": true,
+        "scope": "prior_lob",
+        "earned_premium": 122240,
+        "loss_ratio": 0.009,
+        "paid_claims": 1
+      },
+      {
+        "is_total_row": true,
+        "scope": "account_total",
+        "earned_premium": 129425,
+        "loss_ratio": 0.008,
+        "paid_claims": 1
+      }
+    ]
+  },
+  "policy_year_lob_pivot": [
+    {
+      "policy_period_start": "03/07/2025",
+      "policy_period_end": "03/07/2026",
+      "lob": "WORKERS COMP",
+      "earned_premium": 7185.0,
+      "loss_ratio_pct": 0.0,
+      "written_premium": 15677.0,
+      "paid_claims": 0
+    },
+    {
+      "policy_period_lob": "FIRE & ALLIED 2016-2020",
+      "earned_premium": 4608.0,
+      "loss_ratio_pct": 0.0,
+      "paid_claims": 0
+    },
+    {
+      "policy_period_lob": "WORKERS COMP 2016-2025",
+      "earned_premium": 104444.0,
+      "loss_ratio_pct": 1.0,
+      "paid_claims": 1
+    },
+    {
+      "policy_period_lob": "GENERAL LIAB 2016-2020",
+      "earned_premium": 13188.0,
+      "loss_ratio_pct": 0.0,
+      "paid_claims": 0
+    }
+  ],
+  "account_total": {
+    "earned_premium": 129425.0,
+    "loss_ratio_pct": 0.8,
+    "paid_claims": 1
+  },
+  "policies": [],
+  "_notes": "This is a pivot-summary report. The single paid WC claim is the same Balster Justine Y3WC99221 claim that appears with full detail in Strategic_Information_Resources_Inc_loss_runs.pdf."
+}

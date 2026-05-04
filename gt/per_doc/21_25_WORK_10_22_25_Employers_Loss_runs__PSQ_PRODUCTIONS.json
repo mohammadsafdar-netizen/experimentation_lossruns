@@ -1,0 +1,130 @@
+{
+  "file_name": "21-25_WORK_10_22_25_Employers_Loss_runs_-PSQ_PRODUCTIONS.pdf",
+  "carrier": "Employers Preferred Insurance Company",
+  "carrier_format_archetype": "per_policy_section",
+  "n_pages": 1,
+  "document_metadata": {
+    "report_title": "Claims History Report (Loss Run)",
+    "carrier_brand": "EMPLOYERS",
+    "carrier_tagline": "America's small business insurance specialist",
+    "agency": "WORLDWIDE FACILITIES LLC",
+    "policyholder": "PSQ PRODUCTIONS LLC",
+    "losses_incurred_since": "1/1/18",
+    "data_as_of_date": "10/22/2025",
+    "amount_disclaimer": "Amount does not reflect deductible",
+    "total_claims_all_periods": 3
+  },
+  "policies": [
+    {
+      "policy_number": "EIG469077603",
+      "policy_period_start": "01/14/2024",
+      "policy_period_end": "01/14/2025",
+      "median_days_to_report_claim": 2,
+      "claims": [],
+      "policy_period_totals": {
+        "total_claims": 0,
+        "medical_paid": 0.0,
+        "indemnity_paid": 0.0,
+        "total_incurred": 0.0,
+        "net_expense": 0.0
+      }
+    },
+    {
+      "policy_number": "EIG469077602",
+      "policy_period_start": "01/14/2023",
+      "policy_period_end": "01/14/2024",
+      "median_days_to_report_claim": 2,
+      "claims": [
+        {
+          "injured_employee_name": "Guerra, Seth",
+          "claim_number": "2023026815",
+          "fatality": "N",
+          "injury_date": "12/13/2023 12:00 PM",
+          "status": "Closed",
+          "injury_cause": "Cumulative NOC",
+          "body_part": "Lower Back Area",
+          "injury_type": "All Other Cumulative Injury NOC",
+          "medical_paid": 230.0,
+          "medical_reserve": 0.0,
+          "indemnity_paid": 21300.0,
+          "indemnity_reserve": 0.0,
+          "recovery": 0.0,
+          "deductible": 0.0,
+          "total_incurred": 21530.0,
+          "net_expense": 3547.48
+        }
+      ],
+      "policy_period_totals": {
+        "total_claims": 1,
+        "medical_paid": 230.0,
+        "indemnity_paid": 21300.0,
+        "total_incurred": 21530.0,
+        "net_expense": 3547.48
+      }
+    },
+    {
+      "policy_number": "EIG469077601",
+      "policy_period_start": "01/14/2022",
+      "policy_period_end": "01/14/2023",
+      "median_days_to_report_claim": 2,
+      "claims": [],
+      "policy_period_totals": {
+        "total_claims": 0,
+        "medical_paid": 0.0,
+        "indemnity_paid": 0.0,
+        "total_incurred": 0.0,
+        "net_expense": 0.0
+      }
+    },
+    {
+      "policy_number": "EIG469077600",
+      "policy_period_start": "01/14/2021",
+      "policy_period_end": "01/14/2022",
+      "median_days_to_report_claim": 2,
+      "claims": [
+        {
+          "injured_employee_name": "Alejandre, Lucio",
+          "claim_number": "2021452572",
+          "fatality": "N",
+          "injury_date": "05/29/2021 05:00 PM",
+          "status": "Closed",
+          "injury_cause": "Strain or Injury by NOC",
+          "body_part": "Ankle",
+          "injury_type": "Strain or Tear",
+          "medical_paid": 504.92,
+          "indemnity_paid": 0.0,
+          "total_incurred": 504.92,
+          "net_expense": 18.06
+        },
+        {
+          "injured_employee_name": "Oconnor, Mark",
+          "claim_number": "2021007688",
+          "fatality": "N",
+          "injury_date": "09/25/2021 09:00 PM",
+          "status": "Closed",
+          "injury_cause": "Pushing or Pulling",
+          "body_part": "Shoulder(s)",
+          "injury_type": "Strain or Tear",
+          "medical_paid": 1184.72,
+          "indemnity_paid": 0.0,
+          "total_incurred": 1184.72,
+          "net_expense": 139.29
+        }
+      ],
+      "policy_period_totals": {
+        "total_claims": 2,
+        "medical_paid": 1689.64,
+        "indemnity_paid": 0.0,
+        "total_incurred": 1689.64,
+        "net_expense": 157.35
+      }
+    }
+  ],
+  "combined_all_periods_totals": {
+    "medical_paid": 1919.64,
+    "indemnity_paid": 21300.0,
+    "total_incurred": 23219.64,
+    "net_expense": 3704.83,
+    "total_claims": 3
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "file_name": "Strategic_Information_Resources_Inc_loss_runs.pdf",
+  "carrier": "The Hartford",
+  "carrier_format_archetype": "hybrid_detail",
+  "n_pages": 1,
+  "document_metadata": {
+    "insured_name": "Strategic Information Resources Inc",
+    "insured_city_state": "Canoga Park, CA",
+    "producer_name": "Ap Intego Insurance Group LLC",
+    "producer_city_state": "Fairport, NY",
+    "producer_code": "250846",
+    "policy_number_master": "076WEG AF8JGW"
+  },
+  "policies": [
+    {
+      "policy_number": "076WEG AF8JGW",
+      "policy_period_start": "03/07/2021",
+      "policy_period_end": "03/07/2022",
+      "claims": [],
+      "_note": "No Claims"
+    },
+    {
+      "policy_number": "076WEG AF8JGW",
+      "policy_period_start": "03/07/2022",
+      "policy_period_end": "03/07/2023",
+      "claims": [],
+      "_note": "No Claims"
+    },
+    {
+      "policy_number": "076WEG AF8JGW",
+      "policy_period_start": "03/07/2023",
+      "policy_period_end": "03/07/2024",
+      "claims": [
+        {
+          "claimant_name": "Balster, Justine",
+          "claim_number": "Y3WC99221",
+          "loss_date": "02/19/2024",
+          "reported_date": "02/20/2024",
+          "closed_date": "07/16/2024",
+          "state": "CA",
+          "class_code": "065191",
+          "occupation": "Office Manager",
+          "cause_of_loss": "Struck By Flying or Falling Object",
+          "status": "Closed",
+          "paid_loss": 1056.0,
+          "paid_expense": 75.0,
+          "total_incurred": 1056.0,
+          "raw_combined_cell": "Canoga Park Ca/Struck By Flying/falling Object - Not We /Office Manager"
+        }
+      ],
+      "_note": "No Claims"
+    },
+    {
+      "policy_number": "076WEG AF8JGW",
+      "policy_period_start": "03/07/2024",
+      "policy_period_end": "03/07/2025",
+      "claims": []
+    },
+    {
+      "policy_number": "076WEG AF8JGW",
+      "policy_period_start": "03/07/2025",
+      "policy_period_end": "03/07/2026",
+      "claims": [],
+      "_note": "No Claims"
+    }
+  ]
+}

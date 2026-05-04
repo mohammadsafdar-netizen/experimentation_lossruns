@@ -1,0 +1,1143 @@
+{
+  "_meta": {
+    "version": "v5",
+    "audited_on": "2026-05-03",
+    "auditor": "pdftotext-grounded re-audit (8/9 PDFs) + visual page-by-page (Arrowhead scanned)",
+    "supersedes": "loss_runs_gt_v4_schema_extended.json",
+    "carrier_format_archetypes": {
+      "per_policy_section": "One section per policy term with per-section header + sub-totals (Arrowhead/Everest, Employers).",
+      "flat_table_with_grouping": "Single flat table with grouping rows (TriNet/Origami Risk, Insperity/Origami Risk).",
+      "summary_pivot": "LOB-by-year rollup, no per-claim detail (Hartford pivot 8.21.25).",
+      "hybrid_detail": "Cover sheet + per-claim detail pages + analytics pages (Hartford detailed, ICW Group).",
+      "flat_multipage_zeros": "Header repeats per page; claim block empty; group/report totals at end (AmTrust/ADP)."
+    },
+    "non_loss_run_excluded": [
+      {
+        "file": "PERFORMA_INVOICE.pdf",
+        "reason": "M.S. Enterprises (Faridabad, India) commercial invoice for handle/big-box/small-box forging dies \u2014 not a workers-comp loss-run document. Misclassified in corpus and excluded from GT."
+      }
+    ],
+    "audit_corrections_count": 19,
+    "audit_corrections": [
+      "Employers/policyholder: PSG \u2192 PSQ",
+      "Employers/policy_number: EIG2469077802 \u2192 EIG469077603",
+      "Employers/policy_number: EIG2469077801 \u2192 EIG469077602",
+      "Employers/policy_number: EIG2469077800 \u2192 EIG469077601",
+      "Employers/policy_number: EIG6469077800 \u2192 EIG469077600",
+      "Employers/Guerra claim_number: 2023030615 \u2192 2023026815",
+      "Employers/Guerra net_expense: 3547.46 \u2192 3547.48",
+      "Employers/policies[1].policy_period_totals.net_expense: 3547.46 \u2192 3547.48",
+      "Employers/Oconnor claim_number: 2021037998 \u2192 2021007688",
+      "Employers/policies[3].policy_period_totals.net_expense: 158.35 \u2192 157.35",
+      "Employers/combined_all_periods_totals.net_expense: 3706.81 \u2192 3704.83",
+      "StrategicInfo/Y3WC99221 claimant_name: Baister \u2192 Balster",
+      "StrategicInfo/Y3WC99221 reported_date: 02/19/2024 \u2192 02/20/2024",
+      "ICW/current_account_summary.medical_closed: 1 \u2192 0",
+      "ICW/2025001519 claimant_name: Bartold \u2192 Baird",
+      "ICW/2025001519 cause: Fall/Slp \u2192 Fall/Slip",
+      "ICW/2025028840 nature_of_injury: 'Occ Mental Stress' \u2192 'Occ: Mental Stress'",
+      "ICW/2024031850 claim_examiner: ENWIN QUACH \u2192 KEVIN QUACH",
+      "SIR_HARTFORD/GENERAL LIAB period: 2025 \u2192 2020"
+    ],
+    "schema": "loss_run.schema_v4.json",
+    "v4_changes": [
+      "Hartford a: added policy_year_lob_pivot[] with 7 rows",
+      "Hartford b: added policy_year_lob_pivot[] (same as a)",
+      "Strategic Info: added raw_combined_cell to Y3WC99221",
+      "ICW: prefix semantics locked in extraction prompt (no GT change needed)"
+    ],
+    "v5_fixes": [
+      "Strategic Info: moved claim Y3WC99221 from policy[3] (2024-2025) to policy[2] (2023-2024) \u2014 matches PDF header"
+    ]
+  },
+  "documents": [
+    {
+      "file_name": "21-25_WORK_10_22_25_Employers_Loss_runs_-PSQ_PRODUCTIONS.pdf",
+      "carrier": "Employers Preferred Insurance Company",
+      "carrier_format_archetype": "per_policy_section",
+      "n_pages": 1,
+      "document_metadata": {
+        "report_title": "Claims History Report (Loss Run)",
+        "carrier_brand": "EMPLOYERS",
+        "carrier_tagline": "America's small business insurance specialist",
+        "agency": "WORLDWIDE FACILITIES LLC",
+        "policyholder": "PSQ PRODUCTIONS LLC",
+        "losses_incurred_since": "1/1/18",
+        "data_as_of_date": "10/22/2025",
+        "amount_disclaimer": "Amount does not reflect deductible",
+        "total_claims_all_periods": 3
+      },
+      "policies": [
+        {
+          "policy_number": "EIG469077603",
+          "policy_period_start": "01/14/2024",
+          "policy_period_end": "01/14/2025",
+          "median_days_to_report_claim": 2,
+          "claims": [],
+          "policy_period_totals": {
+            "total_claims": 0,
+            "medical_paid": 0.0,
+            "indemnity_paid": 0.0,
+            "total_incurred": 0.0,
+            "net_expense": 0.0
+          }
+        },
+        {
+          "policy_number": "EIG469077602",
+          "policy_period_start": "01/14/2023",
+          "policy_period_end": "01/14/2024",
+          "median_days_to_report_claim": 2,
+          "claims": [
+            {
+              "injured_employee_name": "Guerra, Seth",
+              "claim_number": "2023026815",
+              "fatality": "N",
+              "injury_date": "12/13/2023 12:00 PM",
+              "status": "Closed",
+              "injury_cause": "Cumulative NOC",
+              "body_part": "Lower Back Area",
+              "injury_type": "All Other Cumulative Injury NOC",
+              "medical_paid": 230.0,
+              "medical_reserve": 0.0,
+              "indemnity_paid": 21300.0,
+              "indemnity_reserve": 0.0,
+              "recovery": 0.0,
+              "deductible": 0.0,
+              "total_incurred": 21530.0,
+              "net_expense": 3547.48
+            }
+          ],
+          "policy_period_totals": {
+            "total_claims": 1,
+            "medical_paid": 230.0,
+            "indemnity_paid": 21300.0,
+            "total_incurred": 21530.0,
+            "net_expense": 3547.48
+          }
+        },
+        {
+          "policy_number": "EIG469077601",
+          "policy_period_start": "01/14/2022",
+          "policy_period_end": "01/14/2023",
+          "median_days_to_report_claim": 0,
+          "claims": [],
+          "policy_period_totals": {
+            "total_claims": 0,
+            "medical_paid": 0.0,
+            "indemnity_paid": 0.0,
+            "total_incurred": 0.0,
+            "net_expense": 0.0
+          }
+        },
+        {
+          "policy_number": "EIG469077600",
+          "policy_period_start": "01/14/2021",
+          "policy_period_end": "01/14/2022",
+          "median_days_to_report_claim": 2,
+          "claims": [
+            {
+              "injured_employee_name": "Alejandre, Lucio",
+              "claim_number": "2021452572",
+              "fatality": "N",
+              "injury_date": "05/29/2021 05:00 PM",
+              "status": "Closed",
+              "injury_cause": "Strain or Injury by NOC",
+              "body_part": "Ankle",
+              "injury_type": "Strain or Tear",
+              "medical_paid": 504.92,
+              "indemnity_paid": 0.0,
+              "total_incurred": 504.92,
+              "net_expense": 19.06
+            },
+            {
+              "injured_employee_name": "Oconnor, Mark",
+              "claim_number": "2021007688",
+              "fatality": "N",
+              "injury_date": "09/25/2021 09:00 PM",
+              "status": "Closed",
+              "injury_cause": "Pulling or Pushing",
+              "body_part": "Shoulder(s)",
+              "injury_type": "Strain or Tear",
+              "medical_paid": 1184.72,
+              "indemnity_paid": 0.0,
+              "total_incurred": 1184.72,
+              "net_expense": 139.29
+            }
+          ],
+          "policy_period_totals": {
+            "total_claims": 2,
+            "medical_paid": 1689.64,
+            "indemnity_paid": 0.0,
+            "total_incurred": 1689.64,
+            "net_expense": 157.35
+          }
+        }
+      ],
+      "combined_all_periods_totals": {
+        "medical_paid": 1919.64,
+        "indemnity_paid": 21300.0,
+        "total_incurred": 23219.64,
+        "net_expense": 3704.83,
+        "total_claims": 3
+      }
+    },
+    {
+      "file_name": "SIR_HARTFORD_Loss_Runs_2016_25_val_8_21_05.pdf",
+      "carrier": "The Hartford",
+      "carrier_format_archetype": "summary_pivot",
+      "n_pages": 1,
+      "duplicates": [
+        "SIR_Hartford_Loss_Runs_2016_25_val_8_21_25B.pdf"
+      ],
+      "document_metadata": {
+        "account_trade_name": "Strategic Information Resources",
+        "policy_number_current": "076WEG AF8JGW",
+        "date_produced": "08/21/2025",
+        "aif_account_number": "1045104368",
+        "agency_code": "250846",
+        "msi": "830",
+        "policy_year_lob_pivot": [
+          {
+            "line_of_business": "WORKERS COMP",
+            "lob_code": "W",
+            "policy_number": "076WEG AF8JGW",
+            "policy_period_start": "2025-03-07",
+            "policy_period_end": "2026-03-07",
+            "earned_premium": 7185,
+            "loss_ratio": 0.0,
+            "paid_claims": 0,
+            "open_claims": 0,
+            "written_premium": 15677,
+            "agency_code": "250846",
+            "msi": "830",
+            "scope": "latest_policy"
+          },
+          {
+            "is_total_row": true,
+            "scope": "latest_policy",
+            "line_of_business": "WORKERS COMP",
+            "earned_premium": 7185,
+            "loss_ratio": 0.0,
+            "paid_claims": 0,
+            "written_premium": 15677
+          },
+          {
+            "line_of_business": "FIRE & ALLIED",
+            "lob_code": "P",
+            "policy_period_label": "2016-2020",
+            "earned_premium": 4608,
+            "loss_ratio": 0.0,
+            "paid_claims": 0,
+            "scope": "row"
+          },
+          {
+            "line_of_business": "WORKERS COMP",
+            "lob_code": "W",
+            "policy_period_label": "2016-2025",
+            "earned_premium": 104444,
+            "loss_ratio": 0.01,
+            "paid_claims": 1,
+            "scope": "row"
+          },
+          {
+            "line_of_business": "GENERAL LIAB",
+            "lob_code": "L",
+            "policy_period_label": "2016-2020",
+            "earned_premium": 13188,
+            "loss_ratio": 0.0,
+            "paid_claims": 0,
+            "scope": "row"
+          },
+          {
+            "is_total_row": true,
+            "scope": "prior_lob",
+            "earned_premium": 122240,
+            "loss_ratio": 0.009,
+            "paid_claims": 1
+          },
+          {
+            "is_total_row": true,
+            "scope": "account_total",
+            "earned_premium": 129425,
+            "loss_ratio": 0.008,
+            "paid_claims": 1
+          }
+        ]
+      },
+      "policy_year_lob_pivot": [
+        {
+          "policy_period_start": "03/07/2025",
+          "policy_period_end": "03/07/2026",
+          "lob": "WORKERS COMP",
+          "earned_premium": 7185.0,
+          "loss_ratio_pct": 0.0,
+          "written_premium": 15677.0,
+          "paid_claims": 0
+        },
+        {
+          "policy_period_lob": "FIRE & ALLIED 2016-2020",
+          "earned_premium": 4608.0,
+          "loss_ratio_pct": 0.0,
+          "paid_claims": 0
+        },
+        {
+          "policy_period_lob": "WORKERS COMP 2016-2025",
+          "earned_premium": 104444.0,
+          "loss_ratio_pct": 1.0,
+          "paid_claims": 1
+        },
+        {
+          "policy_period_lob": "GENERAL LIAB 2016-2020",
+          "earned_premium": 13188.0,
+          "loss_ratio_pct": 0.0,
+          "paid_claims": 0
+        }
+      ],
+      "account_total": {
+        "earned_premium": 129425.0,
+        "loss_ratio_pct": 0.8,
+        "paid_claims": 1
+      },
+      "policies": [],
+      "_notes": "This is a pivot-summary report. The single paid WC claim is the same Baister Justine Y3WC99221 claim that appears with full detail in Strategic_Information_Resources_Inc_loss_runs.pdf."
+    },
+    {
+      "file_name": "SIR_Hartford_Loss_Runs_2016_25_val_8_21_25B.pdf",
+      "carrier": "The Hartford",
+      "carrier_format_archetype": "summary_pivot",
+      "n_pages": 1,
+      "duplicate_of": "SIR_HARTFORD_Loss_Runs_2016_25_val_8_21_05.pdf",
+      "document_metadata": {
+        "account_trade_name": "Strategic Information Resources",
+        "policy_number_current": "076WEG AF8JGW",
+        "date_produced": "08/21/2025",
+        "aif_account_number": "1045104368",
+        "policy_year_lob_pivot": [
+          {
+            "line_of_business": "WORKERS COMP",
+            "lob_code": "W",
+            "policy_number": "076WEG AF8JGW",
+            "policy_period_start": "2025-03-07",
+            "policy_period_end": "2026-03-07",
+            "earned_premium": 7185,
+            "loss_ratio": 0.0,
+            "paid_claims": 0,
+            "open_claims": 0,
+            "written_premium": 15677,
+            "agency_code": "250846",
+            "msi": "830",
+            "scope": "latest_policy"
+          },
+          {
+            "is_total_row": true,
+            "scope": "latest_policy",
+            "line_of_business": "WORKERS COMP",
+            "earned_premium": 7185,
+            "loss_ratio": 0.0,
+            "paid_claims": 0,
+            "written_premium": 15677
+          },
+          {
+            "line_of_business": "FIRE & ALLIED",
+            "lob_code": "P",
+            "policy_period_label": "2016-2020",
+            "earned_premium": 4608,
+            "loss_ratio": 0.0,
+            "paid_claims": 0,
+            "scope": "row"
+          },
+          {
+            "line_of_business": "WORKERS COMP",
+            "lob_code": "W",
+            "policy_period_label": "2016-2025",
+            "earned_premium": 104444,
+            "loss_ratio": 0.01,
+            "paid_claims": 1,
+            "scope": "row"
+          },
+          {
+            "line_of_business": "GENERAL LIAB",
+            "lob_code": "L",
+            "policy_period_label": "2016-2020",
+            "earned_premium": 13188,
+            "loss_ratio": 0.0,
+            "paid_claims": 0,
+            "scope": "row"
+          },
+          {
+            "is_total_row": true,
+            "scope": "prior_lob",
+            "earned_premium": 122240,
+            "loss_ratio": 0.009,
+            "paid_claims": 1
+          },
+          {
+            "is_total_row": true,
+            "scope": "account_total",
+            "earned_premium": 129425,
+            "loss_ratio": 0.008,
+            "paid_claims": 1
+          }
+        ]
+      }
+    },
+    {
+      "file_name": "Strategic_Information_Resources_Inc_loss_runs.pdf",
+      "carrier": "The Hartford",
+      "carrier_format_archetype": "hybrid_detail",
+      "n_pages": 1,
+      "document_metadata": {
+        "insured_name": "Strategic Information Resources Inc",
+        "insured_city_state": "Canoga Park, CA",
+        "producer_name": "Ap Intego Insurance Group LLC",
+        "producer_city_state": "Fairport, NY",
+        "producer_code": "250846",
+        "policy_number_master": "076WEG AF8JGW"
+      },
+      "policies": [
+        {
+          "policy_number": "076WEG AF8JGW",
+          "policy_period_start": "03/07/2021",
+          "policy_period_end": "03/07/2022",
+          "claims": [],
+          "_note": "No Claims"
+        },
+        {
+          "policy_number": "076WEG AF8JGW",
+          "policy_period_start": "03/07/2022",
+          "policy_period_end": "03/07/2023",
+          "claims": [],
+          "_note": "No Claims"
+        },
+        {
+          "policy_number": "076WEG AF8JGW",
+          "policy_period_start": "03/07/2023",
+          "policy_period_end": "03/07/2024",
+          "claims": [
+            {
+              "claimant_name": "Balster, Justine",
+              "claim_number": "Y3WC99221",
+              "loss_date": "02/19/2024",
+              "reported_date": "02/20/2024",
+              "closed_date": "07/16/2024",
+              "state": "CA",
+              "class_code": "065191",
+              "occupation": "Office Manager",
+              "cause_of_loss": "Struck By Flying or Falling Object",
+              "status": "Closed",
+              "paid_loss": 1056.0,
+              "paid_expense": 75.0,
+              "total_incurred": 1056.0,
+              "raw_combined_cell": "Canoga Park Ca/Struck By Flying/falling Object - Not We /Office Manager"
+            }
+          ],
+          "_note": "No Claims"
+        },
+        {
+          "policy_number": "076WEG AF8JGW",
+          "policy_period_start": "03/07/2024",
+          "policy_period_end": "03/07/2025",
+          "claims": []
+        },
+        {
+          "policy_number": "076WEG AF8JGW",
+          "policy_period_start": "03/07/2025",
+          "policy_period_end": "03/07/2026",
+          "claims": [],
+          "_note": "No Claims"
+        }
+      ]
+    },
+    {
+      "file_name": "Loss_Runs_2021_to_2024_-_Insperity.pdf",
+      "carrier": "Insperity (W/C Loss Run via Origami Risk)",
+      "carrier_format_archetype": "flat_table_with_grouping",
+      "n_pages": 2,
+      "document_metadata": {
+        "vendor_system": "Origami Risk",
+        "insured_name": "PARTNERS IN LEADERSHIP LLC",
+        "valued_as_of": "01/26/2026",
+        "report_period_start": "06/22/2021",
+        "report_period_end": "05/01/2024",
+        "report_run_date": "01/27/2026",
+        "report_filters": "Loss Date >= 06/21/2021; Client = PARTNERS IN LEADERSHIP; Group by Member -> Period -> Location -> Status",
+        "grand_total_claims": 0
+      },
+      "policies": [],
+      "claims": []
+    },
+    {
+      "file_name": "Loss_Runs_5_1_24-4_1_25_TriNet_Dated_1_26_26.pdf",
+      "carrier": "TriNet (Workers' Compensation Claims Summary)",
+      "carrier_format_archetype": "flat_table_with_grouping",
+      "n_pages": 2,
+      "document_metadata": {
+        "vendor_system_inferred": "internal-or-Origami",
+        "insured_location": "TIII24M6 - Partners In Leadership LLC",
+        "valued_as_of": "01/28/2026",
+        "filter_voided": false,
+        "filter_coverage": "WC",
+        "filter_loss_date_start": "05/01/2024",
+        "filter_loss_date_end": "04/01/2025"
+      },
+      "policies": [],
+      "claims": [
+        {
+          "claim_number": "M377969",
+          "claimant_name": "KRIEGEL, JESSICA",
+          "location_name": "Partners In Leadership LLC",
+          "incident_state": "CA",
+          "loss_date": "9/18/2024",
+          "reported_date": "9/19/2024",
+          "closed_date": "9/27/2024",
+          "status": "Incident Closed",
+          "cause_of_loss": "Slip and Fall",
+          "body_part": "Lower Back Injury",
+          "paid": 0.0,
+          "reserve": 0.0,
+          "incurred": 0.0
+        }
+      ]
+    },
+    {
+      "file_name": "Loss_Runs_4_1_25_Eff_Date_to_Curr_ADP_1_27_26.pdf",
+      "carrier": "AmTrust North America (via ADP TotalSource)",
+      "carrier_format_archetype": "flat_multipage_zeros",
+      "n_pages": 3,
+      "document_metadata": {
+        "report_title": "WC LOSS RUN REPORT",
+        "carrier": "AMTRUST NORTH AMERICA",
+        "report_id": "677",
+        "run_id": "14569471",
+        "policy_number": "QWC1446510",
+        "policy_effective": "04/01/2025",
+        "insured_name": "Partners in Leadership, LLC",
+        "loss_status_filter": "All Statuses",
+        "footnote": "Policy Loss Run Selection: Partners in Leadership, LLC; Loss Statuses: All Statuses; Losses = 0, for all loss dates"
+      },
+      "policies": [
+        {
+          "policy_number": "QWC1446510",
+          "policy_period_start": "04/01/2025",
+          "policy_period_end": null,
+          "claims": [],
+          "group_totals": {
+            "open_lost_time": 0,
+            "open_medical_only": 0,
+            "open_total": 0,
+            "closed": 0
+          },
+          "report_totals": {
+            "open_lost_time": 0,
+            "open_medical_only": 0,
+            "open_total": 0,
+            "closed": 0
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "24-26_RE-WORK_11_10_25_ICW_loss_runs.pdf",
+      "carrier": "ICW Group (Insurance Company of the West)",
+      "carrier_format_archetype": "hybrid_detail",
+      "n_pages": 15,
+      "document_metadata": {
+        "report_title": "Workers' Compensation Loss Analysis Report",
+        "valued_as_of": "11/10/2025 01:26:53 PM",
+        "insured_name": "PSQ PRODUCTIONS LLC",
+        "insured_address": "205 Technology Dr Suite 200, Irvine, CA 92618",
+        "agent_name": "ARROYO INSURANCE SERVICES, INC",
+        "agency_code": "0004569",
+        "current_policy_number": "WVE 5075514 01",
+        "current_policy_period_start": "01/14/2025",
+        "current_policy_period_end": "01/14/2026"
+      },
+      "current_account_summary": {
+        "term_premium": 63524.0,
+        "earned_premium": 52211.51,
+        "total_paid_losses_and_expenses": 40649.34,
+        "outstanding_losses_and_expenses": 76450.93,
+        "subrogation": 0.0,
+        "total_incurred_losses_and_expenses": 117100.27,
+        "loss_ratio_pct": 224,
+        "experience_modification_pct": 133,
+        "total_number_of_claims": 2,
+        "litigation_count": 1,
+        "medical_open": 1,
+        "medical_closed": 0,
+        "indemnity_open": 1,
+        "indemnity_closed": 0
+      },
+      "current_and_past_account_summary": [
+        {
+          "policy_number": "WVE 5075514 01",
+          "policy_period_start": "01/14/2025",
+          "policy_period_end": "01/14/2026",
+          "written_premium": 63524.0,
+          "earned_premium": 52211.51,
+          "total_claims": 2,
+          "open_claims": 2,
+          "paid_loss_adj_expenses": 4396.03,
+          "paid_losses": 36253.31,
+          "outstanding_losses_and_expenses": 76450.93,
+          "total_incurred_losses_and_expenses": 117100.27,
+          "loss_ratio_pct": 224
+        },
+        {
+          "policy_number": "WVE 5075514 00",
+          "policy_period_start": "01/14/2024",
+          "policy_period_end": "01/14/2025",
+          "written_premium": 47530.0,
+          "earned_premium": 47530.0,
+          "total_claims": 10,
+          "open_claims": 1,
+          "paid_loss_adj_expenses": 898.8,
+          "paid_losses": 30039.33,
+          "outstanding_losses_and_expenses": 48104.36,
+          "total_incurred_losses_and_expenses": 79042.49,
+          "loss_ratio_pct": 166
+        }
+      ],
+      "combined_account_total": {
+        "written_premium": 111054.0,
+        "earned_premium": 99741.51,
+        "total_claims": 12,
+        "open_claims": 3,
+        "total_incurred_losses_and_expenses": 196142.76,
+        "loss_ratio_pct": 197
+      },
+      "policies": [
+        {
+          "policy_number": "WVE 5075514 01",
+          "policy_period_start": "01/14/2025",
+          "policy_period_end": "01/14/2026",
+          "claims": [
+            {
+              "claim_number": "2025028840",
+              "class_code": "909501",
+              "occupation": "BARTENDER (322)",
+              "date_of_injury": "11/01/2025 05:30",
+              "date_reported_to_carrier": "11/06/2025",
+              "days_to_report": 5,
+              "close_date": null,
+              "in_litigation": "No",
+              "nature_of_injury": "Occ: Mental Stress",
+              "body_part": "Mult: No Physical Injury",
+              "cause": "Misc: Oth Thn Phys Cause Of Inj",
+              "claimant_name": "Rebecca Duchsherer",
+              "claimant_age": 50,
+              "location_id": "001",
+              "claim_status": "Open/Medical",
+              "claim_examiner": "DANYA DILBECK",
+              "examiner_phone": "(858) 350-7298",
+              "examiner_email": "ddilbeck@icwgroup.com",
+              "paid_medical": 0.0,
+              "paid_indemnity": 0.0,
+              "paid_employer_benefits": 0.0,
+              "paid_loss_adj_expense": 0.0,
+              "paid_rehab": 0.0,
+              "paid_subrogation": 0.0,
+              "paid_total": 0.0,
+              "reserved_total": 0.0,
+              "total_incurred": 0.0,
+              "accident_description": "EE REPORTS THAT SHE WAS WORKING AS A BAR CASHIER IN THE MOBILE BAR. THROUGHOUT THE SHIFT SHE WAS BY HERSELF CAUSING HER EXTRA STRESS. SHE WASN'T ABLE TO TAKE HER LUNCH AT THE FIVE HOURS, WHICH MADE HER FEEL SICK AND SHE GOT A MIGRAINE WITH NO RELIEF FROM"
+            },
+            {
+              "claim_number": "2025001519",
+              "class_code": "887101",
+              "occupation": "CLERK, GENERAL (211)",
+              "date_of_injury": "01/20/2025 09:20",
+              "date_reported_to_carrier": "01/20/2025",
+              "days_to_report": 0,
+              "close_date": null,
+              "in_litigation": "Yes",
+              "nature_of_injury": "Spc: Strain",
+              "body_part": "Trunk: Low Back (Lmbr/Lmbo-Sac)",
+              "cause": "Fall/Slip: Fall/Slip/Trip, Noc",
+              "claimant_name": "Eduardo Baird Alejandre",
+              "claimant_age": 41,
+              "location_id": "001",
+              "claim_status": "Open/Indemnity",
+              "claim_examiner": "BREA PFANKUCH",
+              "examiner_phone": "(858) 350-2665",
+              "examiner_email": "bpfankuch@icwgroup.com",
+              "paid_medical": 13512.29,
+              "paid_indemnity": 22741.02,
+              "paid_employer_benefits": 0.0,
+              "paid_loss_adj_expense": 4396.03,
+              "paid_rehab": 0.0,
+              "paid_subrogation": 0.0,
+              "paid_total": 40649.34,
+              "reserved_medical": 51037.83,
+              "reserved_indemnity": 10359.13,
+              "reserved_loss_adj_expense": 15053.97,
+              "reserved_total": 76450.93,
+              "incurred_medical": 64550.12,
+              "incurred_indemnity": 33100.15,
+              "incurred_loss_adj_expense": 19450.0,
+              "total_incurred": 117100.27,
+              "accident_description": "EDUARDO WAS WALKING DOWN A FLIGHT OF STAIRS WITH (2) TUBS MEDIUM WEIGHT TUBS. ON THE LAST STEP, HIS FOOT SLIPPED AND HE FELL ON HIS BUTTOCKS AND BACK. HE WALKED OVER TO A BENCH OUTSIDE AND SAT DOWN. HE IMMEDIATELY FELT PAIN DOWN HIS LEG AND BACK. HE WAS UNABLE TO WALK OR MOVE, SO AN AMBULANCE WAS CALLED."
+            }
+          ]
+        },
+        {
+          "policy_number": "WVE 5075514 00",
+          "policy_period_start": "01/14/2024",
+          "policy_period_end": "01/14/2025",
+          "claims": [
+            {
+              "claim_number": "2025000303",
+              "claimant_name": "Zenette Brown",
+              "claimant_age": 39,
+              "claim_status": "Closed/Medical",
+              "class_code": "909501",
+              "occupation": "DECORATOR, SPECIAL EVENT (38)",
+              "date_of_injury": "01/05/2025 06:30 PM",
+              "date_reported_to_carrier": "01/06/2025",
+              "days_to_report": 1,
+              "close_date": "02/05/2025",
+              "in_litigation": "No",
+              "nature_of_injury": "Spc: All Other Specific Inj,Noc",
+              "body_part": "Mult: No Physical Injury",
+              "cause": "Misc: Other/Miscellaneous, Noc",
+              "claim_examiner": "ASHLEY CAUDILL",
+              "paid_medical": 0.0,
+              "paid_indemnity": 0.0,
+              "paid_loss_adj_expense": 0.0,
+              "paid_total": 0.0,
+              "total_incurred": 0.0,
+              "accident_description": "EE WAS WORKING NEAR THE TREAT STAND AND HOT COCOA STAND WHEN SHE STARTED TO FEEL LIGHTHEADED AND DIZZY. THE EMT WAS THEN CALLED AND CHECKED THE EE'S SUGAR LEVEL, SINCE THE EE IS DIABETIC."
+            },
+            {
+              "claim_number": "2025000290",
+              "claimant_name": "Morgan Crone",
+              "claimant_age": 20,
+              "claim_status": "Closed/Medical",
+              "class_code": "909501",
+              "occupation": "AMUSEMENT PARK ATTENDANT (34)",
+              "date_of_injury": "01/04/2025 (No time provided)",
+              "date_reported_to_carrier": "01/06/2025",
+              "days_to_report": 2,
+              "close_date": "01/17/2025",
+              "in_litigation": "No",
+              "nature_of_injury": "Spc: Sprain",
+              "body_part": "Upper Ext: Thumb",
+              "cause": "Struck By Or Injured By, Noc",
+              "claim_examiner": "ASHLEY CAUDILL",
+              "paid_medical": 95.76,
+              "paid_indemnity": 0.0,
+              "paid_loss_adj_expense": 44.45,
+              "paid_total": 140.21,
+              "total_incurred": 140.21,
+              "accident_description": "THE EE WAS STANDING AT THE SKATE ASSIST WHEN SOMEONE FELL ON THE OTHER SIDE OF THE ASSIST, WHICH PUSHED THE ASSIST INTO THE EE AND JAMMED HER THUMB. THE EE SUSTAINED A SPRAIN TO HER RIGHT THUMB."
+            },
+            {
+              "claim_number": "2024034298",
+              "claimant_name": "Yandel Urbano",
+              "claimant_age": 18,
+              "claim_status": "Closed/Medical",
+              "class_code": "909501",
+              "occupation": "SERVICE REPRESENTATIVE (213)",
+              "date_of_injury": "12/25/2024 07:30 PM",
+              "date_reported_to_carrier": "12/27/2024",
+              "days_to_report": 2,
+              "close_date": "01/30/2025",
+              "in_litigation": "No",
+              "nature_of_injury": "Spc: Strain",
+              "body_part": "Lower Ext: Lower Leg",
+              "cause": "Misc: Oth Thn Phys Cause Of Inj",
+              "claim_examiner": "ASHLEY CAUDILL",
+              "paid_medical": 644.98,
+              "paid_indemnity": 0.0,
+              "paid_loss_adj_expense": 15.06,
+              "paid_total": 660.04,
+              "total_incurred": 660.04,
+              "accident_description": "EE WAS ASSISTING A GUEST WHEN HE HEARD A POP SOUND IN HIS RIGHT LOWER LEG. EE WAS EXPERIENCING PAIN IN HIS LEG"
+            },
+            {
+              "claim_number": "2024033366",
+              "claimant_name": "Ravi Surampudi",
+              "claimant_age": 39,
+              "claim_status": "Closed/Medical",
+              "class_code": "909501",
+              "occupation": "SECURITY GUARD, GATE (212)",
+              "date_of_injury": "12/13/2024 06:30 PM",
+              "date_reported_to_carrier": "12/13/2024",
+              "days_to_report": 0,
+              "close_date": "03/26/2025",
+              "in_litigation": "No",
+              "nature_of_injury": "Spc: All Other Specific Inj,Noc",
+              "body_part": "Mult: Body Systems/Mlt Body Sys",
+              "cause": "Misc: Other/Miscellaneous, Noc",
+              "claim_examiner": "RENE BARRIENTOS",
+              "paid_medical": 456.47,
+              "paid_indemnity": 0.0,
+              "paid_loss_adj_expense": 1.5,
+              "paid_total": 457.97,
+              "total_incurred": 457.97,
+              "accident_description": "EMPLOYEE WAS COMPLETING REGULAR WORK DUTIES AND STARTED TO NOT FEEL WELL. HE HAD ELEVATED GLUCOSE AND BLOOD PRESSURE."
+            },
+            {
+              "claim_number": "2024033160",
+              "claimant_name": "Jensen Diaz",
+              "claimant_age": 23,
+              "claim_status": "Closed/Medical",
+              "class_code": "909501",
+              "occupation": "OPERATING ENGINEER (332)",
+              "date_of_injury": "12/12/2024 (No time provided)",
+              "date_reported_to_carrier": "12/12/2024",
+              "days_to_report": 0,
+              "close_date": "02/18/2025",
+              "in_litigation": "No",
+              "nature_of_injury": "Spc: Strain",
+              "body_part": "Mult: Multiple Body Parts",
+              "cause": "Fall/Slp: Slipped, Didn't Fall",
+              "claim_examiner": "ONYEABO ADUBA",
+              "paid_medical": 837.29,
+              "paid_indemnity": 0.0,
+              "paid_loss_adj_expense": 47.95,
+              "paid_total": 885.24,
+              "total_incurred": 885.24,
+              "accident_description": "THE EE WAS WORKING THE SNOW PLACE AREA TRYING TO REMOVE THE EXCESS SNOW FROM THE MACHINE. AS HE WAS REMOVING THE EXCESS SNOW, HE SLIPPED AND FELL, CAUSING PAIN IN THE LOWER BACK AND RIGHT HIP AREA."
+            },
+            {
+              "claim_number": "2024032743",
+              "claimant_name": "Claudia Mercado",
+              "claimant_age": 50,
+              "claim_status": "Closed/Medical",
+              "class_code": "909501",
+              "occupation": "Unknown",
+              "date_of_injury": "12/07/2024 05:43 PM",
+              "date_reported_to_carrier": "12/09/2024",
+              "days_to_report": 2,
+              "close_date": "04/07/2025",
+              "in_litigation": "No",
+              "nature_of_injury": "Spc: Inflammation",
+              "body_part": "Lower Ext: Ankle",
+              "cause": "Fall/Slp: Into Openings",
+              "claim_examiner": "ASHLEY CAUDILL",
+              "paid_medical": 3779.57,
+              "paid_indemnity": 0.0,
+              "paid_loss_adj_expense": 77.67,
+              "paid_total": 3857.24,
+              "total_incurred": 3857.24,
+              "accident_description": "THE CALLER REPORTS THAT THE EE WAS GETTING READY TO SIGN OUT, AND HER FOOT GOT CAUGHT UNDER A SMALL POTHOLE; SHE TRIPPED AND FELL. EE SUSTAINED INFLAMMATION TO THE RIGHT ANKLE."
+            },
+            {
+              "claim_number": "2024032747",
+              "claimant_name": "Maria Lugo",
+              "claimant_age": 34,
+              "claim_status": "Open/Indemnity",
+              "class_code": "909501",
+              "occupation": "CREW SCHEDULER (111)",
+              "date_of_injury": "12/07/2024 08:00 AM",
+              "date_reported_to_carrier": "12/09/2024",
+              "days_to_report": 2,
+              "close_date": null,
+              "in_litigation": "No",
+              "nature_of_injury": "Spc: Strain",
+              "body_part": "Trunk: Low Back (Lmbr/Lmbo-Sac)",
+              "cause": "Strain By Lifting",
+              "claim_examiner": "DARREN MCTAGGART",
+              "paid_medical": 9479.38,
+              "paid_indemnity": 12400.44,
+              "paid_loss_adj_expense": 643.98,
+              "paid_total": 22523.8,
+              "reserved_medical": 24820.62,
+              "reserved_indemnity": 21927.72,
+              "reserved_loss_adj_expense": 1356.02,
+              "reserved_total": 48104.36,
+              "incurred_medical": 34300.0,
+              "incurred_indemnity": 34328.16,
+              "incurred_loss_adj_expense": 2000.0,
+              "total_incurred": 70628.16,
+              "accident_description": "EMPLOYEE STATES WHEN SHE WAS LIFTING AN UMBRELLA BASE, SHE FAILED TO LIFT CORRECTLY AND STRAINED HER BACK/WRIST."
+            },
+            {
+              "claim_number": "2024031850",
+              "claimant_name": "Melvin Carrera",
+              "claimant_age": 18,
+              "claim_status": "Closed/Indemnity",
+              "class_code": "909501",
+              "occupation": "LABORER, YARD (460)",
+              "date_of_injury": "11/27/2024 07:50 AM",
+              "date_reported_to_carrier": "11/27/2024",
+              "days_to_report": 0,
+              "close_date": "12/31/2024",
+              "in_litigation": "No",
+              "nature_of_injury": "Spc: Sprain",
+              "body_part": "Trunk: Low Back (Lmbr/Lmbo-Sac)",
+              "cause": "Strain By Lifting",
+              "claim_examiner": "KEVIN QUACH",
+              "paid_medical": 1688.54,
+              "paid_indemnity": 115.81,
+              "paid_loss_adj_expense": 41.99,
+              "paid_total": 1846.34,
+              "total_incurred": 1846.34,
+              "accident_description": "EE WORKING AT AN EVENT WITH SNOW. SHOVELING SNOW AND LIFTED A BIKE RACK WHEN HE FELT HIS BACK TIGHTEN UP."
+            },
+            {
+              "claim_number": "2024031866",
+              "claimant_name": "Elias Paz",
+              "claimant_age": 33,
+              "claim_status": "Closed/Indemnity",
+              "class_code": "909501",
+              "occupation": "MANAGER, DEPARTMENT (110)",
+              "date_of_injury": "11/27/2024 08:16 AM",
+              "date_reported_to_carrier": "11/27/2024",
+              "days_to_report": 0,
+              "close_date": "12/19/2024",
+              "in_litigation": "No",
+              "nature_of_injury": "Occ: All Other Occ Dis Inj, Noc",
+              "body_part": "Trunk: Multiple Trunk",
+              "cause": "Fall/Slp: On Ice Or Snow",
+              "claim_examiner": "MICHAELA ALGER",
+              "paid_medical": 189.55,
+              "paid_indemnity": 96.77,
+              "paid_loss_adj_expense": 10.48,
+              "paid_total": 296.8,
+              "total_incurred": 296.8,
+              "accident_description": "EMPLOYEE WAS EXITING ICE RINK AT EMPLOYERS EVENT AND HE SLIPPED AND FELL ON THE ICE. NO HEAD INJURY, BUT CLAIMS THE FALL TOOK HIS BREATH AWAY MOMENTARILY."
+            },
+            {
+              "claim_number": "2024020888",
+              "claimant_name": "Maria Lugo",
+              "claimant_age": 34,
+              "claim_status": "Closed/Medical",
+              "class_code": "909501",
+              "occupation": "Unknown",
+              "date_of_injury": "08/09/2024 09:00 AM",
+              "date_reported_to_carrier": "08/13/2024",
+              "days_to_report": 4,
+              "close_date": "10/04/2024",
+              "in_litigation": "No",
+              "nature_of_injury": "Spc: Strain",
+              "body_part": "Lower Ext: Knee",
+              "cause": "Strain By, Noc",
+              "claim_examiner": "MONTANA POTTS",
+              "paid_medical": 254.77,
+              "paid_indemnity": 0.0,
+              "paid_loss_adj_expense": 15.72,
+              "paid_total": 270.49,
+              "total_incurred": 270.49,
+              "accident_description": "EMPLOYEE WAS SETTING UP PICNIC TABLES AT A WORK EVENT. SHE WAS USING HER KNEE AS LEVERAGE AND SHE INJURED HER LEFT KNEE."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_name": "Loss_Runs_2026_-_2018.pdf",
+      "carrier": "Arrowhead / Everest National Insurance",
+      "carrier_format_archetype": "per_policy_section",
+      "n_pages": 12,
+      "document_metadata": {
+        "carrier_underwriter": "Everest National Insurance",
+        "claims_administrator": "American Claims Management",
+        "insured_name": "Sea West Enterprises, Inc.",
+        "valuation_date": "12/04/2025"
+      },
+      "policies": [
+        {
+          "policy_number": "7690000362251",
+          "policy_period_start": "01/01/2025",
+          "policy_period_end": "01/01/2026",
+          "claims": [],
+          "_note": "No losses for this period"
+        },
+        {
+          "policy_number": "7600018496251",
+          "policy_period_start": "01/01/2025",
+          "policy_period_end": "01/01/2026",
+          "claims": [
+            {
+              "claimant_name": "Albert Nystrom",
+              "claim_number": "173008376",
+              "loss_date": "09/11/2025",
+              "status": "Closed",
+              "close_date": "11/05/2025",
+              "nature_of_injury": "Laceration",
+              "body_part": "Left Middle Finger",
+              "average_weekly_wage": 2000.0,
+              "class_code": "5183",
+              "paid_medical": 626.86,
+              "paid_expense": 32.14,
+              "paid_total": 659.0,
+              "total_incurred": 659.0
+            }
+          ]
+        },
+        {
+          "policy_number": "7600025142241",
+          "policy_period_start": "01/01/2024",
+          "policy_period_end": "01/01/2025",
+          "claims": [],
+          "_note": "No losses"
+        },
+        {
+          "policy_number": "7690000362241",
+          "policy_period_start": "01/01/2024",
+          "policy_period_end": "01/01/2025",
+          "claims": [],
+          "_note": "No losses"
+        },
+        {
+          "policy_number": "7600018496241",
+          "policy_period_start": "01/01/2024",
+          "policy_period_end": "01/01/2025",
+          "claims": [
+            {
+              "claimant_name": "Juan Villanueva",
+              "claim_number": "173007214",
+              "loss_date": "09/18/2024",
+              "status": "Open",
+              "claim_type": "Indemnity",
+              "nature_of_injury": "Fracture",
+              "body_part": "Left Ring Finger Distal Phalanx",
+              "permanent_disability_pct": 6.0,
+              "class_code": "5542",
+              "occupation": "Crew Leader",
+              "incurred_medical": 46500.0,
+              "incurred_disability": 21130.0,
+              "incurred_expense": 5000.0,
+              "total_incurred": 72630.0,
+              "paid_total": 22671.08,
+              "reserves_total": 49958.92
+            }
+          ]
+        },
+        {
+          "policy_number": "7690000362231",
+          "policy_period_start": "01/01/2023",
+          "policy_period_end": "01/01/2024",
+          "claims": [],
+          "_note": "No losses"
+        },
+        {
+          "policy_number": "7600018496231",
+          "policy_period_start": "01/01/2023",
+          "policy_period_end": "01/01/2024",
+          "claims": [
+            {
+              "claimant_name": "Cody Walker",
+              "claim_number": "173005795",
+              "loss_date": "08/01/2023",
+              "status": "Closed",
+              "close_date": "08/28/2023",
+              "nature_of_injury": "Laceration",
+              "body_part": "Left Pointer Finger",
+              "class_code": "8742",
+              "average_weekly_wage": 1200.0,
+              "paid_medical": 721.1,
+              "paid_expense": 36.25,
+              "paid_total": 757.35,
+              "total_incurred": 757.35
+            },
+            {
+              "claimant_name": "Albert Nystrom II",
+              "claim_number": "173006141",
+              "loss_date": "10/30/2023",
+              "status": "Closed",
+              "close_date": "12/11/2023",
+              "nature_of_injury": "Laceration",
+              "body_part": "Right Index Finger",
+              "class_code": "5432",
+              "occupation": "Manager",
+              "average_weekly_wage": 173.08,
+              "paid_medical": 721.94,
+              "paid_expense": 36.24,
+              "paid_total": 758.18,
+              "total_incurred": 758.18
+            }
+          ]
+        },
+        {
+          "policy_number": "7600018496221",
+          "policy_period_start": "01/01/2022",
+          "policy_period_end": "01/01/2023",
+          "claims": [],
+          "_note": "No losses"
+        },
+        {
+          "policy_number": "7600018496211",
+          "policy_period_start": "01/01/2021",
+          "policy_period_end": "01/01/2022",
+          "claims": [],
+          "_note": "No losses"
+        },
+        {
+          "policy_number": "7600018496201",
+          "policy_period_start": "01/01/2020",
+          "policy_period_end": "01/01/2021",
+          "claims": [],
+          "_note": "No losses"
+        },
+        {
+          "policy_number": "7600018496191",
+          "policy_period_start": "01/01/2019",
+          "policy_period_end": "01/01/2020",
+          "claims": [],
+          "_note": "No losses"
+        }
+      ]
+    }
+  ],
+  "_audit_summary": {
+    "total_pdfs_audited": 9,
+    "total_pages_audited": 38,
+    "non_loss_run_excluded": 1,
+    "claim_count_by_carrier": {
+      "Employers": 3,
+      "Hartford_summary_pivot": 1,
+      "Hartford_detailed": 1,
+      "Insperity": 0,
+      "TriNet": 1,
+      "AmTrust_ADP": 0,
+      "ICW": 12,
+      "Arrowhead_Everest": 4
+    },
+    "total_claims_with_detail_rows": 21,
+    "carrier_format_archetype_counts": {
+      "per_policy_section": 2,
+      "flat_table_with_grouping": 2,
+      "summary_pivot": 2,
+      "hybrid_detail": 2,
+      "flat_multipage_zeros": 1
+    },
+    "ground_truth_signal_classes": [
+      "claim_number",
+      "claimant_name",
+      "loss_date",
+      "reported_date",
+      "close_date",
+      "status",
+      "class_code",
+      "occupation",
+      "nature_of_injury",
+      "body_part",
+      "cause",
+      "paid_medical",
+      "paid_indemnity",
+      "paid_loss_adj_expense",
+      "paid_total",
+      "reserved_medical",
+      "reserved_indemnity",
+      "reserved_loss_adj_expense",
+      "reserved_total",
+      "incurred_medical",
+      "incurred_indemnity",
+      "incurred_loss_adj_expense",
+      "total_incurred",
+      "examiner_name",
+      "examiner_phone",
+      "examiner_email",
+      "in_litigation",
+      "policy_number",
+      "policy_period_start",
+      "policy_period_end",
+      "insured_name",
+      "agent_name",
+      "valuation_date"
+    ]
+  }
+}

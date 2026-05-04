@@ -1,0 +1,396 @@
+{
+  "carrier": {
+    "status": "correct",
+    "value": "Employers Preferred Insurance Company",
+    "verified_at": "2026-05-01T20:10:36.939194+00:00",
+    "note": ""
+  },
+  "carrier_format_archetype": {
+    "status": "correct",
+    "value": "per_policy_section",
+    "verified_at": "2026-05-01T20:12:07.244776+00:00",
+    "note": "yes 3 per policy sections but the exact text is policy holder, policy, policy period, periods"
+  },
+  "n_pages": {
+    "status": "correct",
+    "value": 1,
+    "verified_at": "2026-05-01T20:12:18.567414+00:00",
+    "note": ""
+  },
+  "document_metadata.report_title": {
+    "status": "correct",
+    "value": "Claims History Report (Loss Run)",
+    "verified_at": "2026-05-01T20:12:49.481692+00:00",
+    "note": ""
+  },
+  "document_metadata.carrier_brand": {
+    "status": "correct",
+    "value": "EMPLOYERS",
+    "verified_at": "2026-05-01T20:13:01.207513+00:00",
+    "note": ""
+  },
+  "document_metadata.carrier_tagline": {
+    "status": "correct",
+    "value": "America's small business insurance specialist",
+    "verified_at": "2026-05-01T20:13:47.167223+00:00",
+    "note": ""
+  },
+  "document_metadata.agency": {
+    "status": "correct",
+    "value": "WORLDWIDE FACILITIES LLC",
+    "verified_at": "2026-05-01T20:13:52.570537+00:00",
+    "note": ""
+  },
+  "document_metadata.policyholder": {
+    "status": "correct",
+    "value": "PSQ PRODUCTIONS LLC",
+    "verified_at": "2026-05-01T20:14:19.619157+00:00",
+    "note": "its a name of a policy holder"
+  },
+  "document_metadata.losses_incurred_since": {
+    "status": "correct",
+    "value": "1/1/18",
+    "verified_at": "2026-05-01T20:16:03.410984+00:00",
+    "note": "its a date"
+  },
+  "document_metadata.data_as_of_date": {
+    "status": "correct",
+    "value": "10/22/2025",
+    "verified_at": "2026-05-01T20:16:16.777157+00:00",
+    "note": "its a date"
+  },
+  "document_metadata.amount_disclaimer": {
+    "status": "correct",
+    "value": "Amount does not reflect deductible",
+    "verified_at": "2026-05-01T20:17:23.222702+00:00",
+    "note": "Amount does not reflect deductible  is the heading and the Deductible  in the tables are the colums of th etables"
+  },
+  "document_metadata.total_claims_all_periods": {
+    "status": "correct",
+    "value": 3,
+    "verified_at": "2026-05-01T20:17:33.512051+00:00",
+    "note": ""
+  },
+  "policies[0].policy_number": {
+    "status": "correct",
+    "value": "EIG469077603",
+    "verified_at": "2026-05-01T20:17:49.094018+00:00",
+    "note": ""
+  },
+  "policies[0].policy_period_start": {
+    "status": "correct",
+    "value": "01/14/2024",
+    "verified_at": "2026-05-01T20:17:50.891557+00:00",
+    "note": ""
+  },
+  "policies[0].policy_period_end": {
+    "status": "correct",
+    "value": "01/14/2025",
+    "verified_at": "2026-05-01T20:17:54.818388+00:00",
+    "note": ""
+  },
+  "policies[0].median_days_to_report_claim": {
+    "status": "correct",
+    "value": 2,
+    "verified_at": "2026-05-01T20:18:08.805578+00:00",
+    "note": ""
+  },
+  "policies[1].policy_number": {
+    "status": "correct",
+    "value": "EIG469077602",
+    "verified_at": "2026-05-01T20:18:28.296904+00:00",
+    "note": "its a policy number"
+  },
+  "policies[1].policy_period_start": {
+    "status": "correct",
+    "value": "01/14/2023",
+    "verified_at": "2026-05-01T20:18:42.267012+00:00",
+    "note": ""
+  },
+  "policies[1].policy_period_end": {
+    "status": "correct",
+    "value": "01/14/2024",
+    "verified_at": "2026-05-01T20:18:48.074173+00:00",
+    "note": ""
+  },
+  "policies[1].median_days_to_report_claim": {
+    "status": "correct",
+    "value": 2,
+    "verified_at": "2026-05-01T20:18:56.493410+00:00",
+    "note": ""
+  },
+  "policies[1].claims[0].injured_employee_name": {
+    "status": "correct",
+    "value": "Guerra, Seth",
+    "verified_at": "2026-05-01T20:19:23.262474+00:00",
+    "note": "its the name of the injured employee"
+  },
+  "policies[1].claims[0].claim_number": {
+    "status": "correct",
+    "value": "2023026815",
+    "verified_at": "2026-05-01T20:19:50.015366+00:00",
+    "note": "this is a claim number"
+  },
+  "policies[1].claims[0].fatality": {
+    "status": "correct",
+    "value": "N",
+    "verified_at": "2026-05-01T20:20:16.499321+00:00",
+    "note": "fatalities: yes or no"
+  },
+  "policies[1].claims[0].injury_date": {
+    "status": "correct",
+    "value": "12/13/2023 12:00 PM",
+    "verified_at": "2026-05-01T20:20:38.881441+00:00",
+    "note": "date and time of the injury"
+  },
+  "policies[1].claims[0].status": {
+    "status": "correct",
+    "value": "Closed",
+    "verified_at": "2026-05-01T20:20:53.442615+00:00",
+    "note": "status of the  claim"
+  },
+  "policies[1].claims[0].injury_cause": {
+    "status": "correct",
+    "value": "Cumulative NOC",
+    "verified_at": "2026-05-01T20:21:33.063724+00:00",
+    "note": "in the injury source as well as injury type"
+  },
+  "policies[1].claims[0].body_part": {
+    "status": "correct",
+    "value": "Lower Back Area",
+    "verified_at": "2026-05-01T20:21:51.380493+00:00",
+    "note": "its a body part information"
+  },
+  "policies[1].claims[0].injury_type": {
+    "status": "correct",
+    "value": "All Other Cumulative Injury NOC",
+    "verified_at": "2026-05-01T20:22:33.152304+00:00",
+    "note": "can be in injury source and injury type"
+  },
+  "policies[1].claims[0].medical_paid": {
+    "status": "correct",
+    "value": 230.0,
+    "verified_at": "2026-05-01T20:23:01.498659+00:00",
+    "note": "medical paid value "
+  },
+  "policies[1].claims[0].indemnity_paid": {
+    "status": "correct",
+    "value": 21300.0,
+    "verified_at": "2026-05-01T20:24:00.192177+00:00",
+    "note": "value of the indemnity paid cell"
+  },
+  "policies[1].claims[0].total_incurred": {
+    "status": "correct",
+    "value": 21530.0,
+    "verified_at": "2026-05-01T20:24:30.092022+00:00",
+    "note": "value of the total incurred"
+  },
+  "policies[1].claims[0].net_expense": {
+    "status": "correct",
+    "value": 3547.48,
+    "verified_at": "2026-05-01T20:24:45.111051+00:00",
+    "note": "value of the  net expense"
+  },
+  "policies[1].policy_period_totals.total_claims": {
+    "status": "correct",
+    "value": 1,
+    "verified_at": "2026-05-01T20:24:57.494996+00:00",
+    "note": "page number"
+  },
+  "policies[1].policy_period_totals.medical_paid": {
+    "status": "correct",
+    "value": 230.0,
+    "verified_at": "2026-05-01T20:25:10.195076+00:00",
+    "note": "medical paid value"
+  },
+  "policies[1].policy_period_totals.indemnity_paid": {
+    "status": "correct",
+    "value": 21300.0,
+    "verified_at": "2026-05-01T20:26:32.463724+00:00",
+    "note": "value of indemnity paid"
+  },
+  "policies[1].policy_period_totals.total_incurred": {
+    "status": "correct",
+    "value": 21530.0,
+    "verified_at": "2026-05-02T06:24:41.451806+00:00"
+  },
+  "policies[1].policy_period_totals.net_expense": {
+    "status": "correct",
+    "value": 3547.48,
+    "verified_at": "2026-05-02T06:24:48.864264+00:00"
+  },
+  "policies[2].policy_number": {
+    "status": "correct",
+    "value": "EIG469077601",
+    "verified_at": "2026-05-02T06:25:11.430931+00:00"
+  },
+  "policies[2].policy_period_start": {
+    "status": "correct",
+    "value": "01/14/2022",
+    "verified_at": "2026-05-02T06:25:29.540441+00:00"
+  },
+  "policies[2].policy_period_end": {
+    "status": "correct",
+    "value": "01/14/2023",
+    "verified_at": "2026-05-02T06:25:41.096531+00:00"
+  },
+  "policies[3].policy_number": {
+    "status": "correct",
+    "value": "EIG469077600",
+    "verified_at": "2026-05-02T06:25:57.149047+00:00"
+  },
+  "policies[3].policy_period_start": {
+    "status": "correct",
+    "value": "01/14/2021",
+    "verified_at": "2026-05-02T06:26:10.070904+00:00"
+  },
+  "policies[3].policy_period_end": {
+    "status": "correct",
+    "value": "01/14/2022",
+    "verified_at": "2026-05-02T06:26:33.966931+00:00"
+  },
+  "policies[3].median_days_to_report_claim": {
+    "status": "wrong",
+    "value": 2,
+    "verified_at": "2026-05-02T06:28:05.795316+00:00",
+    "note": "WRONG GROUP: should be n_pages. the '2' is the median days to report claim value, present in all 4 of the claims sections on this page",
+    "should_be_field": "n_pages"
+  },
+  "policies[3].claims[0].injured_employee_name": {
+    "status": "correct",
+    "value": "Alejandre, Lucio",
+    "verified_at": "2026-05-02T06:28:39.182011+00:00"
+  },
+  "policies[3].claims[0].claim_number": {
+    "status": "correct",
+    "value": "2021452572",
+    "verified_at": "2026-05-02T06:28:48.970747+00:00"
+  },
+  "policies[3].claims[0].fatality": {
+    "status": "correct",
+    "value": "N",
+    "verified_at": "2026-05-02T06:29:13.094423+00:00"
+  },
+  "policies[3].claims[0].injury_date": {
+    "status": "correct",
+    "value": "05/29/2021 05:00 PM",
+    "verified_at": "2026-05-02T07:37:09.294230+00:00"
+  },
+  "policies[3].claims[0].status": {
+    "status": "correct",
+    "value": "Closed",
+    "verified_at": "2026-05-02T07:37:34.620331+00:00"
+  },
+  "policies[3].claims[0].injury_cause": {
+    "status": "correct",
+    "value": "Strain or Injury by NOC",
+    "verified_at": "2026-05-02T07:37:48.595973+00:00"
+  },
+  "policies[3].claims[0].body_part": {
+    "status": "correct",
+    "value": "Ankle",
+    "verified_at": "2026-05-02T07:37:54.776241+00:00"
+  },
+  "policies[3].claims[0].injury_type": {
+    "status": "correct",
+    "value": "Strain or Tear",
+    "verified_at": "2026-05-02T07:37:59.574732+00:00"
+  },
+  "policies[3].claims[0].medical_paid": {
+    "status": "correct",
+    "value": 504.92,
+    "verified_at": "2026-05-02T07:38:05.271040+00:00"
+  },
+  "policies[3].claims[0].total_incurred": {
+    "status": "correct",
+    "value": 504.92,
+    "verified_at": "2026-05-02T07:38:18.051316+00:00"
+  },
+  "policies[3].claims[0].net_expense": {
+    "status": "edited",
+    "value": 19.06,
+    "verified_at": "2026-05-02T07:38:58.041609+00:00",
+    "note": "18.06",
+    "corrected_value": "19.06"
+  },
+  "policies[3].claims[1].injured_employee_name": {
+    "status": "correct",
+    "value": "Oconnor, Mark",
+    "verified_at": "2026-05-02T07:39:18.298552+00:00"
+  },
+  "policies[3].claims[1].claim_number": {
+    "status": "correct",
+    "value": "2021007688",
+    "verified_at": "2026-05-02T07:39:26.304664+00:00"
+  },
+  "policies[3].claims[1].fatality": {
+    "status": "correct",
+    "value": "N",
+    "verified_at": "2026-05-02T07:39:34.137187+00:00"
+  },
+  "policies[3].claims[1].injury_date": {
+    "status": "correct",
+    "value": "09/25/2021 09:00 PM",
+    "verified_at": "2026-05-02T07:39:42.453337+00:00"
+  },
+  "policies[3].claims[1].status": {
+    "status": "correct",
+    "value": "Closed",
+    "verified_at": "2026-05-02T07:39:49.941773+00:00"
+  },
+  "policies[3].claims[1].injury_cause": {
+    "status": "correct",
+    "value": "Pulling or Pushing",
+    "verified_at": "2026-05-02T07:40:02.041717+00:00"
+  },
+  "policies[3].claims[1].body_part": {
+    "status": "correct",
+    "value": "Shoulder(s)",
+    "verified_at": "2026-05-02T07:40:08.494285+00:00"
+  },
+  "policies[3].claims[1].injury_type": {
+    "status": "correct",
+    "value": "Strain or Tear",
+    "verified_at": "2026-05-02T07:40:20.937509+00:00"
+  },
+  "policies[3].claims[1].medical_paid": {
+    "status": "correct",
+    "value": 1184.72,
+    "verified_at": "2026-05-02T07:40:31.900056+00:00"
+  },
+  "policies[3].claims[1].total_incurred": {
+    "status": "correct",
+    "value": 1184.72,
+    "verified_at": "2026-05-02T07:40:39.405515+00:00"
+  },
+  "policies[3].claims[1].net_expense": {
+    "status": "correct",
+    "value": 139.29,
+    "verified_at": "2026-05-02T07:40:51.009860+00:00"
+  },
+  "policies[3].policy_period_totals.total_claims": {
+    "status": "correct",
+    "value": 2,
+    "verified_at": "2026-05-02T07:43:36.202622+00:00"
+  },
+  "policies[3].policy_period_totals.medical_paid": {
+    "status": "correct",
+    "value": 1689.64,
+    "verified_at": "2026-05-02T07:43:45.576482+00:00"
+  },
+  "policies[3].policy_period_totals.total_incurred": {
+    "status": "correct",
+    "value": 1689.64,
+    "verified_at": "2026-05-02T07:43:51.208714+00:00"
+  },
+  "policies[3].policy_period_totals.net_expense": {
+    "status": "correct",
+    "value": 157.35,
+    "verified_at": "2026-05-02T07:43:56.583170+00:00"
+  },
+  "combined_all_periods_totals.medical_paid": {
+    "status": "correct",
+    "value": 1919.64,
+    "verified_at": "2026-05-02T07:44:13.271090+00:00"
+  }
+}

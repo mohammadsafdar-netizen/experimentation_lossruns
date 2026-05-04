@@ -1,0 +1,187 @@
+{
+  "_meta": {
+    "purpose": "Per-document, per-page exhaustive field inventory. Every printed label + value mapped to a semantic field name with confidence score. Items <90% confidence are listed in needs_user_verification with field name + on-page location so the user can read and confirm the exact value.",
+    "confidence_scale": "0-100. 100 = unambiguous (fixed label, large legible value). 90+ = confident, no verification needed. <90 = please verify.",
+    "started": "2026-04-30",
+    "documents_in_progress": ["21-25_WORK_10_22_25_Employers_Loss_runs"],
+    "documents_pending": [
+      "SIR_HARTFORD_Loss_Runs_2016_25_val_8_21_05",
+      "SIR_Hartford_Loss_Runs_2016_25_val_8_21_25B",
+      "Strategic_Information_Resources_Inc_loss_runs",
+      "Loss_Runs_2021_to_2024_-_Insperity",
+      "Loss_Runs_5_1_24-4_1_25_TriNet_Dated_1_26_26",
+      "Loss_Runs_4_1_25_Eff_Date_to_Curr_ADP_1_27_26",
+      "24-26_RE-WORK_11_10_25_ICW_loss_runs",
+      "Loss_Runs_2026_-_2018_(Arrowhead_Everest)"
+    ]
+  },
+  "documents": [
+    {
+      "file_name": "21-25_WORK_10_22_25_Employers_Loss_runs_-PSQ_PRODUCTIONS.pdf",
+      "n_pages": 1,
+      "carrier": "Employers Preferred Insurance Company",
+      "carrier_format_archetype": "per_policy_section",
+
+      "page_1_field_inventory": {
+        "header_band": [
+          {"semantic": "carrier_brand_logo",        "label_printed": "EMPLOYERS®",                                            "value": "EMPLOYERS",                                  "location": "top-left logo",                                "confidence": 100},
+          {"semantic": "carrier_tagline",           "label_printed": "America's small business insurance specialist®",       "value": "America's small business insurance specialist", "location": "directly under logo",                       "confidence": 100}
+        ],
+        "title_band": [
+          {"semantic": "report_title",              "label_printed": "Claims History Report (Loss Run)",                     "value": "Claims History Report (Loss Run)",          "location": "centered, page top, underlined",               "confidence": 100},
+          {"semantic": "amount_disclaimer",         "label_printed": "*Amount does not reflect deductible",                  "value": "*Amount does not reflect deductible",       "location": "directly below title",                          "confidence": 100}
+        ],
+        "account_header": [
+          {"semantic": "agency_name",               "label_printed": "Agency:",                                              "value": "WORLDWIDE FACILITIES LLC",                  "location": "left, just below title",                       "confidence": 95},
+          {"semantic": "policyholder_name",         "label_printed": "Policyholder:",                                        "value": "PSG PRODUCTIONS LLC",                       "location": "left, below Agency",                            "confidence": 95},
+          {"semantic": "losses_incurred_since",     "label_printed": "Losses Incurred Since:",                               "value": "1/1/18",                                    "location": "right side of header band",                     "confidence": 95}
+        ],
+        "policy_sections": [
+          {
+            "section_index": 1,
+            "section_header": [
+              {"semantic": "policy_number",                 "label_printed": "Policy:",                            "value": "EIG2469077802", "location": "section banner, left",   "confidence": 70, "verify_reason": "Small font, leading digits 'EIG2469' could be 'EIG3469' or similar"},
+              {"semantic": "policy_period_start",           "label_printed": null,                                  "value": "01/14/2024",    "location": "section banner, after policy number", "confidence": 92},
+              {"semantic": "policy_period_end",             "label_printed": null,                                  "value": "01/14/2025",    "location": "section banner, after policy number", "confidence": 92},
+              {"semantic": "median_days_to_report_claim",   "label_printed": "Median Days to Report Claim:",       "value": "0",             "location": "section banner, center",  "confidence": 75, "verify_reason": "Could also be '2' or another single digit at this resolution"},
+              {"semantic": "carrier_long_name",             "label_printed": null,                                  "value": "Employers Preferred Insurance Company", "location": "section banner, far right", "confidence": 100}
+            ],
+            "claims": [],
+            "subtotal_row": {
+              "label_printed": "Total claims this policy period: 0",
+              "totals_observed": "all $0.00",
+              "confidence": 90
+            }
+          },
+          {
+            "section_index": 2,
+            "section_header": [
+              {"semantic": "policy_number",               "value": "EIG2469077801", "confidence": 70, "verify_reason": "Same digit-ambiguity as section 1; ends in 01 vs 02 vs 11"},
+              {"semantic": "policy_period_start",         "value": "01/14/2023",    "confidence": 92},
+              {"semantic": "policy_period_end",           "value": "01/14/2024",    "confidence": 92},
+              {"semantic": "median_days_to_report_claim", "value": "2",             "confidence": 80}
+            ],
+            "claims": [
+              {
+                "row_index": 1,
+                "fields": [
+                  {"semantic": "injured_employee_name",  "value": "Guerra, Seth",                              "confidence": 92},
+                  {"semantic": "claim_number",           "value": "2023030615",                                "confidence": 78, "verify_reason": "10-digit number; could be 2023030615 vs 2023030515 vs 2023050615 — not all glyphs distinguishable"},
+                  {"semantic": "fatalities",             "value": "N",                                         "confidence": 95},
+                  {"semantic": "injury_date_time",       "value": "12/13/2023 12:00 PM",                       "confidence": 70, "verify_reason": "Time portion is small; '12:00 PM' may actually be a different time"},
+                  {"semantic": "status",                 "value": "Closed",                                    "confidence": 95},
+                  {"semantic": "injury_cause",           "value": "Cumulative, NOC",                           "confidence": 80},
+                  {"semantic": "body_part",              "value": "Lower Back Area",                           "confidence": 90},
+                  {"semantic": "injury_type",            "value": "All Other Cumulative Injury, NOC",          "confidence": 75, "verify_reason": "Wrap may be 'All Other Cumulative Injury, NOC' or similar; need user to read"},
+                  {"semantic": "class_code",             "value": "8060",                                      "confidence": 40, "verify_reason": "Could be 8000 / 8006 / 8060 / 8810 — class codes are 4-digit and the print is too small to disambiguate"},
+                  {"semantic": "medical_paid",           "value": "$230.00",                                   "confidence": 92},
+                  {"semantic": "medical_reserve",        "value": "$0.00",                                     "confidence": 95},
+                  {"semantic": "indemnity_paid",         "value": "$21,300.00",                                "confidence": 92},
+                  {"semantic": "indemnity_reserve",      "value": "$0.00",                                     "confidence": 95},
+                  {"semantic": "recovery",               "value": "$0.00",                                     "confidence": 95},
+                  {"semantic": "deductible",             "value": "$0.00",                                     "confidence": 95},
+                  {"semantic": "total_incurred",         "value": "$21,530.00",                                "confidence": 92},
+                  {"semantic": "net_expense",            "value": "$3,547.46",                                 "confidence": 92}
+                ]
+              }
+            ],
+            "subtotal_row": {"total_claims_this_period": 1}
+          },
+          {
+            "section_index": 3,
+            "section_header": [
+              {"semantic": "policy_number",               "value": "EIG2469077800", "confidence": 70, "verify_reason": "Same family of policy numbers — please verify each"},
+              {"semantic": "policy_period_start",         "value": "01/14/2022",    "confidence": 92},
+              {"semantic": "policy_period_end",           "value": "01/14/2023",    "confidence": 92},
+              {"semantic": "median_days_to_report_claim", "value": "0",             "confidence": 75}
+            ],
+            "claims": [],
+            "subtotal_row": {"total_claims_this_period": 0}
+          },
+          {
+            "section_index": 4,
+            "section_header": [
+              {"semantic": "policy_number",               "value": "EIG6469077800", "confidence": 50, "verify_reason": "Leading digit changes between 'EIG2…' and 'EIG6…' in this section vs the others — please confirm"},
+              {"semantic": "policy_period_start",         "value": "01/14/2021",    "confidence": 92},
+              {"semantic": "policy_period_end",           "value": "01/14/2022",    "confidence": 92},
+              {"semantic": "median_days_to_report_claim", "value": "2",             "confidence": 80}
+            ],
+            "claims": [
+              {
+                "row_index": 1,
+                "fields": [
+                  {"semantic": "injured_employee_name", "value": "Alejandre, Lucio",        "confidence": 92},
+                  {"semantic": "claim_number",          "value": "2021452572",              "confidence": 80, "verify_reason": "Mid-claim digits 4-5-2-5-7-2 are small"},
+                  {"semantic": "fatalities",            "value": "N",                       "confidence": 95},
+                  {"semantic": "injury_date_time",      "value": "05/29/2021 05:00 PM",     "confidence": 70, "verify_reason": "Time may actually be a different value (e.g., 03:00 PM or 08:00 AM)"},
+                  {"semantic": "status",                "value": "Closed",                  "confidence": 95},
+                  {"semantic": "injury_cause",          "value": "Strain or Injury by, NOC","confidence": 80},
+                  {"semantic": "body_part",             "value": "Ankle",                   "confidence": 92},
+                  {"semantic": "injury_type",           "value": "Strain or Tear",          "confidence": 88, "verify_reason": "Could be 'Strain or Tear' — borderline"},
+                  {"semantic": "class_code",            "value": "8868",                    "confidence": 35, "verify_reason": "Could be 8868 / 8869 / 9079 — please verify each row's class code"},
+                  {"semantic": "medical_paid",          "value": "$504.92",                 "confidence": 92},
+                  {"semantic": "indemnity_paid",        "value": "$0.00",                   "confidence": 95},
+                  {"semantic": "total_incurred",        "value": "$504.92",                 "confidence": 92},
+                  {"semantic": "net_expense",           "value": "$19.06",                  "confidence": 88, "verify_reason": "Could also be '$18.06' or '$19.06' — small print"}
+                ]
+              },
+              {
+                "row_index": 2,
+                "fields": [
+                  {"semantic": "injured_employee_name", "value": "Oconnor, Mark",           "confidence": 92},
+                  {"semantic": "claim_number",          "value": "2021037998",              "confidence": 60, "verify_reason": "Could be 2021037998 / 2021057998 / 2021087998 — middle digit 3 vs 5 vs 8 not distinguishable"},
+                  {"semantic": "injury_date_time",      "value": "09/25/2021 09:00 PM",     "confidence": 55, "verify_reason": "Date may be 06/25/2021 or 09/25/2021; time may be different"},
+                  {"semantic": "injury_cause",          "value": "Pulling or Pushing",      "confidence": 88, "verify_reason": "Could be 'Pulling or Pushing' or 'Pushing or Pulling'"},
+                  {"semantic": "body_part",             "value": "Shoulder(s)",             "confidence": 90},
+                  {"semantic": "injury_type",           "value": "Strain or Tear",          "confidence": 88},
+                  {"semantic": "class_code",            "value": "8855",                    "confidence": 35, "verify_reason": "Could be 8855 / 8835 / 8810 / 8856 — please verify"},
+                  {"semantic": "medical_paid",          "value": "$1,184.72",               "confidence": 92},
+                  {"semantic": "total_incurred",        "value": "$1,184.72",               "confidence": 92},
+                  {"semantic": "net_expense",           "value": "$139.29",                 "confidence": 88, "verify_reason": "Could also be '$138.29' or similar"}
+                ]
+              }
+            ]
+          }
+        ],
+        "combined_totals_row": [
+          {"semantic": "combined_label",          "label_printed": "Combined for all periods:",         "value": "Combined for all periods:",  "confidence": 95},
+          {"semantic": "combined_medical_paid",   "value": "$1,919.64",                                 "confidence": 92},
+          {"semantic": "combined_medical_reserve","value": "$0.00",                                     "confidence": 95},
+          {"semantic": "combined_indemnity_paid", "value": "$21,300.00",                                "confidence": 92},
+          {"semantic": "combined_total_incurred", "value": "$23,219.64",                                "confidence": 92},
+          {"semantic": "combined_net_expense",    "value": "$3,706.81",                                 "confidence": 88, "verify_reason": "Could also be $3,705.81 or $3,706.81"}
+        ],
+        "footer_band": [
+          {"semantic": "total_claims_all_periods", "label_printed": "Total Claims:", "value": "3",          "confidence": 92},
+          {"semantic": "data_as_of_date",          "label_printed": "Data as of",     "value": "10/22/2025", "confidence": 92},
+          {"semantic": "report_generated_date",    "value": "Oct 22, 2025",                                  "location": "bottom-left", "confidence": 92},
+          {"semantic": "report_generated_time",    "value": "3:49:49 PM",                                    "location": "bottom-right", "confidence": 80, "verify_reason": "Could be 3:49:49 PM or similar"},
+          {"semantic": "page_number",              "value": "1",                                             "location": "bottom-center", "confidence": 95}
+        ]
+      },
+
+      "needs_user_verification": [
+        {"id": "EMP-V01", "field_name": "policy_number (section 1)",                  "location": "top-most policy banner, just right of 'Policy:' label", "current_guess": "EIG2469077802", "ask": "Please read the exact policy number on the FIRST policy banner (01/14/2024 - 01/14/2025 period). Is it 'EIG2469077802' or something else?"},
+        {"id": "EMP-V02", "field_name": "policy_number (section 2)",                  "location": "second policy banner from top (01/14/2023 - 01/14/2024)",                              "current_guess": "EIG2469077801", "ask": "Exact value of policy number on the section that contains the Guerra Seth claim?"},
+        {"id": "EMP-V03", "field_name": "policy_number (section 3)",                  "location": "third policy banner (01/14/2022 - 01/14/2023)",                                         "current_guess": "EIG2469077800", "ask": "Exact value of policy number on the third (zero-claim) section?"},
+        {"id": "EMP-V04", "field_name": "policy_number (section 4)",                  "location": "fourth/bottom policy banner (01/14/2021 - 01/14/2022)",                                 "current_guess": "EIG6469077800", "ask": "Is the leading prefix on this section actually different from the other three? Exact value?"},
+        {"id": "EMP-V05", "field_name": "median_days_to_report_claim (each section)", "location": "center of each policy banner",                                                          "current_guess": "{0, 2, 0, 2}",  "ask": "Please read each section's 'Median Days to Report Claim' value top-to-bottom."},
+        {"id": "EMP-V06", "field_name": "Guerra Seth — claim_number",                 "location": "row 1 of section 2 (01/14/2023 policy)",                                                "current_guess": "2023030615",   "ask": "Exact 10-digit claim number for Guerra, Seth?"},
+        {"id": "EMP-V07", "field_name": "Guerra Seth — injury_date_time",             "location": "row 1 of section 2",                                                                    "current_guess": "12/13/2023 12:00 PM", "ask": "Exact injury date/time for Guerra, Seth?"},
+        {"id": "EMP-V08", "field_name": "Guerra Seth — injury_type",                  "location": "row 1 of section 2, 8th column from left",                                              "current_guess": "All Other Cumulative Injury, NOC", "ask": "Exact injury_type wording for Guerra Seth?"},
+        {"id": "EMP-V09", "field_name": "Guerra Seth — class_code",                   "location": "row 1 of section 2, 9th column",                                                        "current_guess": "8060",         "ask": "Exact 4-digit class code on Guerra Seth's row?"},
+        {"id": "EMP-V10", "field_name": "Alejandre Lucio — claim_number",             "location": "row 1 of section 4 (01/14/2021 policy)",                                                "current_guess": "2021452572",   "ask": "Exact 10-digit claim number for Alejandre, Lucio?"},
+        {"id": "EMP-V11", "field_name": "Alejandre Lucio — injury_date_time",         "location": "row 1 of section 4",                                                                    "current_guess": "05/29/2021 05:00 PM", "ask": "Exact injury date/time for Alejandre Lucio?"},
+        {"id": "EMP-V12", "field_name": "Alejandre Lucio — class_code",               "location": "row 1 of section 4",                                                                    "current_guess": "8868",         "ask": "Exact 4-digit class code on Alejandre Lucio's row?"},
+        {"id": "EMP-V13", "field_name": "Alejandre Lucio — net_expense",              "location": "rightmost column, row 1 of section 4",                                                  "current_guess": "$19.06",       "ask": "Exact net_expense for Alejandre Lucio (could be $18.06 / $19.06)?"},
+        {"id": "EMP-V14", "field_name": "Oconnor Mark — claim_number",                "location": "row 2 of section 4",                                                                    "current_guess": "2021037998",   "ask": "Exact 10-digit claim number for Oconnor, Mark — middle digit is unclear?"},
+        {"id": "EMP-V15", "field_name": "Oconnor Mark — injury_date_time",            "location": "row 2 of section 4",                                                                    "current_guess": "09/25/2021 09:00 PM", "ask": "Exact injury date/time for Oconnor Mark?"},
+        {"id": "EMP-V16", "field_name": "Oconnor Mark — injury_cause",                "location": "row 2 of section 4, 6th column",                                                        "current_guess": "Pulling or Pushing", "ask": "Exact injury_cause wording for Oconnor Mark — is it 'Pulling or Pushing' or 'Pushing or Pulling'?"},
+        {"id": "EMP-V17", "field_name": "Oconnor Mark — class_code",                  "location": "row 2 of section 4",                                                                    "current_guess": "8855",         "ask": "Exact 4-digit class code on Oconnor Mark's row?"},
+        {"id": "EMP-V18", "field_name": "Oconnor Mark — net_expense",                 "location": "rightmost column, row 2 of section 4",                                                  "current_guess": "$139.29",      "ask": "Exact net_expense for Oconnor Mark?"},
+        {"id": "EMP-V19", "field_name": "combined_net_expense",                       "location": "Combined for all periods row, rightmost column",                                        "current_guess": "$3,706.81",    "ask": "Exact combined net_expense (could be $3,705.81 / $3,706.81)?"},
+        {"id": "EMP-V20", "field_name": "report_generated_time",                      "location": "very bottom-right of page",                                                             "current_guess": "3:49:49 PM",   "ask": "Exact report-generated time at bottom of page?"}
+      ]
+    }
+  ]
+}

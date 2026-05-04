@@ -4,10 +4,15 @@ Hand-curated ground-truth annotations for 9 workers'-comp loss-run PDFs across 7
 
 ## Latest comparison docs (`docs/`)
 
+- **[`docs/V7_COVERAGE_2026_05_04.md`](docs/V7_COVERAGE_2026_05_04.md)** — production accuracy against the richer GT v7 schema: **86.2% upper-bound coverage** (741/860 leaf values). Per-doc breakdown + interpretation.
 - **[`docs/INSIGHTS.md`](docs/INSIGHTS.md)** — production state (May 4, 2026): **91.12% winner-only F1 / 88.5% strict** on GT v6, per-archetype breakdown, active bottlenecks, cross-references
 - **[`docs/TABLE_EXTRACTOR_COMPARISON.md`](docs/TABLE_EXTRACTOR_COMPARISON.md)** — head-to-head of docling, pdfplumber, pymupdf, unstructured, and YOLO+docling cascade across all archetypes. **Conclusion:** no single tool wins; per-archetype routing is the production path.
-- **[`docs/ABLATION_MATRIX_2026_05_04.md`](docs/ABLATION_MATRIX_2026_05_04.md)** — VLM × OCR-config matrix. **Key finding:** bbox-coordinates-in-prompt regresses Qwen3-VL by 2.47pp (Landing AI's parse-once trick does NOT transfer to a 3-input setup). Granite/Dolphin swap-in tests blocked on env/prompt format issues.
+- **[`docs/ABLATION_MATRIX_2026_05_04.md`](docs/ABLATION_MATRIX_2026_05_04.md)** — VLM × OCR-config matrix. **Key finding:** bbox-coordinates-in-prompt regresses Qwen3-VL by 2.47pp (Landing AI's parse-once trick does NOT transfer to a 3-input setup). Granite/Dolphin swap-in tests confirm Qwen3-VL baseline; Granite at 15.95% F1, Dolphin produces empty output.
 - **[`docs/LESSONS.md`](docs/LESSONS.md)** — 11 codified lessons (cache invalidation, A/B discipline, namespace separation, etc.)
+
+## Scripts (`scripts/`)
+
+- **[`scripts/score_v7_coverage.py`](scripts/score_v7_coverage.py)** — score any production output dir against `gt/loss_runs_gt_v7_extended.json`. Walks GT leaf values, checks substring-presence in the extraction. Used to produce the 86.2% number above.
 
 > ⚠ Older milestone docs (`90_PERCENT_MILESTONE_2026_05_03.md`, `FINAL_94_7PCT_2026_05_03.md`, etc.) at the repo root are **pre-GT-v6**. Their numbers (90-94.7%) were produced against earlier GT versions that contained typos and duplicate-field counting; the rigorous v6 audit revealed and corrected those. **Trust the May 4 docs in `docs/` over the May 3 milestone docs at root.**
 
@@ -17,7 +22,8 @@ Hand-curated ground-truth annotations for 9 workers'-comp loss-run PDFs across 7
 
 ```
 gt/
-├── loss_runs_gt_v6.json                     # 47K — consolidated v6 (all 9 docs in one file)
+├── loss_runs_gt_v6.json                     # 47K — production target schema (75 fields)
+├── loss_runs_gt_v7_extended.json            # NEW — richer schema (~140 fields, examiner contact, demographics, analytics, vendor tags)
 │
 ├── per_doc/                                 # same v6 data, split per form (1 file per loss run)
 │   ├── 21_25_WORK_10_22_25_Employers_Loss_runs__PSQ_PRODUCTIONS.json

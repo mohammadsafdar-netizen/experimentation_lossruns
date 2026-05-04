@@ -1,0 +1,4428 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/loss_run.schema.json",
+  "title": "Workers' Compensation Loss Run \u2014 Universal Extraction Schema v5 (industry-standard)",
+  "description": "Comprehensive schema synthesizing ACORD/NCCI/IAIABC/CMS standards + 50+ US carrier/TPA/PEO format observations + state-specific requirements (CA, NY, TX, FL, OR, CO, UT) + edge cases (CT, mental, OD, fatality, MSA, litigation, subrogation, reinsurance). v5 adds ~75 fields organized into themed groups. All v4 fields preserved (backward compat).",
+  "type": "object",
+  "required": [
+    "document",
+    "policies",
+    "claims"
+  ],
+  "properties": {
+    "document": {
+      "type": "object",
+      "required": [
+        "report_source_type",
+        "valuation_date",
+        "carrier",
+        "policyholder",
+        "deductible_treatment",
+        "lae_inclusion_in_total"
+      ],
+      "properties": {
+        "report_source_type": {
+          "type": "string",
+          "enum": [
+            "direct_carrier",
+            "peo",
+            "wholesaler",
+            "tpa",
+            "state_fund",
+            "unknown"
+          ]
+        },
+        "report_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "report_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "run_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generating_user": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "report_run_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "report_run_time": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valuation_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "valuation_time": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "report_period_start": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "report_period_end": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "losses_incurred_since": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "target_policy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "carrier": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "legal_entity": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "license_number": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "claims_administrator": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "address": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "broker_or_agency": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "agency_code": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "dba": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "producer_name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "producer_code": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "producing_regional": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "license_number": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "producer_city": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "producer_state": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "agency_city": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "agency_state": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "policyholder": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "dba": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "trade_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "individual_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "address_line": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "city": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "state": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "postal_code": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "aif_account_number": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "msi": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "deductible_treatment": {
+          "type": "string",
+          "enum": [
+            "gross",
+            "net_of_recoveries",
+            "unknown"
+          ]
+        },
+        "lae_inclusion_in_total": {
+          "type": "string",
+          "enum": [
+            "included",
+            "excluded",
+            "unknown"
+          ]
+        },
+        "report_definition": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "filters": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "groups": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "sorts": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "options": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "symbol_legend": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "symbol",
+              "meaning"
+            ],
+            "properties": {
+              "symbol": {
+                "type": "string"
+              },
+              "meaning": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "safety_facts_block": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "account_summary": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "term_premium": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "earned_premium": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "earned_premium_excl_retro_adj": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "written_premium": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "total_paid_losses_and_expenses": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "outstanding_losses_and_expenses": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "subrogation": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "total_incurred_losses_and_expenses": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "loss_ratio": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "experience_modification": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "total_number_of_claims": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "litigation_count": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "medical_claims_open": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "medical_claims_closed": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "indemnity_claims_open": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "indemnity_claims_closed": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "claim_severity_gt_10m": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "claim_severity_gt_25m": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "claim_severity_gt_50m": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "total_amount_in_millions": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "section_totals": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "scope"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "latest_policy",
+                  "prior_lob",
+                  "account_total",
+                  "cross_policy_total",
+                  "lob_total",
+                  "state_total",
+                  "other"
+                ]
+              },
+              "lines_of_business": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": "string"
+                }
+              },
+              "policy_numbers": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": "string"
+                }
+              },
+              "earned_premium": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "earned_premium_excl_retro_adj": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "written_premium": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "loss_ratio": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "claims_paid_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "claims_open_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "claims_total_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "claims_severity_gt_10m": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "claims_severity_gt_25m": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "claims_severity_gt_50m": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "total_amount_in_millions": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "paid_loss_adjustment_expenses": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "paid_losses": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "outstanding_losses_and_expenses": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "total_incurred_losses_and_expenses": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "policy_year_lob_pivot": {
+          "type": "array",
+          "description": "Pivot summary of metrics by Line of Business \u00d7 policy period. Distinct from policies[] (which carries individual policy terms with claims) and from section_totals[] (which is rollup rows). Each row here is one LOB \u00d7 period intersection from a printed pivot table. Example carriers: Hartford account summary, BlueCross multi-LOB reports.",
+          "items": {
+            "type": "object",
+            "required": [
+              "line_of_business"
+            ],
+            "properties": {
+              "line_of_business": {
+                "type": "string",
+                "description": "Free text (preserved from source) \u2014 WORKERS COMP, FIRE & ALLIED, GENERAL LIAB, etc."
+              },
+              "lob_code": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Single-letter or short code (W, P, L) when carrier prints one."
+              },
+              "policy_number": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "If pivot row is for a single policy, capture it. Null for multi-policy aggregates."
+              },
+              "policy_period_start": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "policy_period_end": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "policy_period_label": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Verbatim period label when not a clean date range, e.g. '2016-2020'."
+              },
+              "earned_premium": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "earned_premium_excl_retro_adj": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "written_premium": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "loss_ratio": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Decimal (0.05 = 5%)."
+              },
+              "paid_claims": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "Hartford 'Claims Frequency Paid'."
+              },
+              "open_claims": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "total_claims": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "claims_severity_gt_10m": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "claims_severity_gt_25m": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "claims_severity_gt_50m": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "total_amount_in_millions": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "agency_code": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Hartford prints per-row."
+              },
+              "msi": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Hartford metadata field."
+              },
+              "is_total_row": {
+                "type": "boolean",
+                "description": "True for 'PRIOR LOB TOTAL', 'ACCOUNT TOTAL', 'LATEST POLICY INFORMATION TOTAL' etc.",
+                "default": false
+              },
+              "scope": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "latest_policy",
+                  "prior_lob",
+                  "account_total",
+                  "lob_total",
+                  "year_total",
+                  "row",
+                  null
+                ],
+                "description": "Semantic category of this row."
+              }
+            }
+          }
+        },
+        "report_platform": {
+          "oneOf": [
+            {
+              "type": "object",
+              "description": "The risk-management software platform that generated the report. Distinct from carrier and claims_administrator. Examples: Origami Risk (TriNet, Insperity), Riskonnect, Marsh ClearSight, Ventiv.",
+              "properties": {
+                "name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "version": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "logo_text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Verbatim platform logo / footer text."
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "currency": {
+          "type": "string",
+          "default": "USD",
+          "description": "ISO 4217 currency code. Defaults to USD for North American carriers; supports international."
+        },
+        "ncci_carrier_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "NCCI Carrier Code (used in WCSTAT submissions)."
+        },
+        "risk_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "NCCI Risk ID."
+        },
+        "business_segment_identifier": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "WCSTAT positions 106-112; not used in DE/MI/NC/NJ/NY/PA/WI."
+        },
+        "multistate_indicator": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "type_of_coverage": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "WC",
+            "USL_H",
+            "FELA",
+            "JONES_ACT",
+            "VOLUNTARY",
+            null
+          ]
+        },
+        "policy_conditions_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valuation_report_number": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "WCSTAT report number: 1, 2, 3, 4, 5, 10."
+        }
+      }
+    },
+    "policies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "policy_id",
+          "policy_number",
+          "has_no_claims"
+        ],
+        "properties": {
+          "policy_id": {
+            "type": "string"
+          },
+          "policy_number": {
+            "type": "string"
+          },
+          "policy_carrier_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "line_of_business": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "policy_effective_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "policy_expiration_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "median_days_to_report_claim": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "premium": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "term_premium": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "written_premium": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "earned_premium": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "earned_premium_excl_retro_adj": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "counts": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "total_claims": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "open_claims": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "closed_claims": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "litigated_claims": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "indemnity_open": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "indemnity_closed": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "indemnity_total": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "medical_open": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "medical_closed": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "medical_total": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "total_records_open": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "total_records_closed": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "total_records_total": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "policy_litigated_indicator": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "Y",
+              "N",
+              "Ukn",
+              null
+            ]
+          },
+          "financials": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "paid_losses": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "paid_loss_adjustment_expenses": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "outstanding_losses_and_expenses": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "total_incurred_losses_and_expenses": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "loss_ratio": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "by_bucket": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "medical": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "indemnity": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "disability": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "vr": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "expense_lae": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "employer_paid_benefits": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "rehab": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "recovery": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "lost_time": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          },
+                          "total": {
+                            "oneOf": [
+                              {
+                                "$ref": "#/$defs/policyBucketTotals"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "has_no_claims": {
+            "type": "boolean"
+          },
+          "no_claims_marker_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "subtotals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "label",
+                "scope"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "scope": {
+                  "type": "string",
+                  "enum": [
+                    "state",
+                    "line_of_business",
+                    "location",
+                    "other"
+                  ]
+                },
+                "scope_value": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "number_of_claims": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "paid_losses": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "paid_expense": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "open_losses": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "open_expense": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "total_incurred": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "location_summaries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "location_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "location_name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "location_address": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "number_of_claims": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "open_claims": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "by_bucket": {
+                  "type": "object",
+                  "properties": {
+                    "medical": {
+                      "$ref": "#/$defs/policyBucketTotals"
+                    },
+                    "indemnity": {
+                      "$ref": "#/$defs/policyBucketTotals"
+                    },
+                    "employer_paid_benefits": {
+                      "$ref": "#/$defs/policyBucketTotals"
+                    },
+                    "expense_lae": {
+                      "$ref": "#/$defs/policyBucketTotals"
+                    },
+                    "rehab": {
+                      "$ref": "#/$defs/policyBucketTotals"
+                    },
+                    "recovery_subrogation": {
+                      "$ref": "#/$defs/policyBucketTotals"
+                    },
+                    "total": {
+                      "$ref": "#/$defs/policyBucketTotals"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "excess_reinsurance": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Excess WC / reinsurance / self-insured retention fields.",
+                "properties": {
+                  "self_insured_retention": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Per-claim SIR amount."
+                  },
+                  "per_occurrence_retention": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "aggregate_retention": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "aggregate_stop_loss_attachment": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "aggregate_limit": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "aggregate_eroded_amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "aggregate_eroded_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "corridor_deductible_amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "excess_carrier_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "excess_policy_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "excess_layer_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "primary",
+                      "1st_excess",
+                      "2nd_excess",
+                      "umbrella",
+                      "cat_xol",
+                      null
+                    ]
+                  },
+                  "treaty_reference": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "cession_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "quota_share_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "cession_type": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "facultative",
+                      "treaty",
+                      null
+                    ]
+                  },
+                  "reinsurer_recoverable_billed": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "reinsurer_recoverable_collected": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "policy_id",
+          "identity"
+        ],
+        "properties": {
+          "policy_id": {
+            "type": "string"
+          },
+          "identity": {
+            "type": "object",
+            "properties": {
+              "claim_number": {
+                "type": "string"
+              },
+              "converted_claim_number": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "related_claim_number": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "parent_organization": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "insured_on_row": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "claimant_name": {
+                "type": "string"
+              },
+              "claimant_age": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "claimant_hire_date": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "claimant_length_of_employment": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "claimant_average_weekly_wage": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "claimant_occupation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "claimant_occupation_code": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "claimant_department": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "claim_number_history": {
+                "type": "array",
+                "description": "Prior claim numbers from system migrations. Generalizes AmTrust 'converted_claim_number' (kept as alias) to support multi-system histories. Each entry preserves the source. Primary claim_number is the current system's number.",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "claim_number"
+                  ],
+                  "properties": {
+                    "claim_number": {
+                      "type": "string"
+                    },
+                    "source_system": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "description": "Name of the system this number came from (e.g. 'legacy ICM', 'AmTrust pre-2020')."
+                    },
+                    "valid_from": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "format": "date"
+                    },
+                    "valid_to": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "format": "date"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "location": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "location_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "location_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "location_address": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "loss_location": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "injury_location_state": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "injury_location_city": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "jurisdiction_state": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "raw_combined_cell": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Verbatim combined-cell text when a carrier prints multiple semantic fields in one cell. Example (Hartford detail): 'Canoga Park Ca/Struck By Flying-falling Object - Not We /Office Manager'. REQUIRED for hybrid_detail archetype docs (Hartford detail, similar). Even when location/cause/occupation are individually parsed into their fields, this audit trail must be preserved when the source cell was visually combined.",
+                    "x-required-for-archetypes": [
+                      "hybrid_detail"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "dates": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "date_of_loss": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "date_of_loss_time": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "date_reported_to_carrier": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "date_first_aware": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "date_closed": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "employee_lag_days": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "reporting_lag_days": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "date_of_injury_begin": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "CT claims: start of exposure window (CA LC \u00a75500.5)."
+                  },
+                  "date_of_injury_end": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "CT claims: last injurious exposure date."
+                  },
+                  "date_of_knowledge_industrial_causation": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "CA LC \u00a75412 \u2014 when claimant knew injury was work-related."
+                  },
+                  "date_first_compensable_disability": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "CA LC \u00a75412 \u2014 first day TTD/TPD."
+                  },
+                  "date_first_exposure": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "Occupational disease: first known exposure to causative agent."
+                  },
+                  "date_last_exposure": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "OD: last day of exposure before manifestation."
+                  },
+                  "date_of_diagnosis": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "OD: when diagnosis was rendered (often = DOI per IAIABC convention for latency claims)."
+                  },
+                  "date_of_disability": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "First day unable to work (vs DOI which may be earlier)."
+                  },
+                  "mmi_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "Maximum Medical Improvement / Permanent and Stationary date."
+                  },
+                  "return_to_work_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "RTW date (full or modified duty)."
+                  },
+                  "date_of_death": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "Fatality claims only."
+                  },
+                  "original_closure_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "For reopened claims \u2014 when it was originally closed."
+                  },
+                  "reopen_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "Date the claim was reopened (NY 18yr/8yr; IL 30mo windows)."
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "status": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "claim_status": {
+                    "type": "string",
+                    "enum": [
+                      "open",
+                      "closed",
+                      "reopened",
+                      "reopened_closed",
+                      "incident_only",
+                      "unknown"
+                    ]
+                  },
+                  "claim_type": {
+                    "type": "string",
+                    "enum": [
+                      "medical_only",
+                      "indemnity",
+                      "incident",
+                      "report_only",
+                      "unknown"
+                    ]
+                  },
+                  "raw_status": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "compound_status_split": {
+                    "type": "boolean"
+                  },
+                  "in_litigation": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "pd_rating": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "fatalities_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "recovery_pending_indicator": {
+                    "type": "boolean"
+                  },
+                  "medical_only_indicator": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "injury": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "nature_of_injury": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "nature_of_injury_prefix": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Carrier-specific prefix extracted from the main value. ICW examples: 'Spc' (Specific), 'Occ' (Occupational), 'Mult' (Multiple). When extracted, the main nature_of_injury must NOT include the prefix (canonical = stripped). Example: PDF prints 'Spc: Strain'. Schema fills nature_of_injury='Strain', nature_of_injury_prefix='Spc'."
+                  },
+                  "body_part": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "body_part_prefix": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Body region grouping prefix. ICW examples: 'Trunk', 'Lower Ext', 'Upper Ext', 'Mult', 'Body Systems'. Same rule as nature_of_injury_prefix: extract + strip."
+                  },
+                  "cause_of_injury": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "injury_source": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "injury_type": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "accident_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "category": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "loss_description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "body_part_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "WCIO 2-digit Part of Body code (e.g., '11'=Brain, '34'=Hand, '41'=Lower Back, '54'=Knee). Pair with body_part text."
+                  },
+                  "nature_of_injury_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "WCIO 2-digit Nature of Injury code (e.g., '04'=Burn, '13'=Cut, '30'=Sprain, '31'=Strain, '40'=Amputation, '49'=Hernia, '65'=Carpal Tunnel)."
+                  },
+                  "cause_of_injury_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "WCIO 2-digit Cause code (e.g., '40'=Fall/Slip, '60'=Strain, '80'=Struck/Injured by, '97'=Cumulative Trauma)."
+                  },
+                  "icd10_codes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "ICD-10 diagnosis codes (Sedgwick, CorVel, CMS Section 111 reporting). Multi-value."
+                  },
+                  "disease_icd10_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Primary diagnosis for occupational disease (asbestosis, silicosis, hearing loss, COVID-19, etc.)"
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "classification": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "class_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "class_code_raw": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "examiner": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Adjuster / claim examiner contact. Locked shape across carriers: all 5 fields are siblings (no nested .contact wrapper). When a carrier prints only name, leave others null.",
+                "properties": {
+                  "name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Internal employee ID (Arrowhead 'kgerardo' style)."
+                  },
+                  "phone": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "email": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "category": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "AmTrust 'Adjuster Category' \u2014 examiner severity tier (Lite, Standard, Complex, etc.)"
+                  },
+                  "role": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "adjuster",
+                      "examiner",
+                      "tpa_adjuster",
+                      "supervisor",
+                      "subrogation_specialist",
+                      "other",
+                      null
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "financials": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "medical": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/claimBucket"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "indemnity": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/claimBucket"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "disability": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/claimBucket"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "vr": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/claimBucket"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "expense_lae": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/claimBucket"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "employer_paid_benefits": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/claimBucket"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "rehab": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/claimBucket"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "lost_time": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/claimBucket"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "recovery_subrogation": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/claimBucket"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "deductible": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "amount": {
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "raw_value": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "internal_handling_expense": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "amount": {
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "raw_value": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "totals": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "total_paid": {
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "total_reserve": {
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "total_incurred": {
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "net_total_paid": {
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "net_total_reserve": {
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "net_total_incurred": {
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "raw_row": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cross_references": {
+            "type": "array",
+            "description": "Links to other claims (re-openings, multi-policy claims, related litigation). Replaces single-valued related_claim_number.",
+            "items": {
+              "type": "object",
+              "required": [
+                "claim_number",
+                "relationship"
+              ],
+              "properties": {
+                "claim_number": {
+                  "type": "string"
+                },
+                "policy_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "relationship": {
+                  "type": "string",
+                  "enum": [
+                    "reopening_of",
+                    "reopened_as",
+                    "supersedes",
+                    "superseded_by",
+                    "linked_litigation",
+                    "duplicate_of",
+                    "split_from",
+                    "merged_with",
+                    "other"
+                  ]
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "disability_rating": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Permanency / disability rating. State-specific schemes (CA scheduled, AMA Guides, TX IR).",
+                "properties": {
+                  "disability_type_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "TTD",
+                      "TPD",
+                      "PTD",
+                      "PPD",
+                      "DEATH",
+                      "MED_ONLY",
+                      null
+                    ],
+                    "description": "TTD=Temp Total, TPD=Temp Partial, PTD=Perm Total, PPD=Perm Partial, MED_ONLY."
+                  },
+                  "pd_rating_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Permanent Disability rating (CA scheduled rating, decimal 0-1 or pct 0-100)."
+                  },
+                  "wpi_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Whole Person Impairment per AMA Guides 5th/6th Edition."
+                  },
+                  "ama_guides_edition": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "enum": [
+                      4,
+                      5,
+                      6,
+                      null
+                    ],
+                    "description": "Which AMA Guides edition was used."
+                  },
+                  "pd_tier_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "CA tier: 0-24%, 25-69%, \u226570%."
+                  },
+                  "schedule_loss_of_use_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "NY-specific Schedule Loss of Use rating."
+                  },
+                  "loss_of_wage_earning_capacity_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "NY non-schedule disability rating."
+                  },
+                  "ftd_rating_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Future Earning Capacity (CA pre-2013 SB-863)."
+                  },
+                  "apportionment_pct_industrial": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "CA LC \u00a74663/\u00a74664 \u2014 % of disability industrial."
+                  },
+                  "apportionment_pct_non_industrial": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "apportionment_basis_text": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Free-text rationale from physician's report."
+                  },
+                  "rating_completion_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "qme_ame_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "CA Qualified or Agreed Medical Evaluator who issued the rating."
+                  },
+                  "designated_doctor_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "TX Designated Doctor."
+                  },
+                  "tx_impairment_rating_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "TX Impairment Rating."
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "litigation": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Litigation / appeals / settlement details. Distinct from status.in_litigation flag.",
+                "properties": {
+                  "wcab_case_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "CA WCAB ADJ-prefixed case number."
+                  },
+                  "state_board_case_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "State workers' comp board case ID (NY WCB, FL OJCC, TX DWC, etc.)."
+                  },
+                  "application_for_adjudication_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "settlement_type_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "CR",
+                      "STIP",
+                      "FA",
+                      "SECTION_32",
+                      "REDEMPTION",
+                      "C_AND_R",
+                      null
+                    ],
+                    "description": "C&R=Compromise & Release, STIP=Stipulated Award, FA=Findings & Award, SECTION_32=NY \u00a732."
+                  },
+                  "settlement_amount_gross": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "settlement_amount_net_to_claimant": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "settlement_approval_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "judge_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "WCJ (Workers' Comp Judge) for hearings."
+                  },
+                  "motion_for_reconsideration_filed": {
+                    "type": "boolean"
+                  },
+                  "appeal_court_reference": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "DCA, state appellate court reference."
+                  },
+                  "claimant_attorney_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "claimant_attorney_firm": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "claimant_attorney_bar_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "claimant_attorney_fee_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "defense_attorney_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "defense_attorney_firm": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "defense_panel_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "litigation_stage": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "pre_litigation",
+                      "filed",
+                      "discovery",
+                      "hearing_scheduled",
+                      "hearing_complete",
+                      "decision",
+                      "appeal",
+                      "settled",
+                      "dismissed",
+                      null
+                    ]
+                  },
+                  "section_25a_indicator": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "NY \u00a725-a Special Disability Fund / Reopened Case Fund."
+                  },
+                  "section_132a_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "CA \u00a7132a discrimination claim."
+                  },
+                  "labor_code_4850_indicator": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "CA \u00a74850 \u2014 peace officer/firefighter full-salary benefit."
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subrogation": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Third-party subrogation / lien details. Distinct from financials.recovery_subrogation amount.",
+                "properties": {
+                  "subro_potential_flag": {
+                    "type": "boolean"
+                  },
+                  "tortfeasor_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "tortfeasor_carrier": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "tortfeasor_policy_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "civil_complaint_filing_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "civil_court_case_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "gross_subro_recovery": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "subro_attorney_fee_share": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "subro_costs": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "net_subro_recovery": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "lien_amount_filed": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "lien_amount_satisfied": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "future_credit_amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "CA LC \u00a73861 future credit."
+                  },
+                  "employer_negligence_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "second_injury_fund_recovery": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "salvage_recovery": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "deductible_reimbursement": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Recovery from insured under large-deductible plans."
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "medicare": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "CMS Section 111 / Medicare Set-Aside fields. Mandatory for \u00a7111 reportable claims.",
+                "properties": {
+                  "medicare_beneficiary_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "claimant_hicn_or_mbi": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Medicare ID (masked)."
+                  },
+                  "section_111_rre_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "ongoing_responsibility_for_medicals_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "ORM Y/N per CMS Section 111."
+                  },
+                  "orm_termination_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "tpoc_amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Total Payment Obligation to Claimant (Section 111)."
+                  },
+                  "tpoc_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "msa_amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "msa_funding_method": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "lump_sum",
+                      "annuity",
+                      "structured",
+                      null
+                    ]
+                  },
+                  "msa_seed_money": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "msa_annual_deposit": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "msa_admin_type": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "self_administered",
+                      "professional",
+                      null
+                    ]
+                  },
+                  "msa_cms_review_status": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "submitted",
+                      "approved",
+                      "counter_higher",
+                      "closed",
+                      "withdrawn",
+                      null
+                    ]
+                  },
+                  "msa_cms_submission_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "msa_cms_approval_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "life_expectancy_years": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "rated_age_used": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "msp_conditional_payment": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "MSP repayment to Medicare (conditional payment recovery)."
+                  },
+                  "structured_settlement_indicator": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "provider": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Treating physician + medical network + UR/IMR details.",
+                "properties": {
+                  "treating_physician_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "treating_physician_npi": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Federal NPPES National Provider Identifier."
+                  },
+                  "ptp_designation_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "Primary Treating Physician designation (CA)."
+                  },
+                  "mpn_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "CA DWC Medical Provider Network ID."
+                  },
+                  "mpn_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "hcn_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "TX Health Care Network ID."
+                  },
+                  "network_type_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "MPN",
+                      "HCN",
+                      "MCO",
+                      "PPO",
+                      "DIRECT",
+                      "NETWORK_OUT",
+                      null
+                    ]
+                  },
+                  "qme_ame_panel_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "CA QME panel number."
+                  },
+                  "ime_provider_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Independent Medical Examination provider."
+                  },
+                  "ime_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "ur_decisions": {
+                    "type": "array",
+                    "description": "Utilization Review decisions on treatment requests.",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "request_date": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "format": "date"
+                        },
+                        "rfa_number": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "description": "Request for Authorization #"
+                        },
+                        "decision": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "enum": [
+                            "approved",
+                            "modified",
+                            "denied",
+                            "deferred",
+                            null
+                          ]
+                        },
+                        "decision_date": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "format": "date"
+                        },
+                        "reviewer": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "imr_request_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "imr_case_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "imr_decision": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "upheld",
+                      "overturned",
+                      "withdrawn",
+                      null
+                    ]
+                  },
+                  "imr_decision_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "ppo_savings_amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "CorVel-style PPO discount captured."
+                  },
+                  "bill_review_savings_amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "pharmacy_cost_paid": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Broadspire-style separate pharmacy bucket."
+                  },
+                  "cost_containment_paid": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Chubb/ESIS-style separate cost containment fees."
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "death_benefits": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Fatality claim details + dependent benefits.",
+                "properties": {
+                  "death_compensable_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "cause_of_death_icd10": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "burial_expense_paid": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "burial_expense_state_cap": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "death_benefit_weekly_rate": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "death_benefit_state_cap": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "death_benefit_duration_weeks": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "dependents": {
+                    "type": "array",
+                    "description": "Survivors entitled to benefits.",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "relationship": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "enum": [
+                            "spouse",
+                            "child",
+                            "parent",
+                            "sibling",
+                            "other",
+                            null
+                          ]
+                        },
+                        "dob": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "format": "date"
+                        },
+                        "dependency_type": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "enum": [
+                            "total",
+                            "partial",
+                            null
+                          ]
+                        },
+                        "benefit_pct": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "age_out_date": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "format": "date",
+                          "description": "When child ages out (typically 18 or 23 if student)."
+                        }
+                      }
+                    }
+                  },
+                  "total_dependents_count": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "partial_dependents_count": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "surviving_spouse_remarriage_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "remarriage_lump_sum_paid": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "dependency_dispute_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "mental_presumption": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Mental/psychiatric claims + statutory presumption fields (firefighters, peace officers, healthcare).",
+                "properties": {
+                  "psych_claim_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "stress_type_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "sudden_extraordinary",
+                      "ordinary",
+                      "cumulative",
+                      null
+                    ]
+                  },
+                  "predominant_cause_pct": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "CA LC \u00a73208.3 \u2014 must be \u226551% to be compensable."
+                  },
+                  "presumption_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "presumption_statute_cite": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "e.g., CA LC \u00a73212-\u00a73213.2, FL \u00a7112.18."
+                  },
+                  "first_responder_role_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "firefighter",
+                      "peace_officer",
+                      "emt_paramedic",
+                      "dispatcher",
+                      "correctional_officer",
+                      "healthcare_worker",
+                      "other",
+                      null
+                    ]
+                  },
+                  "presumption_window_active": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "qualifying_event_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "ptsd_diagnosis_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "ptsd_dsm5_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "DSM-5 / ICD-10 (F43.10, F43.12)."
+                  },
+                  "heart_lung_presumption_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "cancer_presumption_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "cancer_type_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Specific cancer for firefighter presumption (per NFPA studies)."
+                  },
+                  "covid19_claim_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "covid19_presumption_basis": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "essential_worker",
+                      "healthcare",
+                      "first_responder",
+                      "outbreak_workplace",
+                      null
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "excess_notification": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Excess carrier notification triggers per claim.",
+                "properties": {
+                  "attachment_point_reached_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "excess_notice_50pct_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "excess_notice_75pct_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "excess_notice_100pct_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "cat_claim_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "Catastrophic claim flag (typically >$1M total incurred)."
+                  },
+                  "reinsurer_treaty_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reopening": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Reopened claim details. Distinct from cross_references.",
+                "properties": {
+                  "is_reopened_claim": {
+                    "type": "boolean"
+                  },
+                  "reopen_petitioner": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "claimant",
+                      "carrier",
+                      "board",
+                      "employer",
+                      null
+                    ]
+                  },
+                  "reopen_reason_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "worsening",
+                      "new_evidence",
+                      "fraud",
+                      "clerical",
+                      "med_only_to_indemnity",
+                      "post_settlement_complication",
+                      "other",
+                      null
+                    ]
+                  },
+                  "reopen_statute_window_days": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "prior_settlement_type": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "CR",
+                      "STIP",
+                      "FA",
+                      "SECTION_32",
+                      "REDEMPTION",
+                      null
+                    ]
+                  },
+                  "waiver_signed_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "times_reopened_count": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "compensability_defense": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Denial / compensability dispute / defense fields.",
+                "properties": {
+                  "compensability_status": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "accepted",
+                      "denied",
+                      "delayed",
+                      "controverted",
+                      "withdrawn",
+                      null
+                    ]
+                  },
+                  "denial_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "denial_reason_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "intoxication",
+                      "horseplay",
+                      "willful_misconduct",
+                      "deviation_from_employment",
+                      "no_aoe_coe",
+                      "self_inflicted",
+                      "non_industrial_cause",
+                      "late_reporting",
+                      "no_employee_relationship",
+                      "other",
+                      null
+                    ]
+                  },
+                  "denial_rescinded_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "intoxication_test_performed": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "test_result_substance": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "alcohol",
+                      "marijuana",
+                      "cocaine",
+                      "opioids",
+                      "amphetamines",
+                      "negative",
+                      "refused",
+                      null
+                    ]
+                  },
+                  "bac_level": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "dot_reportable_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "dot_test_type": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "post_accident",
+                      "random",
+                      "reasonable_suspicion",
+                      "pre_employment",
+                      "return_to_duty",
+                      null
+                    ]
+                  },
+                  "intoxication_causation_proven_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "controversion_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "wage_benefits": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "Wage statement + income benefit fields.",
+                "properties": {
+                  "average_weekly_wage_at_injury": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "average_weekly_wage_max_benefit": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "wage_statement_13week_total": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "FL DWC-1a 13-week wage statement."
+                  },
+                  "weekly_compensation_rate": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "statutory_max_rate_hit_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "ttd_weeks_paid": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "tpd_weeks_paid": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "ppd_weeks_paid": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "tibs_weeks_paid": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "description": "TX Temporary Income Benefits."
+                  },
+                  "iibs_weeks_paid": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "description": "TX Impairment Income Benefits."
+                  },
+                  "sibs_quarter": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "description": "TX Supplemental Income Benefits quarter."
+                  },
+                  "libs_indicator": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "TX Lifetime Income Benefits."
+                  },
+                  "reduced_earnings_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "NY-specific reduced earnings classification."
+                  },
+                  "modified_duty_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "rtw_status_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "full_duty",
+                      "modified_duty",
+                      "no_rtw",
+                      "not_yet_evaluated",
+                      null
+                    ]
+                  },
+                  "lost_time_days": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "restricted_duty_days": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "salary_continuation_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "supplemental_job_displacement_voucher_amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "CA SJDB voucher (SB-863)."
+                  },
+                  "bona_fide_offer_of_employment_date": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date",
+                    "description": "TX-specific BFOE date."
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "employer_relationship": {
+            "oneOf": [
+              {
+                "type": "object",
+                "description": "PEO/co-employment, subcontractor, IC dispute fields.",
+                "properties": {
+                  "peo_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "peo_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "peo_fein": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "client_company_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "client_fein": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "worksite_employer_id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "coemployment_arrangement_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "payroll_attribution_pct_peo": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "payroll_attribution_pct_client": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "independent_contractor_dispute_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "ic_classification_test": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "enum": [
+                      "abc_test",
+                      "borello",
+                      "economic_realities",
+                      "20_factor_irs",
+                      null
+                    ]
+                  },
+                  "subcontractor_cross_coverage_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "statutory_employer_flag": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "aggregations": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "by_part_of_body": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/categoricalDistribution"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "by_nature_of_injury": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/categoricalDistribution"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "by_cause_of_injury": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/categoricalDistribution"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "by_time_of_injury": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/categoricalDistribution"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "by_day_of_injury": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/categoricalDistribution"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "by_month_of_injury": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/categoricalDistribution"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "by_time_to_report": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/categoricalDistribution"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "passed"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "passed": {
+                "type": "boolean"
+              },
+              "details": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "claim_number": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "policy_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "expected": {
+                "type": [
+                  "number",
+                  "string",
+                  "null"
+                ]
+              },
+              "actual": {
+                "type": [
+                  "number",
+                  "string",
+                  "null"
+                ]
+              },
+              "delta": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "reconciliation_summary": {
+          "type": "object",
+          "description": "Pass/fail summary across all reconciliation checks. Downstream consumers gate on this.",
+          "properties": {
+            "checks_run": {
+              "type": "integer"
+            },
+            "checks_passed": {
+              "type": "integer"
+            },
+            "checks_failed": {
+              "type": "integer"
+            },
+            "overall_pass": {
+              "type": "boolean"
+            },
+            "categories_failed": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Categories with at least one failure: bucket_arithmetic, policy_total, claim_count, lae_inclusion, date_ordering"
+            }
+          }
+        }
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "properties": {
+        "document_overall": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "by_field": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "by_claim": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "overall": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "low_confidence_fields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "severity"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "late_reporting",
+              "very_late_reporting",
+              "high_reserve_no_pay",
+              "closed_with_reserves",
+              "litigated",
+              "large_reserve_jump_pattern",
+              "cumulative_trauma",
+              "mental_stress_only",
+              "class_occupation_mismatch",
+              "governing_class_drift",
+              "reporting_lag_outlier_for_state",
+              "frequency_outlier",
+              "recovery_pending",
+              "large_med_to_indemnity_ratio",
+              "possible_duplicate_claim",
+              "manual_annotation_present",
+              "ocr_quality_low",
+              "policy_total_mismatch",
+              "claim_count_mismatch",
+              "bucket_arithmetic_mismatch",
+              "other"
+            ]
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "info",
+              "warning",
+              "critical"
+            ]
+          },
+          "claim_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "policy_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "detail": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "extraction_notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "scope",
+          "message"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "document",
+              "policy",
+              "claim",
+              "field"
+            ]
+          },
+          "claim_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "policy_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "field_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source_provenance": {
+      "type": "object",
+      "properties": {
+        "source_filename": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_hash": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "page_count": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "extracted_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "extractor_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "delivery_format": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "pdf_text",
+            "pdf_scanned",
+            "csv",
+            "xlsx",
+            "acord_xml",
+            "acord_json",
+            "api_json",
+            null
+          ]
+        },
+        "acord_message_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "If delivered via ACORD: ECOT, EBOT, GRLC version."
+        }
+      }
+    }
+  },
+  "$defs": {
+    "claimBucket": {
+      "type": "object",
+      "properties": {
+        "paid": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "reserve": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "incurred": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "recovery": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "policyBucketTotals": {
+      "type": "object",
+      "properties": {
+        "paid": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "reserve": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "incurred": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "recovery": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "categoricalDistribution": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "frequency": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "percent": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "dollar_total": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "x-version": "v5",
+  "x-extends": "v4",
+  "x-built-at": "2026-05-02T10:20:06.996739+00:00",
+  "x-changes": [
+    "ADD document.policy_year_lob_pivot[] (Hartford summary archetype)",
+    "ADD document.report_platform (Origami Risk, Riskonnect, Marsh ClearSight)",
+    "ADD document.currency (default USD)",
+    "ADD claims[].identity.claim_number_history[] (system migrations)",
+    "ADD claims[].cross_references[] (re-openings, related litigation)",
+    "ADD verification.reconciliation_summary (downstream gating)",
+    "LOCK claims[].location.raw_combined_cell semantics (required for hybrid_detail)",
+    "LOCK injury.nature_of_injury_prefix / body_part_prefix semantics (extract+strip)",
+    "LOCK examiner shape (5 sibling fields, role enum)"
+  ],
+  "x-changes-v5": [
+    "ADD claims[].injury \u2014 body_part_code, nature_of_injury_code, cause_of_injury_code (WCIO 2-digit codes)",
+    "ADD claims[].injury.icd10_codes[] (CMS Section 111 + Sedgwick/CorVel)",
+    "ADD claims[].dates \u2014 date_of_injury_begin/end, date_of_knowledge, date_of_diagnosis, mmi_date, return_to_work_date, etc.",
+    "ADD claims[].disability_rating (PD%, WPI, AMA Guides edition, apportionment)",
+    "ADD claims[].litigation (WCAB case#, settlement type, attorneys, judge)",
+    "ADD claims[].subrogation (tortfeasor, lien, gross/net recovery, MSP)",
+    "ADD claims[].medicare (Section 111 RRE, MSA amount, ORM, TPOC)",
+    "ADD claims[].provider (treating MD, MPN/HCN, UR, IMR, PPO savings)",
+    "ADD claims[].death_benefits (dependents[], burial, survivor weekly rate)",
+    "ADD claims[].mental_presumption (PTSD, first-responder presumption, COVID-19)",
+    "ADD claims[].excess_notification (50/75/100% notice dates, cat flag)",
+    "ADD claims[].reopening (petitioner, reason, prior settlement type)",
+    "ADD claims[].compensability_defense (denial reason, intoxication, DOT)",
+    "ADD claims[].wage_benefits (AWW, TIBs/IIBs/SIBs/LIBs, RTW status, SJDB voucher)",
+    "ADD claims[].employer_relationship (PEO, co-employment, IC dispute, ABC test)",
+    "ADD policies[].excess_reinsurance (SIR, attachment, treaty, cession)",
+    "ADD document.ncci_carrier_id, risk_id, business_segment_identifier, type_of_coverage",
+    "ADD source_provenance.delivery_format, acord_message_type"
+  ]
+}

@@ -8,8 +8,10 @@
 | | LightOnOCR (text) | LightOnOCR + bbox-grounded | Image only (no OCR) |
 |---|---|---|---|
 | **Qwen3-VL-4B** | A: **91.12%** ✓ baseline | B: **88.65%** ⚠ −2.47pp | E: not run |
-| **Granite-4.0-3B-Vision** | C: **failed to load** ✗ | D: **failed to load** ✗ | F: not attempted |
+| **Granite-4.0-3B-Vision** | C: **15.95%** ⚠⚠ −75.17pp | D: cancelled (cell C result decisive) | F: cancelled |
 | **Dolphin-v2** | G: **0.00% (empty output)** ✗ | H: cancelled (same fault as G) | I: cancelled |
+
+> **Granite update (May 4 ~11am):** Side venv with `transformers==4.57.6` resolved the import error. Granite loads cleanly (8.96GB VRAM), produces structurally valid JSON, but the F1 collapses to 15.95%. Cells D + F cancelled — see "Granite catastrophic regression" below.
 
 ## What we learned (from cells that ran)
 
@@ -41,16 +43,34 @@
 
 ## What we learned (from cells that failed)
 
-### Granite-4.0-3B-Vision (cells C/D/F) — transformers version conflict ✗
+### Granite-4.0-3B-Vision — initial env error then catastrophic regression
 
-```
-ImportError: cannot import name 'HybridMambaAttentionDynamicCache' from
-'transformers.models.granitemoehybrid.modeling_granitemoehybrid'
-```
+**First failure (cells C/D/F initial run):** `ImportError: cannot import name 'HybridMambaAttentionDynamicCache'`. Granite 4.0 expects `transformers==4.57.6`; our main env has 5.7.0. **Resolved** by creating `.venv-granite/` with pinned deps (~30 min).
 
-- Granite 4.0 expects `transformers==4.57.6` per the HF model card; our env has a different version, missing the new attention-cache class.
-- **Not a fundamental block** — fixable in ~30 min by upgrading transformers in a separate venv (existing extractor pipelines may break under upgrade — A/B in isolation first).
-- **Plan:** retry Granite cells in an isolated venv with pinned `transformers==4.57.6`.
+**Second result (cell C retried in side venv): 15.95% F1** — vs **91.12%** baseline. Per-doc:
+
+| Doc | A (Qwen) | C (Granite) | Δ |
+|---|---|---|---|
+| ICW | 95.6% | **1.8%** | −93.8pp |
+| Hartford 8.21.05 | 50.0% | 12.5% | −37.5pp |
+| Hartford 8.21.25B | 40.0% | 20.0% | −20.0pp |
+| Strategic Hartford | 91.2% | 41.2% | −50.0pp |
+| Insperity | 83.3% | 33.3% | −50.0pp |
+| TriNet | 82.4% | 52.9% | −29.5pp |
+| ADP | 88.2% | 29.4% | −58.8pp |
+| Arrowhead | 92.6% | 29.8% | −62.8pp |
+| Employers | 82.0% | 34.8% | −47.2pp |
+
+**Why it failed:** Granite's output is structurally valid JSON conforming to the V4 schema's shape, but values land in the wrong fields. Sample from Employers cell C:
+
+- `"carrier": {"name": "WORLDWIDE FACILITIES LLC"}` — **wrong**: WWFAC is the broker; the carrier is "Employers Preferred Insurance Company"
+- `"report_id": "EIG469077603"` — **wrong**: that's the policy number, not a report ID
+
+Granite is a general-purpose KVP-extraction model. Without insurance-domain priors, it makes naive label→field guesses that misclassify common loss-run elements. It also adds extra top-level fields not in our schema (`verification`, `confidence`, `signals`, `extraction_notes`, `source_provenance`) suggesting it's drawing from its general-domain pretraining rather than our V4 prompt.
+
+**Cells D + F cancelled** — same model + same prompt would produce the same field-misattribution pattern. No point spending another 30+ min of GPU time on it.
+
+**Conclusion:** Granite 4.0 3B Vision is **not a drop-in replacement** for Qwen3-VL-4B at our schema. It would need either (a) explicit field-by-field schema fine-tuning on insurance docs, or (b) a different prompt format (Granite's native `<tables_json>` + custom JSON schema task) to be useful. Both paths are real engineering, not ablation tweaks. **Not pursuing.**
 
 ### Dolphin-v2 (cells G/H/I) — wrong prompt format ✗
 
